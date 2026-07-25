@@ -7,7 +7,7 @@
 ## Reading a Standard Signal
 
 ```
-📊 QUANTEX SIGNAL
+📊 QUANTEX BOT SIGNAL
 ━━━━━━━━━━━━━━━━━━━━
 Pair      : EUR/USD OTC
 Direction : ⬆️ BUY (CALL)
@@ -32,7 +32,7 @@ WIN: 6 | LOSS: 2 | Rate: 75%
 ## Reading a Live Signal (AI-Confirmed)
 
 ```
-📊 LIVE SIGNAL
+📊 LIVE BOT SIGNAL
 ━━━━━━━━━━━━━━━━━━━━
 Pair         : EUR/USD OTC
 Direction    : ⬆️ BUY (CALL)

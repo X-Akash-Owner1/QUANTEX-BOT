@@ -49,12 +49,14 @@ Signals arrive automatically at each 5-minute slot.
 ## Step 4 — Follow Signals
 
 ```
-📊 QUANTEX SIGNAL
+📊 QUANTEX BOT SIGNAL
 ━━━━━━━━━━━━━━━━
 Pair      : EUR/USD OTC
 Direction : ⬆️ BUY (CALL)
 Entry Time: 14:35
 Timeframe : M1
+Confidence:85%
+Payout    :90%
 ```
 
 At exactly **14:35**, open a **BUY (CALL)** M1 trade on Quotex. Result is auto-checked and sent after the candle closes.
@@ -104,13 +106,15 @@ Verify signals from any source:
 ## Step 8 — Access Free Bots
 
 1. Tap **🤖 Free Bots** from the main menu
-2. Choose from available bots (3 released, 7 coming soon)
+2. Choose from available bots (5 released, 5 coming soon)
 3. Tap the bot link — opens directly in Telegram
 
 Currently available free bots:
 - 🚀 **HUNTER X QUANTEX** — Live signal software
 - 🐉 **DRAGON X QUANTEX** — OTC Signal Pro
-- 🖤 **BLACKOUT FUTURE AI** — Future signal system
+- 🖤 **BLACKOUT FUTURE AI** — Blackout Future signal system
+- 🔮 **FUTURE SIGNAL AI** — Future signal system
+- 🤖 **QX PERSONAL AI** — Personal AI system to verify your own analysis and setup
 
 ---
 

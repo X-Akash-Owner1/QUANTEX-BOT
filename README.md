@@ -196,12 +196,7 @@ Signal Loop (5-min Clock)
 
 | Module | Role |
 |---|---|
-| `quantex.py` | Core signal engine — analysis, chart generation, Telegram sender |
-| `quantex_bot_manager.py` | Multi-user Telegram bot — sessions, checker, future live, free bots, bot builder, admin |
-| `quantex_checker_engine.py` | 4-mode checker suite — OTC, Blackout, Whiteout, Custom Date |
-| `quantex_future_engine.py` | Future signal engine — pre-market predictions |
-| `quantex_web.py` | WebApp login server — secure Telegram account connection |
-| `db_postgres.py` | PostgreSQL database layer — all persistent storage |
+'PRIVATE'
 
 ---
 
@@ -211,14 +206,16 @@ Signal Loop (5-min Clock)
 | Broker | Market Type | Status |
 |---|---|---|
 | **Quotex** | OTC + Live Forex | ✅ Fully Supported |
-| **IQ Option** | OTC (Future Engine) | ✅ Supported |
 
 ### Coming Soon
 | Broker | Status |
 |---|---|
 | Pocket Option | 🔜 In Development |
+| Binolla | 🔜 In Development |
 | Olymp Trade | 🔜 Planned |
 | Binomo | 🔜 Planned |
+| IQ Option | 🔜 Planned |
+| Tradowix | 🔜 Planned |
 
 ---
 
@@ -229,17 +226,27 @@ Signal Loop (5-min Clock)
 ### OTC Pairs (Quotex)
 ```
 EURUSD_otc | GBPUSD_otc | USDJPY_otc | AUDUSD_otc | GBPJPY_otc
-EURJPY_otc | XAUUSD_otc | BTCUSD_otc | ETHUSD_otc | FB_otc
-MSFT_otc   | BA_otc     | MCD_otc    | PFE_otc    | SOLUSD_otc
-TONUSD_otc | USCrude_otc| UKBrent_otc| USDINR_otc | USDPHP_otc
-...and 40+ more
+EURJPY_otc | EURGBP_otc | EURCHF_otc | EURCAD_otc | EURAUD_otc
+AUDJPY_otc | AUDCHF_otc | AUDCAD_otc | AUDNZD_otc | GBPAUD_otc
+GBPCAD_otc | GBPCHF_otc | NZDUSD_otc | NZDJPY_otc | NZDCHF_otc
+USDCAD_otc | USDCHF_otc | USDMXN_otc | USDINR_otc | USDDZD_otc
+USDARS_otc | USDBDT_otc | USDCOP_otc | USDEGP_otc | USDIDR_otc
+USDNGN_otc | USDPHP_otc | USDPKR_otc | USDZAR_otc | BRLUSD_otc
+XAUUSD_otc | XAGUSD_otc | BTCUSD_otc | ETHUSD_otc | BCHUSD_otc
+BNBUSD_otc | LTCUSD_otc | SOLUSD_otc | TONUSD_otc | XRPUSD_otc
+DOTUSD_otc | ETCUSD_otc | ZECUSD_otc | TRUUSD_otc | AXSUSD_otc
+AVAUSD_otc | ATOUSD_otc | DASUSD_otc | USCrude_otc | UKBrent_otc
+
 ```
 
 ### Live Forex Pairs
 ```
 EURUSD | GBPUSD | USDJPY | AUDUSD | USDCAD
-USDCHF | GBPJPY | EURJPY | XAUUSD | XAGUSD
-...and 20+ more
+USDCHF | GBPJPY | EURJPY | EURGBP | EURCHF
+EURCAD | EURAUD | AUDJPY | AUDCHF | AUDCAD
+GBPAUD | GBPCAD | GBPCHF | CADJPY | CHFJPY
+XAUUSD | XAGUSD | AXJAUD | CHIA50 | F40EUR
+FTSGBP | HSIHKD | IBXEUR | JPXJPY | STXEUR
 ```
 
 ---
@@ -271,7 +278,7 @@ USDCHF | GBPJPY | EURJPY | XAUUSD | XAGUSD
 ## 🗺️ Future Roadmap
 
 ### 🔜 Short Term
-- [ ] **Multiple Broker Support** — Pocket Option, Olymp Trade, Binomo
+- [ ] **Multiple Broker Support** — Pocket Option, Olymp Trade, Binomo, Binolla, IO Opyion
 - [ ] **Bot Builder Full Release** — no-code custom bot creation
 - [ ] **Web Dashboard** — browser-based signal dashboard
 
