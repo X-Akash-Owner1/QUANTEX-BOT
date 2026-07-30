@@ -16,7 +16,7 @@
 
 ---
 
-> **QUANTEX-BOT** is a professional-grade binary options trading signal system built for Telegram. Powered by a proprietary multi-factor analysis engine and AI-assisted confirmation, it delivers high-accuracy signals with chart generation, auto result tracking, a complete 4-mode signal checker suite, Future Live broadcast system, free premium bots, and an upcoming no-code Bot Builder — all inside one Telegram bot.
+> **QUANTEX-BOT** is a professional-grade binary options trading signal system built for Telegram. Powered by a proprietary multi-factor analysis engine and AI-assisted confirmation, it delivers high-accuracy signals with chart generation, auto result tracking, a complete 4-mode signal checker suite, Future Live broadcast system, a browser-based Web Control dashboard, free premium bots, and a Personal Bot Builder for INFINITY subscribers — all inside one Telegram bot.
 
 ---
 
@@ -48,8 +48,10 @@ Key highlights:
 - ✅ **Live Signal Broadcast** — auto-send signals to your own Telegram channel (Manual & Auto mode)
 - ✅ **Future Live Signal System** — paste a signal list, bot fires each signal at exact scheduled time
 - ✅ **4-Mode Signal Checker Suite** — OTC, Blackout, Whiteout, and Custom Date — super-fast & 100% accurate
-- ✅ **Free Bots Mission** — 10 premium trading bots, released step by step, completely free
-- ✅ **Bot Builder** *(coming soon)* — build your own custom trading bot with zero coding
+- ✅ **Web Control Dashboard** — browser-based Mini App to manage your profile, templates, timezone, and plan
+- ✅ **Tiered Subscription Plans** — STARTER, PLUS, and INFINITY, each unlocking more usage and features
+- ✅ **Free Bots Mission** — premium trading bots released step by step, completely free
+- ✅ **Personal Bot Builder** *(INFINITY plan)* — deploy your own branded trading bot, zero coding
 - ✅ **Telegram Premium Emoji** support via user account integration
 - ✅ Smart sleep mode, scheduled sessions, referral program, and reviews system
 - ✅ **PostgreSQL database** — enterprise-grade, scalable backend
@@ -88,7 +90,7 @@ Key highlights:
 | **Channel Broadcasting** | Signals sent directly to your own Telegram channel |
 | **Custom Header & Username** | Full signal message branding |
 | **Daily Quota Display** | Shows remaining daily signals for free users |
-| **Template Customization** | Edit signal message format for licensed users |
+| **Template Customization** | Edit signal message format — PLUS & INFINITY subscribers |
 
 ### ⏱ Future Live Signal System
 | Feature | Description |
@@ -99,7 +101,7 @@ Key highlights:
 | **MTG 1 & MTG 2 Support** | Multi-step recovery in Future Live mode |
 | **View Signals Dashboard** | See remaining signals and next upcoming signal |
 | **Session Control** | Stop any active Future Live session with one tap |
-| **Free Tier** | 3 free sessions for unlicensed users |
+| **Free Tier** | 3 free sessions for FREE-tier users |
 
 ### 🔍 Signal Checker — 4-Mode Suite
 | Mode | Description |
@@ -130,14 +132,24 @@ Key highlights:
 
 > All free bots accessible directly inside QUANTEX-BOT, no separate signup needed.
 
-### 🏗️ Bot Builder *(Coming Soon)*
+### 🏗️ Bot Builder *(INFINITY plan)*
 | Feature | Description |
 |---|---|
 | **Zero-Code Bot Creation** | Build your own signal bot without any programming knowledge |
 | **Visual Wizard** | Step-by-step button-based setup inside Telegram |
-| **Full Customization** | Signal format, branding, pairs, and settings |
-| **Channel Deployment** | Deploy bot signals to your own channel |
+| **Full Customization** | Signal format, branding, modules, and settings |
+| **Channel Deployment** | Deploy your bot with a live, working webhook — no manual setup |
 | **QUANTEX Engine** | Powered by QUANTEX's proprietary signal engine in the backend |
+
+### 🌐 Web Control Dashboard *(PLUS & INFINITY)*
+| Feature | Description |
+|---|---|
+| **Browser-Based Mini App** | Opens directly inside Telegram — no separate account needed |
+| **Live Profile View** | Plan, daily credits, referral stats, all in real time |
+| **Timezone Management** | Set the clock for every signal type from one screen |
+| **Template Customization** | Edit Live Session & Live Signal message templates visually |
+| **One-Tap Referral Sharing** | Share your referral link straight from the dashboard |
+| **Upgrade / Pricing View** | See all plans and upgrade with one tap |
 
 ### 💎 Telegram Premium Integration
 | Feature | Description |
@@ -153,7 +165,7 @@ Key highlights:
 |---|---|
 | **PostgreSQL Database** | Enterprise-grade scalable backend |
 | **Connection Pooling** | Efficient concurrent multi-user access |
-| **Ban Cache & License Cache** | Fast per-request permission checks |
+| **Ban Cache & Subscription Cache** | Fast per-request permission checks |
 | **Granular Permissions** | Per-user feature access control |
 | **Live Signal Quota** | Per-user daily live signal limits |
 | **Future Live Session Quota** | Per-user lifetime Future Live session limit |
@@ -253,14 +265,15 @@ FTSGBP | HSIHKD | IBXEUR | JPXJPY | STXEUR
 
 ## 💰 Pricing Plans
 
-| Plan | Duration | Price | Features |
-|---|---|---|---|
-| 🥉 **Basic** | 1 Month | **$30** | Full access |
-| 🥈 **Standard** | 3 Months | **$80** | Full access + priority support |
-| 🥇 **Pro** | 6 Months | **$140** | Full access + extended support |
-| 💎 **Lifetime** | Permanent | **$300** | Full access forever + VIP |
+| Plan | Price | Highlights |
+|---|---|---|
+| 🆓 **FREE** | $0 | Limited daily signals, full checker suite, referrals |
+| 🟢 **STARTER** | **$18/month** | Higher usage limits, premium templates, faster performance |
+| 💎 **PLUS** ⭐ Most Popular | **$32/month** | 10× usage, full template customization, Web Control dashboard |
+| 👑 **INFINITY** | **$49/month** | Unlimited usage, Personal Bot Builder, full customization, VIP support |
 
-> 🎟 **Promo codes** — follow [@Quantexbot1](https://t.me/Quantexbot1) or earn via referral program.  
+> 🪄 Tap **Upgrade** inside the bot for live pricing and instant purchase link.
+> 🎟 **Promo codes** — follow [@Quantexbot1](https://t.me/Quantexbot1) or earn via referral program.
 > 💬 **Purchase**: Contact [@X_Akash_Owner](https://t.me/X_Akash_Owner) on Telegram.
 
 ---
@@ -268,7 +281,7 @@ FTSGBP | HSIHKD | IBXEUR | JPXJPY | STXEUR
 ## 🚀 Getting Started
 
 1. Open **[@QuantexBinaryTools_bot](https://t.me/QuantexBinaryTools_bot)** → send `/start`
-2. Tap **License** → contact [@X_Akash_Owner](https://t.me/X_Akash_Owner) to purchase
+2. Tap **🪄 Upgrade** → choose STARTER, PLUS, or INFINITY → contact [@X_Akash_Owner](https://t.me/X_Akash_Owner) to activate
 3. Tap **START LIVE SESSION** → follow the wizard
 4. Signals arrive automatically — follow entry time on Quotex
 5. Results auto-checked and sent after each candle closes
@@ -278,9 +291,9 @@ FTSGBP | HSIHKD | IBXEUR | JPXJPY | STXEUR
 ## 🗺️ Future Roadmap
 
 ### 🔜 Short Term
-- [ ] **Multiple Broker Support** — Pocket Option, Olymp Trade, Binomo, Binolla, IO Opyion
-- [ ] **Bot Builder Full Release** — no-code custom bot creation
-- [ ] **Web Dashboard** — browser-based signal dashboard
+- [ ] **Multiple Broker Support** — Pocket Option, Olymp Trade, Binomo, Binolla
+- [ ] **Bot Builder Full Public Release** — currently in early access for INFINITY subscribers
+- [x] **Web Control Dashboard** — released for PLUS & INFINITY subscribers
 
 ### 🔮 Medium Term
 - [ ] **Enhanced AI Models** — more powerful signal analysis
@@ -300,6 +313,7 @@ FTSGBP | HSIHKD | IBXEUR | JPXJPY | STXEUR
 |---|---|
 | 🤖 **Telegram Bot** | [@QuantexBinaryTools_bot](https://t.me/QuantexBinaryTools_bot) |
 | 📢 **Official Channel** | [@Quantexbot1](https://t.me/Quantexbot1) |
+| 👥 **Community Group** | [t.me/quantexlounge](https://t.me/quantexlounge) |
 | 👤 **Owner / Developer** | [@X_Akash_Owner](https://t.me/X_Akash_Owner) |
 | 📧 **Support Email** | [quantexbotsupport@gmail.com](mailto:quantexbotsupport@gmail.com) |
 
@@ -307,14 +321,22 @@ FTSGBP | HSIHKD | IBXEUR | JPXJPY | STXEUR
 
 ## ⚠️ Disclaimer
 
-> Binary options trading involves substantial risk of loss. QUANTEX-BOT provides signals for informational and educational purposes. Past performance does not guarantee future results. Trade responsibly.
+> Binary options trading involves substantial risk of loss, and no signal provider — QUANTEX-BOT included — can guarantee a 100% win rate. Past performance does not guarantee future results. Trade responsibly and only with money you can afford to lose.
+
+**Why traders trust QUANTEX-BOT:**
+- 📊 Strong, publicly visible track record and consistently positive community feedback
+- 👥 An active **public community group** — [t.me/quantexlounge](https://t.me/quantexlounge) — where users openly share results, good and bad. A bot with poor performance couldn't survive that kind of open scrutiny.
+- 🧪 We recommend every new user **backtest the signals** in demo mode before trading with real funds, so you can verify performance for yourself before committing.
+- 🔒 The Telegram account connection used for Premium Mode is handled through a secure, encrypted login flow. Your credentials are stored safely and are never exposed or shared with anyone else.
+
+QUANTEX-BOT is not a scam — it's an actively maintained, transparent product with a real user community behind it. That said, always trade responsibly and never risk more than you can afford to lose.
 
 ---
 
 ## 👨‍💻 Developer
 
 Built and maintained by **[@X_Akash_Owner](https://t.me/X_Akash_Owner)**.  
-All rights reserved. Unauthorized redistribution of license keys is prohibited.
+All rights reserved. Unauthorized redistribution or resale of subscription access is prohibited.
 
 ---
 
