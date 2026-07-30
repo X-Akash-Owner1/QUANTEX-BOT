@@ -23,12 +23,13 @@
 14. [Partial Report System](#14-partial-report-system)
 15. [Referral Program](#15-referral-program)
 16. [Reviews & Ratings System](#16-reviews--ratings-system)
-17. [License & Access System](#17-license--access-system)
+17. [Subscription & Access System](#17-subscription--access-system)
 18. [Admin Control Panel](#18-admin-control-panel)
 19. [Points & Quota System](#19-points--quota-system)
 20. [Database — PostgreSQL Backend](#20-database--postgresql-backend)
 21. [Supported Markets & Pairs](#21-supported-markets--pairs)
 22. [Multi-Platform Support](#22-multi-platform-support)
+23. [Web Control Dashboard](#23-web-control-dashboard)
 
 ---
 
@@ -103,7 +104,7 @@ Send AI-confirmed signals automatically to your own **Telegram channel**.
 - **MTG in Broadcast** — recovery signals sent to channel automatically
 - **Channel Permission Validation** — checks admin rights before starting
 - **Owner Name Setting** — customize the name shown at bottom of each signal
-- **Live Signal Quota** — free users get a set number of daily live signals; licensed users have unlimited access
+- **Live Signal Quota** — every tier has its own daily live-signal limit; INFINITY subscribers have unlimited access
 - **Daily Remaining Display** — shows remaining signal quota for the day
 
 ---
@@ -143,7 +144,7 @@ During an active session:
 - **Stop Any Time** — stop the session with one tap
 
 ### Free Tier
-Free users get **3 Future Live sessions** total. Licensed users have unlimited sessions.
+Free users get **3 Future Live sessions** total. Subscribed users have unlimited sessions.
 
 ---
 
@@ -300,19 +301,21 @@ Bots 4 through 10 are locked and will be released progressively. Follow [@Quante
 
 ## 10. Bot Builder
 
-**Coming Soon — Build Your Own Bot Without Any Coding**
+**Early Access for INFINITY Subscribers — Build Your Own Bot Without Any Coding**
 
-The **Bot Builder** is an upcoming feature that will allow anyone — even with zero coding knowledge — to build and customize their own trading signal bot directly from QUANTEX-BOT.
+The **Bot Builder** lets anyone — even with zero coding knowledge — build, customize, and deploy their own white-label trading signal bot directly from QUANTEX-BOT.
 
-### What It Will Do
-- Step-by-step bot creation wizard inside Telegram
+### What It Does
+- Step-by-step bot creation wizard inside Telegram — paste your @BotFather token and go
 - No coding required — fully visual, button-based setup
-- Customize signal format, branding, pairs, and settings
-- Deploy the bot to your own Telegram channel
-- Use it for personal trading or share it with your community
+- Customize display name, description, welcome message, support/community links, theme, and language
+- Choose which modules appear in your bot (Live Signals, Market Filter, Settings, Support, Upgrade, Profile, Reviews)
+- Customize your bot's core message templates
+- One-tap **Deploy** — your bot goes live immediately with a working webhook
+- Manage your bot anytime — start, stop, restart, or delete from **My Bots**
 - Powered by QUANTEX's signal engine in the backend
 
-> Currently shows "Coming Soon" in the bot. Full release date to be announced on [@Quantexbot1](https://t.me/Quantexbot1).
+> Currently available to **INFINITY** subscribers (1 bot per account). A public multi-bot release and full Web Dashboard for bot management are planned — follow [@Quantexbot1](https://t.me/Quantexbot1) for updates.
 
 ---
 
@@ -346,7 +349,7 @@ QUANTEX-BOT handles multiple concurrent users with independent sessions.
 Bot automatically **pauses** during high-volatility hours.
 
 - **Default window**: 7:00 PM → 10:00 PM daily
-- All active sessions stopped; licensed users notified
+- All active sessions stopped; subscribed users notified
 - Bot resumes automatically at 10:00 PM with notification
 - Admin can exempt specific users or disable entirely
 - Custom sleep windows configurable
@@ -408,66 +411,72 @@ Community-driven trust system.
 
 ---
 
-## 17. License & Access System
+## 17. Subscription & Access System
 
-### License Types
-| Type | Duration | Access |
+### Subscription Tiers
+| Tier | Price | Access Level |
 |---|---|---|
-| Monthly | 30 days | Full access |
-| Quarterly | 90 days | Full access |
-| Semi-Annual | 180 days | Full access |
-| Lifetime | Permanent | Full access + VIP |
+| 🆓 FREE | $0 | Limited daily usage |
+| 🟢 STARTER | $18/month | Higher usage limits, premium templates |
+| 💎 PLUS | $32/month | 10× usage, full template customization, Web Control |
+| 👑 INFINITY | $49/month | Unlimited usage, Personal Bot Builder, full control |
+
+Subscriptions can be activated for any duration (custom days or permanent) at any tier — the tier determines *what* you can access, the duration determines *how long*.
 
 ### Granular Permissions
-Per-user feature permissions: `can_live`, `can_future`, `can_checker`.
+Per-user feature permissions and daily-usage limits are enforced automatically based on subscription tier.
 
 ### Promo Codes
 - Admin-issued or earned via referral program
 - Discounts or free trial access
 
-Encrypted license keys tied to Telegram user ID — non-transferable.
+Subscriptions are tied to your Telegram user ID — non-transferable.
 
 ---
 
 ## 18. Admin Control Panel
 
+Available both as in-bot Telegram commands/buttons and as a full **Web Admin Panel** for the bot owner and delegated sub-admins.
+
 | Action | Function |
 |---|---|
-| Broadcast | Send to all or licensed users |
-| Grant / Revoke License | Manage user access |
+| Broadcast | Send to all or subscribed users |
+| Grant / Revoke / Change Tier | Manage user subscriptions, including custom duration and tier changes |
 | Add / Set Points | Grant feature-use points |
 | Set Unlimited Points | Unlimited access for a user |
-| Set Live Quota | Control daily Live Signal limit |
-| Pair On/Off | Enable/disable trading pairs globally |
+| Set Live/Future Quota | Control daily signal limits per tier |
+| Pair On/Off | Enable/disable trading pairs globally, with a one-tap toggle list |
 | Maintenance Mode | Enable with custom message |
 | Sleep Exempt | Exempt users from sleep mode |
 | Premium Lock / Unlock | Control premium access per user |
-| View All Users | Full user list with status |
+| View All Users | Full searchable user list with profile details |
+| View Licensed / Expired Users | Separate active vs. expired subscriber lists |
 | View Referrals | All referral activity |
 | Manage Promos | Create and deactivate promo codes |
 | Signal Stats | Market-wide signal performance stats |
 | Broadcast Log | History of past broadcasts |
 | Ban / Unban Users | Block specific users from the bot |
+| Manage Sub-Admins | Assign role-based permission presets to delegated admins |
 
 ---
 
 ## 19. Points & Quota System
 
-### Points (Free Feature Access)
-- Admin grants points to users
-- Each Future Signal or Signal Check use costs 1 point
-- Licensed users have unlimited access
+### Points (Free Trial Access)
+- Admin grants bonus points to users
+- Each Future Signal or Signal Check use can cost 1 point for free-trial access
+- Subscribed users use their tier's daily quota instead
 - Admin can set "unlimited points" per user
 
-### Live Signal Quota
-- Free users get a set number of daily live signals
-- Quota visible in bot menu with remaining count
-- Admin can increase quota per user
-- Licensed users have unlimited daily signals
+### Daily Signal Quotas (Tier-Based)
+- Every tier (FREE, STARTER, PLUS, INFINITY) has its own daily Future Signal and Live Signal allowance
+- Quota only counts signals actually delivered to you — quiet scan cycles that find nothing don't use your quota
+- Quota remaining is shown live in your profile and in Web Control
+- INFINITY subscribers have unlimited daily signals
 
 ### Future Live Session Quota
-- Free users get **3 Future Live sessions** total (lifetime)
-- Licensed users have unlimited sessions
+- Free users get a limited number of Future Live sessions
+- Subscribed users have unlimited sessions
 
 ---
 
@@ -478,7 +487,7 @@ QUANTEX-BOT v3 uses **PostgreSQL** for all persistent storage.
 All data is managed through a dedicated `db_postgres.py` module with connection pooling for efficient concurrent multi-user access.
 
 ### Data Managed
-- User accounts, license data, permissions
+- User accounts, subscription data, permissions
 - Signal history and market statistics
 - Session configurations and schedules
 - Referral tracking and promo codes
@@ -515,9 +524,33 @@ Auto dependency installer handles all required packages on first run — zero ma
 
 ---
 
+## 23. Web Control Dashboard
+
+A browser-based control panel for your account, available directly inside Telegram as a **Mini App** — no separate website login required, it opens using your existing Telegram session.
+
+### Who Can Access It
+| Tier | Access Level |
+|---|---|
+| 🆓 FREE / 🟢 STARTER | View-only — profile, plan status, and pricing |
+| 💎 PLUS / 👑 INFINITY | Full control — every feature below |
+
+### What You Can Do
+- **Live Profile** — see your current plan, daily signal credits used/remaining, and referral stats in real time
+- **Timezone Management** — set the clock offset for every signal type from one screen, with instant live preview
+- **Template Customization** — visually edit your Live Session and Live Signal message templates (titles, chart labels, watermark, footer)
+- **Referral Sharing** — copy or share your referral link with one tap
+- **Upgrade / Pricing** — see all subscription tiers and a direct link to purchase or change plans
+
+### Security
+- Authenticated using Telegram's own signed session data — no separate password to create or remember
+- All changes sync instantly with the bot itself
+
+---
+
 ## 📞 Support
 
 - **Telegram**: [@X_Akash_Owner](https://t.me/X_Akash_Owner)
 - **Email**: [quantexbotsupport@gmail.com](mailto:quantexbotsupport@gmail.com)
 - **Channel**: [@Quantexbot1](https://t.me/Quantexbot1)
+- **Community Group**: [t.me/quantexlounge](https://t.me/quantexlounge)
 - **Bot**: [@QuantexBinaryTools_bot](https://t.me/QuantexBinaryTools_bot)

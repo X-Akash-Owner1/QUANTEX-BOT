@@ -9,8 +9,8 @@
 ### What is QUANTEX-BOT?
 QUANTEX-BOT is an automated binary options trading signal system on Telegram. It uses a proprietary multi-factor analysis engine combined with AI confirmation to deliver high-confidence BUY/CALL or SELL/PUT signals with real-time charts, payout data, and automatic result tracking.
 
-### What's new in v3?
-v3 adds: AI-confirmed Live Signals with S/R levels and payout, Live Signal Broadcast (Manual & Auto), Future Live Signal System, a completely rebuilt 4-mode super-fast 100% accurate checker suite (OTC + Blackout + Whiteout + Custom Date), Free Bots Mission (10 premium bots, free), Bot Builder (coming soon), Telegram Premium emoji integration, referral program, reviews system, and a PostgreSQL database backend.
+### What's new recently?
+Recent updates add: a browser-based **Web Control Dashboard** (Mini App) for managing your profile, templates, and timezone; a new **tiered subscription model** (STARTER / PLUS / INFINITY); a **Personal Bot Builder** in early access for INFINITY subscribers; AI-confirmed Live Signals with S/R levels and payout; Live Signal Broadcast (Manual & Auto); Future Live Signal System; a rebuilt 4-mode super-fast signal checker suite (OTC + Blackout + Whiteout + Custom Date); Free Bots Mission; Telegram Premium emoji integration; referral program; reviews system; and a PostgreSQL database backend.
 
 ### What broker should I use?
 Currently optimized for **Quotex**. Multiple broker support is coming soon.
@@ -57,7 +57,7 @@ USDCAD-OTC 05:53 PUT
 ```
 
 ### How many Future Live sessions do free users get?
-**3 sessions total** (lifetime). Licensed users have unlimited sessions.
+**3 sessions total** (lifetime) for free users. Subscribed users have unlimited sessions.
 
 ---
 
@@ -106,10 +106,13 @@ Inside QUANTEX-BOT → **Free Bots** menu → select any available bot. No separ
 ## 🏗️ Bot Builder
 
 ### What is the Bot Builder?
-An upcoming feature (currently "Coming Soon") that will let anyone build their own custom trading signal bot directly from QUANTEX-BOT — no coding required. You set it up through a button-based wizard and deploy it to your own channel.
+A feature that lets you build your own custom, white-label trading signal bot directly from QUANTEX-BOT — no coding required. You set it up through a button-based wizard (token, branding, modules, templates) and deploy it with one tap.
 
-### When will Bot Builder be released?
-Follow [@Quantexbot1](https://t.me/Quantexbot1) for the release announcement.
+### Who can use it?
+Currently available in early access to **INFINITY** subscribers (1 bot per account).
+
+### When will it be available to everyone?
+Follow [@Quantexbot1](https://t.me/Quantexbot1) for the public release announcement.
 
 ---
 
@@ -145,24 +148,50 @@ Go to **Referral** in the bot → get your unique link → share it. Each verifi
 
 ---
 
-## 💰 Pricing & License
+## 💰 Pricing & Subscriptions
 
 | Plan | Price |
 |---|---|
-| 1 Month | $30 |
-| 3 Months | $80 |
-| 6 Months | $140 |
-| Lifetime | $300 |
+| 🆓 FREE | $0 |
+| 🟢 STARTER | $18 / month |
+| 💎 PLUS ⭐ Most Popular | $32 / month |
+| 👑 INFINITY | $49 / month |
 
-Contact [@X_Akash_Owner](https://t.me/X_Akash_Owner) to purchase.
+Tap **🪄 Upgrade** inside the bot for live pricing, or contact [@X_Akash_Owner](https://t.me/X_Akash_Owner) to purchase.
 
 **Promo codes** available — follow [@Quantexbot1](https://t.me/Quantexbot1) or earn via referrals.
 
 ---
 
+## 🌐 Web Control
+
+### What is Web Control?
+A browser-based dashboard that opens directly inside Telegram (as a Mini App). It shows your live profile, plan, and signal credits, and lets PLUS/INFINITY subscribers manage timezone settings and message templates without typing commands.
+
+### Do I need to create a separate account for Web Control?
+No — it opens using your existing Telegram session automatically. Nothing extra to set up.
+
+### Can FREE or STARTER users open Web Control?
+Yes — you can view your profile and the subscription plans, with a prompt to upgrade for full control access.
+
+---
+
+## 🔒 Trust & Safety
+
+### Is QUANTEX-BOT a scam?
+No. QUANTEX-BOT has an active **public community group** — [t.me/quantexlounge](https://t.me/quantexlounge) — where users share real results, both wins and losses, openly. A bot with poor performance couldn't survive that kind of open scrutiny for long. The product is actively maintained and transparently run.
+
+### Can I be sure the bot performs well before paying?
+We recommend **backtesting** the signals in demo mode first, so you can verify performance yourself before subscribing or trading real funds. Binary options trading carries real risk, and no signal service — including this one — can promise a 100% win rate.
+
+### Is it safe to connect my Telegram account (Premium Mode)?
+Yes. The connection is handled through a secure, encrypted login flow. Your credentials are never exposed or shared, and are stored safely for the sole purpose of verifying your account and enabling Telegram Premium emoji formatting.
+
+---
+
 ## 💤 Sleep Mode
 
-Bot auto-pauses **7:00 PM – 10:00 PM** daily. High volatility during this period makes signals unreliable. Bot resumes automatically at 10:00 PM and notifies all licensed users.
+Bot auto-pauses **7:00 PM – 10:00 PM** daily. High volatility during this period makes signals unreliable. Bot resumes automatically at 10:00 PM and notifies all subscribed users.
 
 ---
 
@@ -182,4 +211,5 @@ Binary options trading carries high risk. QUANTEX-BOT provides signals to assist
 - 💬 **Telegram**: [@X_Akash_Owner](https://t.me/X_Akash_Owner)
 - 📧 **Email**: [quantexbotsupport@gmail.com](mailto:quantexbotsupport@gmail.com)
 - 📢 **Channel**: [@Quantexbot1](https://t.me/Quantexbot1)
+- 👥 **Community Group**: [t.me/quantexlounge](https://t.me/quantexlounge)
 - 🤖 **Bot**: [@QuantexBinaryTools_bot](https://t.me/QuantexBinaryTools_bot)

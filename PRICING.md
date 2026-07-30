@@ -1,66 +1,89 @@
 # 💰 QUANTEX-BOT — Pricing & Plans
 
-> **Get Access**: Contact [@X_Akash_Owner](https://t.me/X_Akash_Owner) on Telegram  
+> **Get Access**: Contact [@X_Akash_Owner](https://t.me/X_Akash_Owner) on Telegram, or tap **Upgrade** inside the bot
 > **Bot**: [@QuantexBinaryTools_bot](https://t.me/QuantexBinaryTools_bot)
 
 ---
 
-## 📋 License Plans
+## 📋 Subscription Tiers
 
-| Plan | Duration | Price | Best For |
-|---|---|---|---|
-| 🥉 **1 Month** | 30 Days | **$30** | New users, testing |
-| 🥈 **3 Months** | 90 Days | **$80** | Regular traders |
-| 🥇 **6 Months** | 180 Days | **$140** | Serious traders |
-| 💎 **Lifetime** | Permanent | **$300** | Professional traders |
+QUANTEX-BOT now runs on a simple monthly tier system — pick the plan that matches how much you use the bot.
 
----
+| Plan | Price | Best For |
+|---|---|---|
+| 🆓 **FREE** | $0 | Trying the bot out |
+| 🟢 **STARTER** | **$18 / month** | Casual users who want more daily signals |
+| 💎 **PLUS** ⭐ Most Popular | **$32 / month** | Regular traders who want the full toolkit |
+| 👑 **INFINITY** | **$49 / month** | Power users who want everything, unlimited |
 
-## ✅ What's Included in All Plans
-
-Every licensed plan includes **full access** to all QUANTEX-BOT features:
-
-### 📡 Signal Features
-- ✅ Unlimited live trading sessions
-- ✅ All 40+ OTC trading pairs
-- ✅ All live Forex pairs
-- ✅ 5-minute clock signal engine
-- ✅ 7-indicator trend analysis
-- ✅ High-confidence signal filtering
-- ✅ MTG (Martingale) recovery system
-
-### 📊 Charts & Reports
-- ✅ Signal charts with every entry
-- ✅ Result charts (WIN/LOSS)
-- ✅ Backtest statistics overlay
-- ✅ Partial performance reports
-- ✅ Full session win-rate tracking
-
-### 🔮 Advanced Tools
-- ✅ Future Signal Engine (unlimited use)
-- ✅ Signal Checker (unlimited use)
-- ✅ Signal checker for any signal source
-- ✅ Pre-market prediction signals
-
-### ⚙️ Bot Features
-- ✅ Scheduled auto-sessions
-- ✅ Sleep mode notifications
-- ✅ Wake-up notifications
-- ✅ Multi-pair monitoring
-- ✅ Priority support
+> Tap **🪄 Upgrade** in the bot's main menu anytime to see live pricing, current plan status, and a direct link to the owner to complete your upgrade.
 
 ---
 
-## 🆓 Free Tier (Points System)
+## ✅ What Each Plan Includes
 
-Unregistered / free users can still access **select features** using **Points**:
+### 🆓 FREE
+- Limited daily Future Signal and Live Signal usage
+- Access to the Signal Checker suite
+- Free Bots section
+- Referral program
+- View-only access to Web Control (see your profile & plan, upgrade prompts)
 
-| Feature | Cost |
-|---|---|
-| Future Signal (1 signal) | 1 Point |
-| Signal Check (1 session) | 1 Point |
+### 🟢 STARTER — $18/month
+- Everything in FREE
+- Higher daily usage limits
+- Premium interface styling
+- Premium message templates
+- Advanced automation options
+- Faster performance
+- Standard support
+- Free future updates
 
-> Points are granted by the admin. Contact [@X_Akash_Owner](https://t.me/X_Akash_Owner) for free trial points.
+### 💎 PLUS — $32/month ⭐ Most Popular
+- Everything in STARTER
+- **10× higher usage limits**
+- Full template customization (signal, result, chart, and partial-report templates)
+- AI-powered features
+- **Full Web Control access** — manage your bot's timezone, templates, and profile from a browser-based dashboard
+- Advanced automation
+- Priority support
+- Early access to new features
+
+### 👑 INFINITY — $49/month
+- Everything in PLUS
+- **Unlimited daily usage** — no signal caps
+- **Personal Bot Builder** (1 bot) — create and deploy your own branded Telegram bot
+- Full admin access over your own deployed bot
+- Complete bot control, custom commands, white-label branding
+- Premium modules and highest performance
+- VIP support
+- All future premium features included automatically
+
+---
+
+## 🌐 Web Control Dashboard
+
+PLUS and INFINITY subscribers can manage their account from a secure, browser-based **Web Control** panel directly inside Telegram (opens as a Mini App — no separate login needed beyond your Telegram account):
+
+- 📊 Live profile — plan, daily credits used/remaining, referral stats
+- ⏰ Timezone management for every signal clock
+- 📝 Full template customization for Live Session and Live Signal messages
+- 🔗 One-tap referral link sharing
+- 🪄 Upgrade / pricing view with direct purchase link
+
+FREE and STARTER users can still open Web Control to view their profile and the pricing plans, with a prompt to upgrade for full access.
+
+---
+
+## 🆓 Free Tier Details
+
+Unregistered / free users get:
+- A limited number of Future Signal lists and Live Signals **per day** (shown live in your profile)
+- Full use of the Signal Checker (OTC / Blackout / Whiteout / Custom Date)
+- Access to the Free Bots section
+- Referral program participation
+
+> Admins can also grant bonus **Points** for extra trial access to Future Signal / Signal Check — contact [@X_Akash_Owner](https://t.me/X_Akash_Owner).
 
 ---
 
@@ -72,18 +95,18 @@ Special promo codes are occasionally released for:
 - Referral rewards
 - Community giveaways
 
-**To use a promo code**: Open the bot → License menu → Enter Promo Code
+**To use a promo code**: Open the bot → **Upgrade** menu → Enter Promo Code
 
-**To get a promo code**: Follow [@Quantexbot1](https://t.me/Quantexbot1) for announcements.
+**To get a promo code**: Follow [@Quantexbot1](https://t.me/Quantexbot1) for announcements, or earn one through the referral program.
 
 ---
 
 ## 💳 How to Purchase
 
-1. **Open Telegram** and message [@X_Akash_Owner](https://t.me/X_Akash_Owner)
-2. **Specify your plan** (1 Month / 3 Months / 6 Months / Lifetime)
-3. **Receive payment details** and complete payment
-4. **Get your license key** — activated instantly on your Telegram account
+1. Tap **🪄 Upgrade** inside the bot, or message [@X_Akash_Owner](https://t.me/X_Akash_Owner) directly
+2. Tell the owner which plan you want — **STARTER**, **PLUS**, or **INFINITY**
+3. Receive payment details and complete payment
+4. Your plan is activated on your Telegram account — you'll get a confirmation message the moment it's live
 
 ### Accepted Payment Methods
 Contact [@X_Akash_Owner](https://t.me/X_Akash_Owner) for current payment options.
@@ -92,20 +115,20 @@ Contact [@X_Akash_Owner](https://t.me/X_Akash_Owner) for current payment options
 
 ## ❓ FAQ
 
-**Q: Can I share my license with others?**  
-A: No. License keys are tied to your Telegram user ID and cannot be transferred or shared.
+**Q: Can I share my subscription with others?**
+A: No. Every plan is tied to your Telegram user ID and cannot be transferred or shared.
 
-**Q: Can I upgrade my plan?**  
-A: Yes. Contact the owner to upgrade from a shorter plan to a longer one (price difference applies).
+**Q: Can I upgrade or downgrade my plan?**
+A: Yes — message the owner anytime to move between STARTER, PLUS, and INFINITY (price difference applies).
 
-**Q: Is there a refund policy?**  
-A: Due to the digital nature of the product, refunds are not offered after license activation. Please use free trial points first to evaluate the bot.
+**Q: Is there a refund policy?**
+A: Due to the digital nature of the product, refunds are not offered after activation. Try the FREE tier first to evaluate the bot before subscribing.
 
-**Q: What happens when my license expires?**  
-A: You'll be notified before expiry. After expiry, you can renew at the standard rate.
+**Q: What happens when my subscription expires?**
+A: You'll be notified before expiry and automatically drop back to the FREE tier limits until renewed.
 
-**Q: Is there a group discount?**  
-A: Yes, for 5+ licenses purchased together. Contact the owner for bulk pricing.
+**Q: Is there a group/bulk discount?**
+A: Yes, for 5+ subscriptions purchased together. Contact the owner for bulk pricing.
 
 ---
 
@@ -114,4 +137,5 @@ A: Yes, for 5+ licenses purchased together. Contact the owner for bulk pricing.
 - 💬 **Telegram**: [@X_Akash_Owner](https://t.me/X_Akash_Owner)
 - 📧 **Email**: [quantexbotsupport@gmail.com](mailto:quantexbotsupport@gmail.com)
 - 📢 **Channel**: [@Quantexbot1](https://t.me/Quantexbot1)
+- 👥 **Community Group**: [t.me/quantexlounge](https://t.me/quantexlounge)
 - 🤖 **Bot**: [@QuantexBinaryTools_bot](https://t.me/QuantexBinaryTools_bot)

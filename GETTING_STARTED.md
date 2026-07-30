@@ -13,19 +13,19 @@ Send `/start` to open the main menu.
 
 ---
 
-## Step 2 — Get a License
+## Step 2 — Choose a Plan
 
-Tap **💎 License** → contact **[@X_Akash_Owner](https://t.me/X_Akash_Owner)** to purchase.
+Tap **🪄 Upgrade** → pick a tier → contact **[@X_Akash_Owner](https://t.me/X_Akash_Owner)** to activate.
 
 | Plan | Price |
 |---|---|
-| 1 Month | $30 |
-| 3 Months | $80 |
-| 6 Months | $140 |
-| Lifetime | $300 |
+| 🆓 FREE | $0 |
+| 🟢 STARTER | $18 / month |
+| 💎 PLUS ⭐ Most Popular | $32 / month |
+| 👑 INFINITY | $49 / month |
 
-> 🎟 Have a promo code? Enter it in the License menu.  
-> 🔓 Even without a license, you can use: Free Bots, Signal Checker (with points), Future Signal (with points), and 3 free Future Live sessions.
+> 🎟 Have a promo code? Enter it in the Upgrade menu.
+> 🔓 Even on the FREE plan, you can use: Free Bots, the full Signal Checker suite, limited daily Future Signal & Live Signal usage, and 3 free Future Live sessions.
 
 ---
 
@@ -130,17 +130,28 @@ Currently available free bots:
 
 ---
 
-## Step 10 — Referral Program
+## Step 10 — Manage Everything from Web Control *(PLUS & INFINITY)*
+
+1. Tap **🌐 Web Control** in the main menu — opens instantly, no separate login
+2. View your live profile: plan, daily signal credits, and referral stats
+3. Adjust the timezone for any signal type
+4. Customize your Live Session / Live Signal message templates
+5. Share your referral link with one tap
+6. FREE / STARTER users can still open it to view their profile and see upgrade options
+
+---
+
+## Step 11 — Referral Program
 
 Earn promo codes by inviting friends:
 
-1. Tap **👥 Referral** in the main menu
+1. Tap **👥 Referral** in the main menu (or use Web Control)
 2. Copy your unique referral link
 3. Share it — each verified signup earns you credit toward promo codes
 
 ---
 
-## Step 11 — Schedule Auto-Sessions *(Optional)*
+## Step 12 — Schedule Auto-Sessions *(Optional)*
 
 1. Tap **📅 Schedule**
 2. Select days of the week
@@ -151,7 +162,7 @@ Earn promo codes by inviting friends:
 
 ## 💤 Sleep Mode Info
 
-Bot auto-pauses **7:00 PM – 10:00 PM** daily. Resumes at 10:00 PM with notification to all licensed users.
+Bot auto-pauses **7:00 PM – 10:00 PM** daily. Resumes at 10:00 PM with notification to all subscribed users.
 
 ---
 
@@ -179,5 +190,6 @@ Access inside QUANTEX-BOT → Free Bots menu. 3 premium bots released now, 7 mor
 - **Telegram**: [@X_Akash_Owner](https://t.me/X_Akash_Owner)
 - **Email**: [quantexbotsupport@gmail.com](mailto:quantexbotsupport@gmail.com)
 - **Channel**: [@Quantexbot1](https://t.me/Quantexbot1)
+- **Community Group**: [t.me/quantexlounge](https://t.me/quantexlounge)
 
 *Happy Trading! — QUANTEX-BOT Team*

@@ -151,7 +151,8 @@ In Live Signal mode, each signal includes the **real-time broker payout %**.
 ## 🤖 Start Using QUANTEX-BOT
 
 - **Bot**: [@QuantexBinaryTools_bot](https://t.me/QuantexBinaryTools_bot)
-- **License**: [@X_Akash_Owner](https://t.me/X_Akash_Owner)
+- **Upgrade / Subscriptions**: [@X_Akash_Owner](https://t.me/X_Akash_Owner)
 - **Channel**: [@Quantexbot1](https://t.me/Quantexbot1)
+- **Community Group**: [t.me/quantexlounge](https://t.me/quantexlounge)
 
 *QUANTEX-BOT — AI-Confirmed Signals. Smart Trading.*

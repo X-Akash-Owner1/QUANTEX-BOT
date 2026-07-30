@@ -93,7 +93,11 @@
 
 ### 🏗️ Bot Builder
 - [x] Bot Builder button added to main menu
-- [ ] Full Bot Builder wizard — *coming soon*
+- [x] Full wizard — token verification, branding, module selection, template editing, button builder, review & deploy
+- [x] Live deployment — real webhook registration, bot goes live instantly
+- [x] My Bots management — start / stop / restart / delete
+- [x] Early access released for INFINITY subscribers (1 bot per account)
+- [ ] Public multi-bot release for all tiers — *in progress*
 
 ### 💎 Telegram Premium Integration
 - [x] User-account sender (own Telegram account)
@@ -112,10 +116,36 @@
 - [x] PostgreSQL database (upgraded from SQLite)
 - [x] Connection pooling for concurrent users
 - [x] Granular permissions (can_live, can_future, can_checker)
-- [x] Ban cache & license cache (fast per-request checks)
+- [x] Ban cache & subscription cache (fast per-request checks)
 - [x] Broadcast log history
 - [x] Live payout menu (real-time % for all pairs)
 - [x] Favorite pair list management
+
+---
+
+## ✅ v3.x — Tiered Subscriptions + Web Control
+
+### 💳 Tiered Subscription System
+- [x] Replaced flat license pricing with FREE / STARTER / PLUS / INFINITY tiers
+- [x] Per-tier daily usage limits for Future Signal & Live Signal
+- [x] Quota now counts only signals actually delivered, not scan attempts
+- [x] "Upgrade" menu with live pricing and one-tap purchase link
+- [x] Admin tools to grant/change any tier and duration, with instant user notification
+
+### 🌐 Web Control Dashboard
+- [x] Telegram Mini App — opens instantly using existing Telegram session
+- [x] Live profile view (plan, credits, referral stats)
+- [x] Timezone management for every signal type
+- [x] Full template customization (Live Session & Live Signal)
+- [x] One-tap referral link sharing
+- [x] Gated to PLUS & INFINITY — FREE/STARTER see a view-only + upgrade prompt
+
+### 🛠️ Admin Web Panel
+- [x] Full user search & management from the browser
+- [x] Licensed / expired subscriber views with in-place tier & duration editing
+- [x] Role-based sub-admin presets (Co-Owner, Moderator, Sales, Support, Broadcaster)
+- [x] Pair enable/disable toggle list
+- [x] Promo code management, points, premium lock, broadcast
 
 ---
 
@@ -127,14 +157,14 @@
 - [ ] **Binomo** — OTC support
 - [ ] Broker selection in setup wizard
 
-### Bot Builder Full Release
-- [ ] Step-by-step bot creation wizard
-- [ ] Zero-code visual setup
-- [ ] Custom signal format, pairs, branding
-- [ ] Channel deployment from inside Telegram
+### Bot Builder — Public Release
+- [ ] Open Bot Builder to all subscription tiers
+- [ ] Multiple bots per account
+- [ ] Nested multi-level menu builder
+- [ ] Logo/banner upload & full theming
 
-### Web Dashboard — Beta
-- [ ] Browser-based signal dashboard
+### Web Dashboard — Full Bot Management
+- [ ] Manage deployed client bots from the browser
 - [ ] Real-time signal display
 - [ ] Session control from browser
 - [ ] Mobile-responsive
@@ -194,7 +224,8 @@
 
 | Version | Highlights |
 |---|---|
-| **v3.0** | AI confirmation, Live broadcast, Future Live system, 4-mode checker suite (super-fast + 100% accurate), Free Bots (3 released), Bot Builder (coming soon), PostgreSQL, referrals, reviews, premium emojis |
+| **v3.x** | Tiered subscriptions (STARTER/PLUS/INFINITY), Web Control dashboard, Admin Web Panel with role-based sub-admins, Bot Builder early access (live deployment) |
+| **v3.0** | AI confirmation, Live broadcast, Future Live system, 4-mode checker suite (super-fast + 100% accurate), Free Bots (3 released), Bot Builder button, PostgreSQL, referrals, reviews, premium emojis |
 | **v2.0** | Full bot manager, MTG, charts, sleep mode, scheduler, future engine, checker |
 | **v1.x** | Core signal engine, basic Telegram integration |
 
@@ -204,6 +235,7 @@
 
 - **Telegram**: [@X_Akash_Owner](https://t.me/X_Akash_Owner)
 - **Channel**: [@Quantexbot1](https://t.me/Quantexbot1)
+- **Community Group**: [t.me/quantexlounge](https://t.me/quantexlounge)
 - **Email**: [quantexbotsupport@gmail.com](mailto:quantexbotsupport@gmail.com)
 
 *Roadmap subject to change based on user feedback.*
