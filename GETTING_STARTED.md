@@ -103,6 +103,8 @@ Verify signals from any source:
 
 ---
 
+
+
 ## Step 8 — Access Free Bots
 
 1. Tap **🤖 Free Bots** from the main menu

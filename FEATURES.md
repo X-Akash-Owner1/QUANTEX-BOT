@@ -449,7 +449,8 @@ Available both as in-bot Telegram commands/buttons and as a full **Web Admin Pan
 | Maintenance Mode | Enable with custom message |
 | Sleep Exempt | Exempt users from sleep mode |
 | Premium Lock / Unlock | Control premium access per user |
-| View All Users | Full searchable user list with profile details |
+| View All Users
+| Full searchable user list with profile details |
 | View Licensed / Expired Users | Separate active vs. expired subscriber lists |
 | View Referrals | All referral activity |
 | Manage Promos | Create and deactivate promo codes |
@@ -457,6 +458,8 @@ Available both as in-bot Telegram commands/buttons and as a full **Web Admin Pan
 | Broadcast Log | History of past broadcasts |
 | Ban / Unban Users | Block specific users from the bot |
 | Manage Sub-Admins | Assign role-based permission presets to delegated admins |
+
+
 
 ---
 
