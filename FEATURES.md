@@ -1,7 +1,4 @@
-# 🔮 QUANTEX-BOT v3 — Complete Feature Documentation
-
-> **Official Telegram Bot**: [@QuantexBinaryTools_bot](https://t.me/QuantexBinaryTools_bot)  
-> **Developer**: [@X_Akash_Owner](https://t.me/X_Akash_Owner)
+# 🔮 F5-BOT v3 — Complete Feature Documentation
 
 ---
 
@@ -14,7 +11,6 @@
 5. [Signal Checker — Full Suite](#5-signal-checker--full-suite)
 6. [MTG (Martingale) System](#6-mtg-martingale-system)
 7. [Chart Generation](#7-chart-generation)
-8. [Telegram Premium Integration](#8-telegram-premium-integration)
 9. [Free Bots Mission](#9-free-bots-mission)
 10. [Bot Builder](#10-bot-builder)
 11. [Session Management](#11-session-management)
@@ -207,7 +203,7 @@ Check signals for **any specific date**, not just today/yesterday.
 
 ### Output Report
 ```
-▰▱▱ 𝚀𝚄𝙰𝙽𝚃𝙴𝚇 𝙱𝙾𝚃 𝙲𝙷𝙴𝙲𝙺𝙴𝚁 ▱▱▰
+▰▱▱ F5 𝙱𝙾𝚃 𝙲𝙷𝙴𝙲𝙺𝙴𝚁 ▱▱▰
 ━━━━━━━━━━━ • ━━━━━━━━━━━
 M1 EURUSD_OTC  14:35 BUY  ✅
 M1 GBPUSD_OTC  15:00 SELL ✅¹
@@ -254,31 +250,6 @@ Every signal includes a professional candlestick chart.
 
 ---
 
-## 8. Telegram Premium Integration
-
-Connect your Telegram account to unlock **Premium Emoji** signal formatting.
-
-### How It Works
-1. Tap **Premium** in the bot menu
-2. Tap **Connect Telegram Account**
-3. Secure browser-based login opens (WebApp)
-4. Enter credentials and phone number
-5. Enter verification code + optional 2FA
-6. Connected — Premium mode active
-
-### What It Unlocks
-- Animated premium emojis in signal and checker outputs
-- Signals sent via your own Telegram account
-- Richer, more visually distinctive formatting
-
-### Security
-- Encrypted session storage with auto-reconnection
-- 2FA fully supported
-- Login tokens expire in 30 minutes if unused
-- Admin can lock/unlock premium per user
-
----
-
 ## 9. Free Bots Mission
 
 **"10 Powerful Premium Bots — 100% FREE"**
@@ -313,15 +284,15 @@ The **Bot Builder** lets anyone — even with zero coding knowledge — build, c
 - Customize your bot's core message templates
 - One-tap **Deploy** — your bot goes live immediately with a working webhook
 - Manage your bot anytime — start, stop, restart, or delete from **My Bots**
-- Powered by QUANTEX's signal engine in the backend
+- Powered by F5's signal engine in the backend
 
-> Currently available to **INFINITY** subscribers (1 bot per account). A public multi-bot release and full Web Dashboard for bot management are planned — follow [@Quantexbot1](https://t.me/Quantexbot1) for updates.
+
 
 ---
 
 ## 11. Session Management
 
-QUANTEX-BOT handles multiple concurrent users with independent sessions.
+F5-BOT handles multiple concurrent users with independent sessions.
 
 ### Session States
 | State | Description |
@@ -338,7 +309,6 @@ QUANTEX-BOT handles multiple concurrent users with independent sessions.
 3. **Mode** — Single pair or Auto (best signal from all)
 4. **Market Type** — OTC or Live
 5. **Trading Pairs** — Specific pairs or "All"
-6. **Premium Mode** — Telegram Premium emojis (if connected)
 7. **Charts** — Enable/disable signal and result charts
 8. **Partial Reports** — Auto-report interval
 
@@ -389,7 +359,7 @@ Win Rate     : 83.3%
 
 ## 15. Referral Program
 
-Earn rewards by inviting others to QUANTEX-BOT.
+Earn rewards by inviting others to F5-BOT.
 
 - Each user gets a unique referral link
 - Each verified referral is tracked
@@ -485,7 +455,7 @@ Available both as in-bot Telegram commands/buttons and as a full **Web Admin Pan
 
 ## 20. Database — PostgreSQL Backend
 
-QUANTEX-BOT v3 uses **PostgreSQL** for all persistent storage.
+F5-BOT v3 uses **PostgreSQL** for all persistent storage.
 
 All data is managed through a dedicated `db_postgres.py` module with connection pooling for efficient concurrent multi-user access.
 
@@ -552,8 +522,5 @@ A browser-based control panel for your account, available directly inside Telegr
 
 ## 📞 Support
 
-- **Telegram**: [@X_Akash_Owner](https://t.me/X_Akash_Owner)
-- **Email**: [quantexbotsupport@gmail.com](mailto:quantexbotsupport@gmail.com)
-- **Channel**: [@Quantexbot1](https://t.me/Quantexbot1)
-- **Community Group**: [t.me/quantexlounge](https://t.me/quantexlounge)
-- **Bot**: [@QuantexBinaryTools_bot](https://t.me/QuantexBinaryTools_bot)
+- **Telegram**: [@magic0xx](https://t.me/magic0xx)
+- **Channel**: [@amotradingteam](https://t.me/amotradingteam)
