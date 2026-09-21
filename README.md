@@ -457,6 +457,6 @@ All rights reserved. Unauthorized redistribution or resale of subscription acces
 [![Join Channel](https://img.shields.io/badge/Join-Telegram%20Channel-2CA5E0?style=for-the-badge&logo=telegram)](https://t.me/Quantexbot1)
 [![Start Bot](https://img.shields.io/badge/Start-Trading%20Bot-00ff88?style=for-the-badge&logo=telegram)](https://t.me/QuantexBinaryTools_bot)
 
-*QUANTEX-BOT — Proprietary Engine. AI Confirmed. 100% Accurate Checker. Smart Trading.*
+*QUANTEX-BOT — Proprietary Engine. AI Confirmed. Smart Trading.*
 
 </div>
