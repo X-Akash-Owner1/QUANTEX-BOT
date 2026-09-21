@@ -89,7 +89,9 @@
 - [x] **HUNTER X QUANTEX** — Bot #1 released
 - [x] **DRAGON X QUANTEX** — Bot #2 released
 - [x] **BLACKOUT FUTURE AI** — Bot #3 released
-- [ ] Bots #4 through #10 — releasing progressively
+- [x] **STORM X QUANTEX** — Bot #4 released
+- [x] **PHANTOM X QUANTEX** — Bot #5 released
+- [ ] Bots #6 through #10 — releasing progressively
 
 ### 🏗️ Bot Builder
 - [x] Bot Builder button added to main menu
@@ -97,7 +99,6 @@
 - [x] Live deployment — real webhook registration, bot goes live instantly
 - [x] My Bots management — start / stop / restart / delete
 - [x] Early access released for INFINITY subscribers (1 bot per account)
-- [ ] Public multi-bot release for all tiers — *in progress*
 
 ### 💎 Telegram Premium Integration
 - [x] User-account sender (own Telegram account)
@@ -149,30 +150,86 @@
 
 ---
 
-## 🔜 Phase 4 — Short Term
+## ✅ v4.0 — Multi-Broker + Auto Payment + News Signal + Tools + Bot Builder Expansion
 
-### Multiple Broker Support
+### 🏢 Multi-Broker Support
+- [x] **Tradowix broker** — fully supported alongside Quotex
+- [x] Broker selection in setup wizard
+- [x] Per-broker pair support (OTC + Live)
+- [x] Admin broker enable/disable toggle (Quotex, Tradowix)
+
+### 💳 Auto Payment System
+- [x] Binance Pay integration (ID: 1133439955) — auto-verified via Binance API
+- [x] TRC20 USDT wallet — auto-verified via TronGrid API
+- [x] BEP20 USDT wallet — auto-verified via BSC RPC
+- [x] 60-minute payment expiry window
+- [x] Amount tolerance for minor blockchain fee differences
+- [x] Instant subscription activation — no manual approval needed
+- [x] Self-serve flow entirely inside the bot
+
+### 📰 News Signal System
+- [x] Forex Factory economic calendar JSON feed integration
+- [x] AI-powered direction analysis via Gemini (BULLISH / BEARISH / NEUTRAL)
+- [x] Heuristic fallback (forecast vs previous, with inversion for negative metrics)
+- [x] 30-day technical structure blend (trend + momentum)
+- [x] Per-event analysis caching (expires at release time)
+- [x] Filter by impact: HIGH / MEDIUM / LOW / All
+- [x] Filter by days ahead: 1, 2, or 3 days
+- [x] 29 supported pairs (major forex + XAU/USD)
+- [x] Automatic CALL/PUT pair mapping from currency bias
+- [x] Premium emoji formatted signal cards
+- [x] Available as a standalone module and in Bot Builder
+
+### 🔍 Signal Checker — 5th Mode Added
+- [x] **Live Checker** — new checker mode for real/live market pairs
+- [x] Full feature parity with OTC Checker (MTG, DOJI, payout filter, premium emoji)
+
+### ⏱ Future Signal Modes — Expanded
+- [x] **Live Market FS** — future signal sessions for live market pairs
+- [x] **Blackout FS** — future signal sessions for blackout-style signals
+- [x] **Whiteout FS** — future signal sessions for whiteout-style signals
+
+### 🛠️ Signal Tools (New Category)
+- [x] **Signal Formatter** — reformat any signal list into a clean card layout
+- [x] **Swap C/P** — flip all CALL/PUT directions in a pasted signal list
+- [x] **TZ Converter** — convert signal entry times to any other timezone
+- [x] **Market Filters** — show which markets are currently stable
+
+### 🏗️ Bot Builder — Major Expansion
+- [x] PLUS plan: up to **3 bots** per account (previously 1)
+- [x] INFINITY plan: up to **10 bots** per account (previously 1)
+- [x] **Custom AI Prompt** per child bot — extra instruction for AI confirmation
+- [x] **Notification Template** — customize default announcement text in Child Admin
+- [x] **Child Admin Panel** — full admin panel for each deployed child bot
+- [x] **Session Log Viewer** — real-time diagnostic log for sessions in child bots
+- [x] All new modules selectable in Bot Builder (News Signal, Live Checker, Live FS, Blackout FS, Whiteout FS, Formatter, Market Filters, Swap C/P, TZ Converter)
+
+### 📋 Session Log Store
+- [x] `session_log_store.py` — shared in-memory session log module
+- [x] Tracks scan / signal / reject / info events per session
+- [x] Signal entries guaranteed never evicted (complete history)
+- [x] General log capped at 20,000 entries
+- [x] Web-based session log viewer (`session_log.html`)
+
+### 🧠 Strategy Intelligence
+- [x] `strategy_intelligence.html` — browser-based strategy intelligence dashboard
+- [x] Accessible from Web Control / Admin Panel
+
+---
+
+## 🔜 Phase 5 — Short Term
+
+### Multiple Broker Support — Phase 2
 - [ ] **Pocket Option** — full signal and broadcast support
 - [ ] **Olymp Trade** — OTC and Live pair support
 - [ ] **Binomo** — OTC support
-- [ ] Broker selection in setup wizard
 
-### Bot Builder — Public Release
-- [ ] Open Bot Builder to all subscription tiers
-- [ ] Multiple bots per account
+### Bot Builder — Full Public Release
+- [ ] Open Bot Builder to STARTER tier
 - [ ] Nested multi-level menu builder
 - [ ] Logo/banner upload & full theming
 
-### Web Dashboard — Full Bot Management
-- [ ] Manage deployed client bots from the browser
-- [ ] Real-time signal display
-- [ ] Session control from browser
-- [ ] Mobile-responsive
-- [ ] Telegram OAuth login
-
 ### Free Bots Mission — Phase 2
-- [ ] Bot #4 release
-- [ ] Bot #5 release
 - [ ] Bot #6 release
 - [ ] Bot #7 release
 - [ ] Bot #8 release
@@ -181,12 +238,10 @@
 
 ---
 
-## 🔮 Phase 5 — Medium Term
+## 🔮 Phase 6 — Medium Term
 
 ### Enhanced AI Capabilities
 - [ ] Upgraded AI models for deeper analysis
-- [ ] News Analysis Engine — monitor economic calendar
-- [ ] News-Based Signals — triggered by news outcomes
 - [ ] Sentiment Analysis — market sentiment scoring
 - [ ] Pattern detection layer
 
@@ -197,7 +252,7 @@
 
 ---
 
-## 🚀 Phase 6 — Long Term
+## 🚀 Phase 7 — Long Term
 
 ### Auto Trading System
 - [ ] Quotex API direct trade execution
@@ -224,8 +279,9 @@
 
 | Version | Highlights |
 |---|---|
+| **v4.0** | Tradowix broker support, Auto Payment (Binance Pay/TRC20/BEP20), News Signal System (Forex Factory + AI), Live Checker (5th checker mode), Signal Tools (Formatter/Swap C/P/TZ Converter/Market Filters), new Future Signal modes (Live/Blackout/Whiteout FS), Bot Builder expanded (PLUS: 3 bots, INFINITY: 10 bots; Custom AI Prompt; Child Admin Panel; Session Log Viewer), Strategy Intelligence dashboard |
 | **v3.x** | Tiered subscriptions (STARTER/PLUS/INFINITY), Web Control dashboard, Admin Web Panel with role-based sub-admins, Bot Builder early access (live deployment) |
-| **v3.0** | AI confirmation, Live broadcast, Future Live system, 4-mode checker suite (super-fast + 100% accurate), Free Bots (3 released), Bot Builder button, PostgreSQL, referrals, reviews, premium emojis |
+| **v3.0** | AI confirmation, Live broadcast, Future Live system, 4-mode checker suite (super-fast + 100% accurate), Free Bots (5 released), Bot Builder button, PostgreSQL, referrals, reviews, premium emojis |
 | **v2.0** | Full bot manager, MTG, charts, sleep mode, scheduler, future engine, checker |
 | **v1.x** | Core signal engine, basic Telegram integration |
 

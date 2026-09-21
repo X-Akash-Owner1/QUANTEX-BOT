@@ -25,6 +25,7 @@ WIN: 6 | LOSS: 2 | Rate: 75%
 | **Direction** | BUY (CALL) = price goes UP; SELL (PUT) = price goes DOWN |
 | **Entry Time** | Open trade AT this exact minute |
 | **Timeframe** | M1 = 1-minute expiry |
+| **Broker** | Which broker this signal is optimized for (Quotex or Tradowix) |
 | **Session Stats** | Running win/loss record |
 
 ---
@@ -58,9 +59,49 @@ Entry validated by AI analysis.
 
 ---
 
-## Executing a Signal on Quotex
+## Reading a News Signal
 
-1. Open Quotex and log in
+News Signals are generated from the **Forex Factory economic calendar** and AI direction analysis.
+
+```
+📰 NEWS SIGNAL — QUANTEX BOT
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+Event    : US Non-Farm Payrolls
+Currency : 🇺🇸 USD
+Impact   : 💥 HIGH
+Time     : 08:30:00 AM  (UTC+6: 06:30 PM)
+Forecast : 180K  |  Previous: 175K
+Direction: ⬆️ BUY-UP-CALL
+Confidence: 86%
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ CALL Pairs:
+   EUR/USD · GBP/USD · AUD/USD
+🔴 PUT Pairs:
+   USD/JPY · USD/CHF · USD/CAD
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+🤖 Forecast exceeds previous — bullish USD outlook.
+Technical structure agrees (bullish, 78% strength).
+```
+
+| Field | Meaning |
+|---|---|
+| **Event** | Economic event name (e.g. NFP, CPI, Interest Rate) |
+| **Currency** | The currency whose pairs are affected |
+| **Impact** | News impact level: HIGH / MEDIUM / LOW |
+| **Time** | Scheduled release time |
+| **Forecast / Previous** | Expected value vs last reading |
+| **Direction** | AI-determined trade direction (BUY = currency strengthening) |
+| **Confidence** | Combined fundamental + technical confidence score (60–95%) |
+| **CALL Pairs** | Pairs where you should enter CALL (BUY) |
+| **PUT Pairs** | Pairs where you should enter PUT (SELL) |
+
+> **How to use**: Enter the trade **just before** the event release time (the signal shows the entry time as 2 seconds before release). Use M1 expiry on your broker.
+
+---
+
+## Executing a Signal on Quotex or Tradowix
+
+1. Open your broker (Quotex or Tradowix) and log in
 2. Select the **pair** from the signal
 3. Set expiry to **M1 (1 minute)**
 4. Set your **stake amount**
@@ -116,6 +157,33 @@ In Live Signal mode, each signal includes the **real-time broker payout %**.
 
 ---
 
+## OTC vs Live Markets
+
+| | OTC | Live |
+|---|---|---|
+| Availability | 24/7 (weekends too) | Mon–Fri market hours |
+| Market Type | Broker-managed synthetic | Real interbank prices |
+| Best For | Anytime trading | Main session trading |
+| Checker | OTC Checker | Live Checker |
+
+---
+
+## Signal Tools
+
+### Swap C/P
+Flip all directions in a signal list — every CALL becomes PUT, every PUT becomes CALL. Useful when you want to reverse a strategy direction.
+
+### TZ Converter
+Have signals in a different timezone? Paste them and select your target timezone — the bot converts all entry times automatically.
+
+### Signal Formatter
+Paste any signal list in any format — the Formatter normalizes and outputs a clean, standardized card. Useful for re-sharing or archiving.
+
+### Market Filters
+Shows which live market pairs are currently in **stable, tradeable conditions** — helps you avoid choppy pairs before starting a session.
+
+---
+
 ## Money Management
 
 **Fixed 2% Stake:**
@@ -129,16 +197,6 @@ In Live Signal mode, each signal includes the **real-time broker payout %**.
 
 ---
 
-## OTC vs Live Markets
-
-| | OTC | Live |
-|---|---|---|
-| Availability | 24/7 (weekends too) | Mon–Fri market hours |
-| Market Type | Broker-managed synthetic | Real interbank prices |
-| Best For | Anytime trading | Main session trading |
-
----
-
 ## Common Mistakes
 
 ❌ Late entries (30+ seconds after signal time)  
@@ -146,6 +204,7 @@ In Live Signal mode, each signal includes the **real-time broker payout %**.
 ❌ Overleveraging (10%+ stake per trade)  
 ❌ Ignoring payout % (low payout = poor risk/reward)  
 ❌ Emotional revenge trading after losses  
+❌ Trading News Signals on extremely low-impact events  
 
 ---
 

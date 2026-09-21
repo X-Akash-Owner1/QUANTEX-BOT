@@ -9,11 +9,11 @@
 ### What is QUANTEX-BOT?
 QUANTEX-BOT is an automated binary options trading signal system on Telegram. It uses a proprietary multi-factor analysis engine combined with AI confirmation to deliver high-confidence BUY/CALL or SELL/PUT signals with real-time charts, payout data, and automatic result tracking.
 
-### What's new recently?
-Recent updates add: a browser-based **Web Control Dashboard** (Mini App) for managing your profile, templates, and timezone; a new **tiered subscription model** (STARTER / PLUS / INFINITY); a **Personal Bot Builder** in early access for INFINITY subscribers; AI-confirmed Live Signals with S/R levels and payout; Live Signal Broadcast (Manual & Auto); Future Live Signal System; a rebuilt 4-mode super-fast signal checker suite (OTC + Blackout + Whiteout + Custom Date); Free Bots Mission; Telegram Premium emoji integration; referral program; reviews system; and a PostgreSQL database backend.
+### What's new in v4.0?
+v4.0 adds: **Tradowix broker** support (alongside Quotex); an **Auto Payment system** (Binance Pay, TRC20 USDT, BEP20 USDT — subscribe instantly without contacting the owner); a **News Signal system** powered by the Forex Factory economic calendar and Gemini AI; a **Live Checker** (5th checker mode for real market pairs); **Signal Tools** (Formatter, Swap C/P, TZ Converter, Market Filters); new **Future Signal modes** (Live FS, Blackout FS, Whiteout FS); **Bot Builder expanded** (PLUS: 3 bots, INFINITY: 10 bots; custom AI prompt; notification template; Child Admin Panel); a **Session Log Viewer**; a **Strategy Intelligence Dashboard** with auto-optimization and ML-based continuous training; a **Machine Learning Signal Engine** with 3 analyzer engines and 20+ independent modules; and **5 Free Bots** now released (HUNTER, DRAGON, BLACKOUT FUTURE AI, STORM, PHANTOM).
 
 ### What broker should I use?
-Currently optimized for **Quotex**. Multiple broker support is coming soon.
+QUANTEX-BOT currently supports two brokers: **Quotex** and **Tradowix**. Both are fully supported with OTC and Live pair signals. Select your preferred broker in the setup wizard.
 
 ---
 
@@ -64,11 +64,15 @@ USDCAD-OTC 05:53 PUT
 ## 🔍 Signal Checker
 
 ### What is the Checker Suite?
-QUANTEX-BOT v3 includes **4 checker modes**:
-- **OTC Checker** — standard WIN/LOSS check for normal signals
+QUANTEX-BOT v4 includes **5 checker modes**:
+- **Live Checker** *(New)* — WIN/LOSS check for real/live market signals
+- **OTC Checker** — standard WIN/LOSS check for OTC signals
 - **Blackout Checker** — direction-free signals checked using reverse previous-candle logic
 - **Whiteout Checker** — direction-free signals checked using follow previous-candle logic
 - **Custom Date Checker** — check signals for any specific past date
+
+### What is the Live Checker?
+The Live Checker works exactly like the OTC Checker, but for **real (live) market pairs** instead of OTC pairs. Paste your live market signals and receive instant WIN/LOSS/DOJI results.
 
 ### What makes the checker "super-fast & 100% accurate"?
 The checker uses a **local candle cache** with a pre-built time index for O(1) lookups — no external API calls needed. Candle data is compared directly (open vs close), not estimated. Results are exact.
@@ -87,6 +91,91 @@ Check signals for any past date — not just today or yesterday. Bot fetches arc
 
 ---
 
+## 📰 News Signal System
+
+### What is the News Signal?
+The News Signal system generates trading signals based on the **Forex Factory economic calendar**. It fetches upcoming economic events (e.g. NFP, CPI, interest rate decisions), analyzes the expected impact using Gemini AI, and produces CALL/PUT recommendations for each of your selected pairs.
+
+### How does it determine direction?
+In three layers:
+1. **Heuristic** — compares `forecast vs previous` for the event, with inversion logic for negative metrics (e.g. unemployment rate)
+2. **AI Analysis** — Gemini AI provides BULLISH/BEARISH/NEUTRAL bias with a confidence score and rationale
+3. **Technical Blend** — a 30-day technical structure read (trend + momentum) is blended with the fundamental bias to adjust confidence up or down
+
+### Which pairs are supported by News Signal?
+29 pairs: all major forex pairs (EUR, GBP, USD, JPY, CHF, CAD, AUD, NZD combinations) plus XAU/USD.
+
+### Can I filter by news impact level?
+Yes — you can filter events by **HIGH**, **MEDIUM**, **LOW**, or show **All** impacts.
+
+### How many days ahead can I see?
+1, 2, or 3 days ahead from the current time.
+
+### Is the AI re-run for every user requesting the same event?
+No — analysis results are **cached per event** (keyed by title + currency + exact release time). The first user requesting an event pays the AI cost; everyone else requesting the same event within its window gets the cached result instantly. Cache expires after the event's release time.
+
+---
+
+## 🛠️ Signal Tools
+
+### What are the Signal Tools?
+Four utility tools for working with signal lists, accessible from the main menu:
+
+- **Signal Formatter** — paste any signal list, receive it reformatted into a clean, standardized card layout
+- **Swap C/P** — paste a signal list, every CALL becomes PUT and vice versa (useful for reversing strategies)
+- **TZ Converter** — paste signals, enter source and target timezone → receive time-converted signals
+- **Market Filters** — shows which live markets are currently stable and tradeable
+
+### Who can use the Signal Tools?
+All users — the tools are available to FREE, STARTER, PLUS, and INFINITY subscribers.
+
+---
+
+## 💳 Auto Payment
+
+### What is the Auto Payment system?
+A self-serve subscription system that lets you activate your plan **instantly inside the bot**, without contacting the owner. Supported methods: **Binance Pay**, **TRC20 USDT**, and **BEP20 USDT**.
+
+### How does it work?
+1. Tap **Upgrade** inside the bot
+2. Select your plan (STARTER, PLUS, or INFINITY)
+3. Choose a payment method
+4. Send the exact USDT amount to the provided address/ID
+5. Bot verifies payment automatically and activates your subscription immediately
+
+### How long do I have to complete payment?
+**60 minutes** from the time you initiate the request. After that, the request expires and you can start a new one.
+
+### Is manual payment still available?
+Yes — you can always contact [@X_Akash_Owner](https://t.me/X_Akash_Owner) directly if you prefer manual activation.
+
+---
+
+## 🧠 Machine Learning Engine
+
+### Does QUANTEX-BOT use machine learning?
+Yes. The signal engine includes an adaptive ML-based analysis system with **3 distinct analyzer engines** and **20+ independent analysis modules**. Every signal result (WIN/LOSS/DOJI) is logged and used to continuously train and optimize the engine's per-pair, per-timeframe parameters.
+
+| Analyzer Engine | Description |
+|---|---|
+| **QUANTUM SCAN** | Dynamic MTF + Structure + Practical Signals |
+| **SMART FOCUS** | Best Quality Market Analyzer |
+| **HYBRID ENGINE** | MTF + Structure + Trap detection, Score 75+ |
+
+### What are the 20+ analysis modules?
+Each signal passes through independent modules including: Trend Continuation, Break of Structure, Change of Character, Engulfing Reversal, MACD Cross, RSI Divergence, Bollinger Breakout, Pin Bar, MTF Confluence, VWAP Reversion, Ichimoku Confluence, Fibonacci Pullback, Candlestick Patterns (Harami, Morning/Evening Star, Tweezer, Three Black Crows), Supertrend + PSAR, CCI Extreme Reversal, and Multi-Indicator Confluence. Only signals where multiple independent modules agree are delivered.
+
+### Does the bot get better over time?
+Yes. The **Strategy Intelligence** system automatically learns from every WIN, LOSS, and DOJI result. Per-pair, per-timeframe parameter profiles are continuously updated. When a strategy underperforms on a specific pair or timeframe, the system detects it and self-corrects — the longer the bot runs, the smarter it becomes.
+
+### What is Strategy Intelligence?
+A browser-based admin dashboard showing real-time strategy performance, win rates per pair and timeframe, and the auto-optimization status of each analyzer engine. Strategies are continuously trained and self-healing **without any manual intervention**.
+
+### What is the minimum signal confidence threshold?
+Only signals scoring **79 or higher** on the internal confidence scale are delivered. Signals below this threshold are silently discarded. The scoring is weighted — stronger modules that have historically performed well carry more influence.
+
+---
+
 ## 🤖 Free Bots Mission
 
 ### What is the Free Bots Mission?
@@ -96,7 +185,9 @@ QUANTEX is releasing **10 premium trading bots completely free** to all users, o
 - **Bot #1: HUNTER X QUANTEX** — Live signal software with bad market filter
 - **Bot #2: DRAGON X QUANTEX** — OTC Signal Pro with entry timer
 - **Bot #3: BLACKOUT FUTURE AI** — AI-powered future signal system (80–95% accuracy)
-- Bots #4–10: coming soon
+- **Bot #4: STORM X QUANTEX** — Premium trading bot (details coming soon)
+- **Bot #5: PHANTOM X QUANTEX** — Premium trading bot (details coming soon)
+- Bots #6–10: coming soon
 
 ### How do I access the free bots?
 Inside QUANTEX-BOT → **Free Bots** menu → select any available bot. No separate login or signup required.
@@ -109,10 +200,32 @@ Inside QUANTEX-BOT → **Free Bots** menu → select any available bot. No separ
 A feature that lets you build your own custom, white-label trading signal bot directly from QUANTEX-BOT — no coding required. You set it up through a button-based wizard (token, branding, modules, templates) and deploy it with one tap.
 
 ### Who can use it?
-Currently available in early access to **INFINITY** subscribers (1 bot per account).
+Available to **PLUS and INFINITY** subscribers.
 
-### When will it be available to everyone?
-Follow [@Quantexbot1](https://t.me/Quantexbot1) for the public release announcement.
+| Plan | Max Bots |
+|---|---|
+| 💎 PLUS | 3 bots |
+| 👑 INFINITY | 10 bots |
+
+### What's new in Bot Builder v4.0?
+- **Custom AI Prompt** — set a custom instruction that your bot's AI confirmation layer uses
+- **Notification Template** — customize the default announcement text in your Child Admin Panel
+- **Child Admin Panel** — full admin panel to manage users of your deployed bot
+- **Session Log Viewer** — real-time diagnostic log for active sessions in your bot
+- All new modules now selectable: News Signal, Live Checker, Live FS, Blackout FS, Whiteout FS, Formatter, Market Filters, Swap C/P, TZ Converter
+
+### When will it be available to STARTER users?
+Follow [@Quantexbot1](https://t.me/Quantexbot1) for the announcement.
+
+---
+
+## 🏢 Brokers
+
+### Which brokers are supported?
+**Quotex** and **Tradowix** are both fully supported. Both provide OTC and Live Forex signal support.
+
+### Are more brokers coming?
+Yes — Pocket Option, Olymp Trade, Binomo, and others are planned. Follow [@Quantexbot1](https://t.me/Quantexbot1) for updates.
 
 ---
 
@@ -157,7 +270,7 @@ Go to **Referral** in the bot → get your unique link → share it. Each verifi
 | 💎 PLUS ⭐ Most Popular | $32 / month |
 | 👑 INFINITY | $49 / month |
 
-Tap **🪄 Upgrade** inside the bot for live pricing, or contact [@X_Akash_Owner](https://t.me/X_Akash_Owner) to purchase.
+Tap **🪄 Upgrade** inside the bot to subscribe instantly via **Auto Payment** (Binance Pay, TRC20 USDT, BEP20 USDT), or contact [@X_Akash_Owner](https://t.me/X_Akash_Owner) for manual activation.
 
 **Promo codes** available — follow [@Quantexbot1](https://t.me/Quantexbot1) or earn via referrals.
 
@@ -173,6 +286,16 @@ No — it opens using your existing Telegram session automatically. Nothing extr
 
 ### Can FREE or STARTER users open Web Control?
 Yes — you can view your profile and the subscription plans, with a prompt to upgrade for full control access.
+
+---
+
+## 📋 Session Log Viewer
+
+### What is the Session Log Viewer?
+A real-time diagnostic log that records every event in your active live signal session — which pairs were scanned, which signals were generated, which were rejected and why. Accessible from the Web Control dashboard and from Bot Builder's Child Admin Panel.
+
+### Does closing the log page lose my data?
+No — the log keeps running in the background regardless of whether the page is open. Reopening the page shows the full accumulated history.
 
 ---
 
