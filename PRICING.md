@@ -7,27 +7,29 @@
 
 ## 📋 Subscription Tiers
 
-QUANTEX-BOT runs on a simple monthly tier system — pick the plan that matches how much you use the bot.
+QUANTEX-BOT uses simple monthly **Bot Access packages**. Pick the one that matches how much you use the bot.
 
 | Plan | Price | Best For |
 |---|---|---|
 | 🆓 **FREE** | $0 | Trying the bot out |
 | 🟢 **STARTER** | **$18 / month** | Casual users who want more daily signals |
-| 💎 **PLUS** ⭐ Most Popular | **$32 / month** | Regular traders who want the full toolkit + Q-BOT STUDIO |
-| 👑 **INFINITY** | **$49 / month** | Power users who want everything, unlimited |
+| 💎 **PLUS** ⭐ Most Popular | **$32 / month** | Regular traders who want the full toolkit, template editing and Web Control |
+| 👑 **INFINITY** | **$49 / month** | Power users who want unlimited usage (+ 1 limited Q-BOT STUDIO bot) |
 
 > Tap **🪄 Upgrade** in the bot's main menu anytime to see live pricing, current plan status, and subscribe instantly via **Auto Payment** — or contact the owner for manual activation.
+
+> 🛠 **Q-BOT STUDIO is not part of the Bot Access packages.** STARTER, PLUS and INFINITY are **Bot Access** packages for using QUANTEX-BOT itself. Q-BOT STUDIO will have its **own separate Studio packages**, coming soon: the Studio is about 85% complete and will be opened to the public shortly. Until then, **INFINITY includes 1 Studio bot with limited Studio features**. Watch the main channel [t.me/bdtraderpro](https://t.me/bdtraderpro) for the launch.
 
 ---
 
 ## 📊 Daily Limits (default)
 
-| Plan | Future Signal lists / day | Live Signals / day | Q-BOT STUDIO bots |
+| Plan | Future Signal lists / day | Live Signals / day | Q-BOT STUDIO |
 |---|---|---|---|
 | 🆓 FREE | 2 | 5 | — |
-| 🟢 STARTER | 3 | 25 | 1 |
-| 💎 PLUS | 10 | 60 | 3 |
-| 👑 INFINITY | **Unlimited** | **Unlimited** | 10 |
+| 🟢 STARTER | 3 | 25 | — |
+| 💎 PLUS | 10 | 60 | — |
+| 👑 INFINITY | **Unlimited** | **Unlimited** | 1 bot (limited) |
 
 > Your remaining allowance is always shown live in **My Profile** and **Web Control**. Only signals actually delivered to you count. Limits may be adjusted by the admin. The bot always shows your current values.
 
@@ -48,7 +50,6 @@ QUANTEX-BOT runs on a simple monthly tier system — pick the plan that matches 
 ### 🟢 STARTER — $18/month
 - Everything in FREE
 - Higher daily usage limits
-- **1 bot** in Q-BOT STUDIO
 - Premium interface styling
 - Premium message templates
 - Advanced automation options
@@ -62,7 +63,6 @@ QUANTEX-BOT runs on a simple monthly tier system — pick the plan that matches 
 - Full template customization (signal, result, chart, and partial-report templates)
 - AI-powered features
 - **Full Web Control access** — manage your bot's timezone, templates, and profile from a browser-based dashboard
-- **Q-BOT STUDIO — up to 3 bots**: create and deploy your own branded Telegram bots from ready-made templates
 - Advanced automation
 - Priority support
 - Early access to new features
@@ -70,20 +70,26 @@ QUANTEX-BOT runs on a simple monthly tier system — pick the plan that matches 
 ### 👑 INFINITY — $49/month
 - Everything in PLUS
 - **Unlimited daily usage** — no signal caps
-- **Q-BOT STUDIO — up to 10 bots**: full multi-bot deployment
-- Custom AI Prompt per bot, Notification Template customization, Child Admin Panel
-- Full admin access over all your deployed bots
-- Complete bot control, custom commands, white-label branding
+- **Q-BOT STUDIO — 1 bot with limited Studio features** (full Studio comes with the separate Studio packages)
 - Premium modules and highest performance
 - VIP support
 - All future premium features included automatically
 
 ---
 
-## 🤖 Q-BOT STUDIO — Plan Comparison
+## 🤖 Q-BOT STUDIO — Separate Packages *(coming soon)*
 
-| Plan | Max Bots | Custom AI Prompt | Child Admin Panel |
-|---|---|---|---|
+| Package | Q-BOT STUDIO access |
+|---|---|
+| 🆓 FREE | — |
+| 🟢 STARTER | — |
+| 💎 PLUS | — |
+| 👑 INFINITY | **1 bot, limited Studio features** |
+| 🛠 **Studio packages** *(coming soon)* | Full Studio: more bots and every Studio feature |
+
+> Q-BOT STUDIO lets you deploy branded signal bots with zero coding: ready-made Welcome / About / Help templates, your choice of features, renamed and recoloured buttons, one-tap deploy and a Child Admin Panel. The Studio is about **85% complete** and is not fully public yet. Dedicated **Studio packages** will be announced on the main channel [t.me/bdtraderpro](https://t.me/bdtraderpro).
+
+---|---|---|---|
 | 🆓 FREE | 0 | — | — |
 | 🟢 STARTER | 1 | ✅ | ✅ |
 | 💎 PLUS | **3** | ✅ | ✅ |
@@ -131,7 +137,7 @@ Special promo codes are occasionally released for:
 
 **To use a promo code**: Open the bot → **Upgrade** menu → Enter Promo Code
 
-**To get a promo code**: Follow [@Quantexbot1](https://t.me/Quantexbot1) for announcements, or earn one through the referral program.
+**To get a promo code**: Follow the main channel [t.me/bdtraderpro](https://t.me/bdtraderpro) for announcements, or earn one through the referral program.
 
 ---
 
@@ -185,6 +191,7 @@ A: Yes — you can use either method at any time. Auto Payment activates instant
 
 - 💬 **Telegram**: [@X_Akash_Owner](https://t.me/X_Akash_Owner)
 - 📧 **Email**: [quantexbotsupport@gmail.com](mailto:quantexbotsupport@gmail.com)
+- 📣 **Main Channel (required)**: [t.me/bdtraderpro](https://t.me/bdtraderpro) — all updates are posted here first
 - 📢 **Channel**: [@Quantexbot1](https://t.me/Quantexbot1)
 - 👥 **Community Group**: [t.me/quantexlounge](https://t.me/quantexlounge)
 - 🤖 **Bot**: [@QuantexBinaryTools_bot](https://t.me/QuantexBinaryTools_bot)

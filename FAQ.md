@@ -10,10 +10,14 @@
 ### What is QUANTEX-BOT?
 QUANTEX-BOT is an automated binary options trading signal system on Telegram. It uses a proprietary multi-factor analysis engine combined with AI confirmation to deliver high-confidence BUY/CALL or SELL/PUT signals with real-time charts, payout data, and automatic result tracking.
 
+
+### Do I need to join a channel?
+Yes. You must be a member of our **main channel** [t.me/bdtraderpro](https://t.me/bdtraderpro) to use the bot. All updates, new features and announcements are posted there first. If you leave it, the bot asks you to rejoin and tap **Verify Membership**.
+
 ### What's new in v5.0?
 - **3 fully supported brokers**: QUOTEX, TRADOWIX and BINOLLA (300+ markets), plus a **Primary Broker** setting
 - **Super-fast and stable**: the analysis engine is about 14× faster, buttons respond instantly, and the bot runs 24/7 with self-healing and automatic restart
-- **Q-BOT STUDIO**: build your own bot in 8 steps from ready-made templates, with no coding
+- **Q-BOT STUDIO** *(coming soon)*: build your own bot in 8 steps from ready-made templates, with no coding
 - **Strategy Intelligence (rebuilt)**: learns from every result and favours the analyzers and setups that win on each market
 - **Scanning Mode**: a new shared supply/demand zone and trendline engine, with accurate level drawing
 - **QUANTEX HUB** community, **Live Chart**, **AXTIRON FS**, **AI Filter** and **Group Live Signal** (for bot owners)
@@ -217,25 +221,29 @@ Everything: which of the 26 features appear, every button's name and colour, the
 ### Can I manage my bot's users?
 Yes. The **Child Admin Panel** (in Telegram and on the web) lets you manage users, licences, bans and broadcasts, view logs and stats, and choose **open** or **licensed** access.
 
-### How many bots can I build?
-| Plan | Bots |
+### Is Q-BOT STUDIO included in my package?
+Not yet as a full product. STARTER, PLUS and INFINITY are **Bot Access** packages. Q-BOT STUDIO will get its **own separate Studio packages** soon (the Studio is about 85% complete). Until then:
+
+| Package | Q-BOT STUDIO access |
 |---|---|
-| 🟢 STARTER | 1 |
-| 💎 PLUS | 3 |
-| 👑 INFINITY | 10 |
+| 🆓 FREE | — |
+| 🟢 STARTER | — |
+| 💎 PLUS | — |
+| 👑 INFINITY | **1 bot, limited Studio features** |
+| 🛠 **Studio packages** *(coming soon)* | Full Studio: more bots and every Studio feature |
 
 ---
 
 ## 🏢 Brokers
 
 ### Which brokers are supported?
-**QUOTEX** (62 OTC + 28 Live), **TRADOWIX** (101 OTC + 15 Live) and **BINOLLA** (100+ markets). All three are fully supported across every feature. Full list: [SUPPORTED_MARKETS.md](SUPPORTED_MARKETS.md).
+**QUOTEX** (62 OTC + 28 Live), **TRADOWIX** (101 OTC + 15 Live) and **BINOLLA** (104 OTC + 17 Live). All three are fully supported across every feature. Full list: [SUPPORTED_MARKETS.md](SUPPORTED_MARKETS.md).
 
 ### Can I set my broker once?
 Yes. Open **Settings → Primary Broker**, pick your broker and turn on **"Use this broker in all features"**.
 
 ### Are more brokers coming?
-Yes. Pocket Option, Olymp Trade, Binomo and others are planned. Follow [@Quantexbot1](https://t.me/Quantexbot1) for updates.
+Yes. Pocket Option, Olymp Trade, Binomo and others are planned. Follow the main channel [t.me/bdtraderpro](https://t.me/bdtraderpro) for updates.
 
 ## 📡 Strategy Mode vs Scanning Mode
 
@@ -306,7 +314,7 @@ Go to **Referral** in the bot → get your unique link → share it. Each verifi
 
 Tap **🪄 Upgrade** inside the bot to subscribe instantly via **Auto Payment** (Binance Pay, TRC20 USDT, BEP20 USDT), or contact [@X_Akash_Owner](https://t.me/X_Akash_Owner) for manual activation.
 
-**Promo codes** available — follow [@Quantexbot1](https://t.me/Quantexbot1) or earn via referrals.
+**Promo codes** available — follow the main channel [t.me/bdtraderpro](https://t.me/bdtraderpro) or earn via referrals.
 
 ---
 
@@ -361,6 +369,7 @@ Binary options trading carries high risk. QUANTEX-BOT provides signals to assist
 
 - 💬 **Telegram**: [@X_Akash_Owner](https://t.me/X_Akash_Owner)
 - 📧 **Email**: [quantexbotsupport@gmail.com](mailto:quantexbotsupport@gmail.com)
+- 📣 **Main Channel (required)**: [t.me/bdtraderpro](https://t.me/bdtraderpro) — all updates are posted here first
 - 📢 **Channel**: [@Quantexbot1](https://t.me/Quantexbot1)
 - 👥 **Community Group**: [t.me/quantexlounge](https://t.me/quantexlounge)
 - 🤖 **Bot**: [@QuantexBinaryTools_bot](https://t.me/QuantexBinaryTools_bot)

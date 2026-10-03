@@ -8,11 +8,11 @@
 
 1. Open Telegram and search **@QuantexBinaryTools_bot**, or tap [t.me/QuantexBinaryTools_bot](https://t.me/QuantexBinaryTools_bot).
 2. Send **`/start`**.
-3. If you see **🔐 Access Required**, you must join the official channel first:
+3. To use the bot you must be a member of our **main channel** [t.me/bdtraderpro](https://t.me/bdtraderpro). Every update, new feature and announcement is posted there first. If you are not a member you see **🔐 Access Required**:
 
 | Button | What it does |
 |---|---|
-| **📢 Join Channel** | Opens the official channel. Join it. |
+| **📢 Join Channel** | Opens the main channel ([t.me/bdtraderpro](https://t.me/bdtraderpro)). Join it. |
 | **✅ Verify Membership** | Checks that you joined. If yes you see *"✅ Verified! Welcome to QUANTEX BOT!"* and the main menu opens. If not, you see *"❌ Not joined yet!"* |
 
 > If you ever leave the channel, the bot shows **⚠️ You have left the channel!** with **📢 Rejoin Channel** and **✅ Verify Membership**. Rejoin and verify to continue.
@@ -91,7 +91,7 @@ The main menu is your home screen. **BACK HOME** / **HOME** on any screen brings
 | **REVIEWS** | Rate the bot 1–5 stars | [11](11-account.md) |
 | **OTHERS** | Telegram Login, TG Status, Signal History | [11](11-account.md) |
 | **FREE BOTS** | 10 free bots (01–05 open) | [12](12-free-bots.md) |
-| **Q-BOT STUDIO** | Build and run your own branded bot | [13](13-qbot-studio.md) |
+| **Q-BOT STUDIO** | Build and run your own branded bot *(coming soon; INFINITY: 1 limited bot)* | [13](13-qbot-studio.md) |
 | **HELP** | A short how-to page inside the bot | [11](11-account.md) |
 
 > 🛠 Admins and sub-admins also see an **ADMIN PANEL** button. Normal users do not.

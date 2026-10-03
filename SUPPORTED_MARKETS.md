@@ -13,7 +13,7 @@ QUANTEX-BOT supports **three brokers**. Each one is a full integration with its 
 |---|---|---|---|---|
 | 🟦 **QUOTEX** | **62** | **28** | **90** | ✅ Fully supported |
 | 🟧 **TRADOWIX** | **101** | **15** | **116** | ✅ Fully supported |
-| 🟪 **BINOLLA** | **100+** | **—** | **100+** | ✅ Fully supported |
+| 🟪 **BINOLLA** | **104** | **17** | **121** | ✅ Fully supported |
 
 ### How broker selection works
 
@@ -163,12 +163,72 @@ _Forex 13 · Crypto 2_
 
 ## 🟪 BINOLLA
 
-**100+ markets.** BINOLLA's market list is read directly from the BINOLLA data feed, so every market BINOLLA lists is picked up by the bot automatically, including new ones, with no update needed.
+**121 markets in total: 104 OTC + 17 Live**
 
-- Live Session, Live Signal (Strategy and Scanning Mode), Checkers, Future Signals, Live Payouts and the Live Chart all work on BINOLLA.
-- BINOLLA results are settled from the closed candle as soon as BINOLLA publishes it.
+### OTC Markets — 104
+_Forex 27 · Crypto 9 · Commodities 7 · Indices 11 · Stocks 50_
 
-> 📋 The full BINOLLA market list will be added here.
+**Forex — 27**
+
+|   |   |   |   |   |
+|---|---|---|---|---|
+| `AUDCHF_otc` | `AUDJPY_otc` | `AUDUSD_otc` | `EURAUD_otc` | `EURCAD_otc` |
+| `EURGBP_otc` | `EURJPY_otc` | `EURUSD_otc` | `GBPAUD_otc` | `GBPCAD_otc` |
+| `GBPCHF_otc` | `GBPUSD_otc` | `NZDUSD_otc` | `USDAED_otc` | `USDARS_otc` |
+| `USDBDT_otc` | `USDBRL_otc` | `USDCAD_otc` | `USDCHF_otc` | `USDCOP_otc` |
+| `USDDZD_otc` | `USDEGP_otc` | `USDIDR_otc` | `USDINR_otc` | `USDMXN_otc` |
+| `USDPKR_otc` | `USDSAR_otc` |   |   |   |
+
+**Crypto — 9**
+
+|   |   |   |   |   |
+|---|---|---|---|---|
+| `BCHUSD_otc` | `BNBUSD_otc` | `BTCUSD_otc` | `DOTUSD_otc` | `ETHUSD_otc` |
+| `NEARUSD_otc` | `SOLUSD_otc` | `TONUSD_otc` | `WIFUSD_otc` |   |
+
+**Commodities — 7**
+
+|   |   |   |   |   |
+|---|---|---|---|---|
+| `XAUUSD_otc` (Gold) | `XAGUSD_otc` (Silver) | `XPTUSD_otc` (Platinum) | `XPDUSD_otc` (Palladium) | `XBRUSD_otc` (Brent Oil) |
+| `XTIUSD_otc` (WTI Crude Oil) | `XNGUSD_otc` (Natural Gas) |   |   |   |
+
+**Indices — 11**
+
+|   |   |   |   |   |
+|---|---|---|---|---|
+| `US100_otc` (Nasdaq 100) | `US500_otc` (S&P 500) | `US2000_otc` (Russell 2000) | `USDX_otc` (US Dollar Index) | `UK100_otc` (FTSE 100) |
+| `GER30_otc` (DAX) | `FR40_otc` (CAC 40) | `SPN35_otc` (IBEX 35) | `J225_otc` (Nikkei 225) | `HK33_otc` (Hang Seng) |
+| `AUS200_otc` (ASX 200) |   |   |   |   |
+
+**Stocks — 50**
+
+|   |   |   |   |   |
+|---|---|---|---|---|
+| `AAPL_otc` (Apple) | `ABT_otc` (Abbott) | `AMD_otc` (AMD) | `AMZN_otc` (Amazon) | `BA_otc` (Boeing) |
+| `BABA_otc` (Alibaba) | `BAC_otc` (Bank of America) | `BIDU_otc` (Baidu) | `BRK-B_otc` (Berkshire Hathaway) | `BUD_otc` (AB InBev) |
+| `C_otc` (Citigroup) | `CAT_otc` (Caterpillar) | `CMCSA_otc` (Comcast) | `CSCO_otc` (Cisco) | `CVX_otc` (Chevron) |
+| `DIS_otc` (Disney) | `EBAY_otc` (eBay) | `GOOG_otc` (Alphabet) | `HD_otc` (Home Depot) | `IBM_otc` (IBM) |
+| `INTC_otc` (Intel) | `JNJ_otc` (Johnson & Johnson) | `JPM_otc` (JPMorgan) | `KO_otc` (Coca-Cola) | `MA_otc` (Mastercard) |
+| `MCD_otc` (McDonald's) | `META_otc` (Meta) | `MMM_otc` (3M) | `MS_otc` (Morgan Stanley) | `MSFT_otc` (Microsoft) |
+| `NFLX_otc` (Netflix) | `NKE_otc` (Nike) | `NVDA_otc` (NVIDIA) | `NVS_otc` (Novartis) | `ORCL_otc` (Oracle) |
+| `PFE_otc` (Pfizer) | `PG_otc` (Procter & Gamble) | `PM_otc` (Philip Morris) | `SBUX_otc` (Starbucks) | `T_otc` (AT&T) |
+| `TSLA_otc` (Tesla) | `V_otc` (Visa) | `VZ_otc` (Verizon) | `WFC_otc` (Wells Fargo) | `WMT_otc` (Walmart) |
+| `XOM_otc` (ExxonMobil) | `0700.HK_otc` (Tencent) | `0939.HK_otc` (China Construction Bank) | `BMW.DE_otc` (BMW) | `OR.PA_otc` (L'Oréal) |
+
+### Live Markets — 17
+_Forex 17_
+
+**Forex — 17**
+
+|   |   |   |   |   |
+|---|---|---|---|---|
+| `AUDCAD` | `AUDCHF` | `AUDJPY` | `AUDUSD` | `EURAUD` |
+| `EURCAD` | `EURGBP` | `EURJPY` | `EURUSD` | `GBPAUD` |
+| `GBPCAD` | `GBPCHF` | `GBPJPY` | `GBPUSD` | `USDCAD` |
+| `USDCHF` | `USDJPY` |  |  |  |
+
+> ✅ **BINOLLA summary:** 104 OTC markets and 17 Live markets are supported, **121 in total**. The list is read directly from the BINOLLA data feed, so any market BINOLLA adds later is picked up automatically.
 
 ---
 
@@ -187,6 +247,7 @@ _Forex 13 · Crypto 2_
 ## 📞 Support
 
 - **Telegram**: [@X_Akash_Owner](https://t.me/X_Akash_Owner)
+- **Main Channel (required)**: [t.me/bdtraderpro](https://t.me/bdtraderpro) — all updates are posted here first
 - **Channel**: [@Quantexbot1](https://t.me/Quantexbot1)
 - **Community Group**: [t.me/quantexlounge](https://t.me/quantexlounge)
 - **Bot**: [@QuantexBinaryTools_bot](https://t.me/QuantexBinaryTools_bot)

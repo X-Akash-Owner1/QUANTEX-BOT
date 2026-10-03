@@ -219,6 +219,7 @@ Shows which live market pairs are currently in **stable, tradeable conditions** 
 
 - **Bot**: [@QuantexBinaryTools_bot](https://t.me/QuantexBinaryTools_bot)
 - **Upgrade / Subscriptions**: [@X_Akash_Owner](https://t.me/X_Akash_Owner)
+- **Main Channel (required)**: [t.me/bdtraderpro](https://t.me/bdtraderpro) — all updates are posted here first
 - **Channel**: [@Quantexbot1](https://t.me/Quantexbot1)
 - **Community Group**: [t.me/quantexlounge](https://t.me/quantexlounge)
 

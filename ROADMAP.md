@@ -231,7 +231,8 @@
 - [x] Signal / result / chart / title customisation, premium emoji, custom AI prompt
 - [x] Force channel join, open/licensed access mode
 - [x] Child Admin Panel (Telegram + web), analytics, My Bots management
-- [x] Opened to STARTER (1 bot), PLUS (3 bots) and INFINITY (10 bots)
+- [x] INFINITY: 1 bot with limited Studio features
+- [ ] **Separate Studio packages** and full public launch *(about 85% complete)*
 
 ### 📘 Documentation
 - [x] Complete step-by-step **User Guide** (13 chapters): every menu, step and button, with plan availability
@@ -343,6 +344,7 @@
 ## 💡 Feature Requests
 
 - **Telegram**: [@X_Akash_Owner](https://t.me/X_Akash_Owner)
+- **Main Channel (required)**: [t.me/bdtraderpro](https://t.me/bdtraderpro) — all updates are posted here first
 - **Channel**: [@Quantexbot1](https://t.me/Quantexbot1)
 - **Community Group**: [t.me/quantexlounge](https://t.me/quantexlounge)
 - **Email**: [quantexbotsupport@gmail.com](mailto:quantexbotsupport@gmail.com)

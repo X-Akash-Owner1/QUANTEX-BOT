@@ -1,15 +1,18 @@
-# 13 · Q-BOT STUDIO — Build Your Own Signal Bot
+# 13 · Q-BOT STUDIO — Build Your Own Signal Bot *(coming soon)*
 
 [⬅ Back to the User Guide](../USER_GUIDE.md)
 
 **Q-BOT STUDIO** lets you create **your own branded Telegram signal bot** that runs on the QUANTEX engine. No coding and no server: you give a bot token, choose templates and features, and tap **DEPLOY**.
 
-| Plan | Bots you can run |
+> 🛠 **Status:** Q-BOT STUDIO is about **85% complete** and is not fully public yet. It will launch with its **own separate Studio packages**. STARTER, PLUS and INFINITY are **Bot Access** packages and do not include the full Studio. Launch news will be posted on the main channel [t.me/bdtraderpro](https://t.me/bdtraderpro).
+
+| Package | Studio access |
 |---|---|
-| 🆓 FREE | 0 |
-| 🟢 STARTER | 1 |
-| 💎 PLUS | 3 |
-| 👑 INFINITY | 10 |
+| 🆓 FREE · 🟢 STARTER · 💎 PLUS | Not included |
+| 👑 INFINITY | **1 bot with limited Studio features** |
+| 🛠 Studio packages *(coming soon)* | Full Studio: more bots and every feature below |
+
+This chapter describes the complete Studio. With the limited INFINITY bot, some options may not be available yet.
 
 **Templates included:** 5 Welcome + 5 About + 5 Help = **15 ready-made message templates**, plus 26 menu features in 6 groups (24 selectable now, 2 coming soon), button renaming and colours, signal templates and chart branding.
 
@@ -24,12 +27,12 @@ Tap **Q-BOT STUDIO** on the main menu. The home screen shows **SYSTEM STATUS**: 
 | **CREATE** | Starts the 8-step wizard to build a new bot |
 | **MYBOTS** | Lists your bots (🟢 running / 🔴 stopped) to manage them |
 | **ANALYTICS** | Users, active today, actions today and total actions for each bot (**PREV / NEXT** between bots) |
-| **SUBSCRIBE** | Your Studio plan, bots used and the bot limit of every plan, with **UPGRADE** |
+| **SUBSCRIBE** | Your Studio plan, bots used and your bot limit, with **UPGRADE** |
 | **HELP** | Step-by-step Studio help |
 | **Back** | Main menu |
 
 > If the Studio is under maintenance you see **⚠️ UNDER MAINTENANCE** until the admin turns it back on.
-> If your plan's limit is reached, **CREATE** shows **🔒 Bot limit reached** with **UPGRADE** and **MYBOTS**.
+> If you have no Studio access or your limit is reached, **CREATE** shows **🔒 Bot limit reached** with **UPGRADE** and **MYBOTS**.
 
 ---
 

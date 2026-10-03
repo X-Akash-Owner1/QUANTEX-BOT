@@ -46,7 +46,7 @@ QUANTEX-BOT fully supports **three brokers**. Each has its own live candle feed,
 |---|---|---|---|
 | 🟦 **QUOTEX** | 62 | 28 | **90** |
 | 🟧 **TRADOWIX** | 101 | 15 | **116** |
-| 🟪 **BINOLLA** | 100+ | — | **100+** |
+| 🟪 **BINOLLA** | 104 | 17 | **121** |
 
 - **Every feature works on every broker**: Live Session, Live Signal (both engines), all Checkers, all Future Signal modes, AXTIRON FS, AI Filter, Live Payouts, Market Filters and the Live Chart.
 - **Broker selection**: each feature asks which broker you trade on. You can also set a **Primary Broker** (*Settings → Primary Broker*) and turn on **"Use this broker in all features"** so it is never asked again.
@@ -395,13 +395,16 @@ Every signal includes a professional candlestick chart.
 
 **Build, brand and run your own Telegram signal bot, with no coding and no experience needed.** Your bot runs on the QUANTEX engine, so you need no server, hosting or technical setup.
 
-### Plan limits
-| Plan | Bots |
+### Availability *(coming soon)*
+Q-BOT STUDIO is about **85% complete** and will be opened to the public soon with its **own separate Studio packages**. It is **not** included in the STARTER / PLUS / INFINITY Bot Access packages, except:
+
+| Package | Q-BOT STUDIO access |
 |---|---|
 | 🆓 FREE | — |
-| 🟢 STARTER | **1** |
-| 💎 PLUS | **3** |
-| 👑 INFINITY | **10** |
+| 🟢 STARTER | — |
+| 💎 PLUS | — |
+| 👑 INFINITY | **1 bot, limited Studio features** |
+| 🛠 **Studio packages** *(coming soon)* | Full Studio: more bots and every Studio feature |
 
 ### The 8-step creation wizard
 | Step | What you do |
@@ -591,9 +594,9 @@ Subscribe to any plan **instantly and automatically**, directly inside the bot �
 | Tier | Price | Access Level |
 |---|---|---|
 | 🆓 FREE | $0 | Limited daily usage |
-| 🟢 STARTER | $18/month | Higher usage limits, premium templates, Q-BOT STUDIO (1 bot) |
-| 💎 PLUS | $32/month | 10× usage, full template customization, Web Control, Q-BOT STUDIO (3 bots) |
-| 👑 INFINITY | $49/month | Unlimited usage, Q-BOT STUDIO (10 bots), full control |
+| 🟢 STARTER | $18/month | Higher usage limits, Live Session & Schedule |
+| 💎 PLUS | $32/month | 10× usage, full template customization, Web Control |
+| 👑 INFINITY | $49/month | Unlimited usage, + 1 limited Q-BOT STUDIO bot |
 
 Subscriptions can be activated for any duration (custom days or permanent) at any tier — the tier determines *what* you can access, the duration determines *how long*.
 
@@ -716,6 +719,7 @@ All data is managed through a dedicated `db_postgres.py` module with connection 
 
 - **Telegram**: [@X_Akash_Owner](https://t.me/X_Akash_Owner)
 - **Email**: [quantexbotsupport@gmail.com](mailto:quantexbotsupport@gmail.com)
+- **Main Channel (required)**: [t.me/bdtraderpro](https://t.me/bdtraderpro) — all updates are posted here first
 - **Channel**: [@Quantexbot1](https://t.me/Quantexbot1)
 - **Community Group**: [t.me/quantexlounge](https://t.me/quantexlounge)
 - **Bot**: [@QuantexBinaryTools_bot](https://t.me/QuantexBinaryTools_bot)

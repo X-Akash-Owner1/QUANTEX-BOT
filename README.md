@@ -7,6 +7,7 @@
 **The Most Advanced Binary Options Signal Bot on Telegram**
 
 [![Telegram Bot](https://img.shields.io/badge/Telegram-QuantexBinaryTools__bot-2CA5E0?style=flat-square&logo=telegram&logoColor=white)](https://t.me/QuantexBinaryTools_bot)
+[![Main Channel](https://img.shields.io/badge/Main%20Channel-bdtraderpro-ff4757?style=flat-square&logo=telegram&logoColor=white)](https://t.me/bdtraderpro)
 [![Channel](https://img.shields.io/badge/Channel-Quantexbot1-2CA5E0?style=flat-square&logo=telegram&logoColor=white)](https://t.me/Quantexbot1)
 [![Owner](https://img.shields.io/badge/Owner-X__Akash__Owner-blueviolet?style=flat-square&logo=telegram)](https://t.me/X_Akash_Owner)
 [![Version](https://img.shields.io/badge/Version-5.0.0-00ff88?style=flat-square)](https://t.me/QuantexBinaryTools_bot)
@@ -45,7 +46,7 @@
 | 🏦 **3 brokers, fully supported** | **QUOTEX, TRADOWIX and BINOLLA** each have their own live feed, payouts and result checking. Set a **Primary Broker** once and every feature uses it automatically. → [Full market list](SUPPORTED_MARKETS.md) |
 | ⚡ **Super-fast performance** | The analysis engine was rebuilt and runs about **14× faster**. Taps on menu buttons get an instant response, screens open without waiting, and heavy work no longer slows anyone else down. |
 | 🛡 **24/7 stability** | Built to run non-stop for weeks. It recovers on its own if anything stalls, monitors itself and restarts automatically if the process ever stops. |
-| 🤖 **Q-BOT STUDIO** | Build your **own branded Telegram signal bot** in 8 guided steps, with **ready-made templates**, no coding and no experience needed. |
+| 🤖 **Q-BOT STUDIO** *(coming soon)* | Build your **own branded Telegram signal bot** in 8 guided steps, with **ready-made templates**, no coding needed. About 85% complete; separate Studio packages are coming. INFINITY already includes 1 limited Studio bot. |
 | 🧠 **Strategy Intelligence** | Learns from every settled result per market, timeframe and hour. It favours the setups and analyzers that actually win on each market and avoids weak ones, so accuracy keeps improving over time. |
 | 📡 **Scanning Mode** | A second signal engine next to Strategy Mode. It tracks supply/demand zones and trendlines on every market at once and shares signals instantly. |
 | 🌐 **QUANTEX HUB** | A built-in trading community: posts, comments, likes, direct messages, leaderboards, profiles and market news. |
@@ -72,7 +73,7 @@ Highlights:
 - ✅ **AI Filter**: filter any future-signal list with AI
 - ✅ **News Signal**: signals from the economic calendar, with AI direction analysis
 - ✅ **Signal Tools**: Formatter, TZ Converter, Market Filters, Live Payouts (Swap C/P coming soon)
-- ✅ **Q-BOT STUDIO**: build your own bot from templates, no coding
+- 🛠 **Q-BOT STUDIO** *(coming soon, own packages)*: build your own bot from templates, no coding. INFINITY includes 1 limited bot
 - ✅ **QUANTEX HUB**: community, messaging and news
 - ✅ **Live Chart** and **Web Control** dashboards inside Telegram
 - ✅ **Auto Payment**: Binance Pay, TRC20 and BEP20 USDT with instant activation
@@ -90,13 +91,13 @@ Highlights:
 |---|---|---|---|
 | 🟦 **QUOTEX** | **62** | **28** | **90** |
 | 🟧 **TRADOWIX** | **101** | **15** | **116** |
-| 🟪 **BINOLLA** | **100+** | — | **100+** |
+| 🟪 **BINOLLA** | **104** | **17** | **121** |
 
 **All three brokers are fully supported** across every feature: Live Session, Live Signal (Strategy and Scanning Mode), all Checkers, all Future Signal modes, AXTIRON FS, AI Filter, Live Payouts, Market Filters and the Live Chart.
 
 - **QUOTEX**: Forex, Crypto and Commodities in OTC, plus Live Forex, Gold and world indices (France 40, UK 100, Hong Kong 50, Japan 225, Euro Stoxx 50 and more)
 - **TRADOWIX**: Forex, Crypto, Commodities and **25 US/global stocks** (Apple, Tesla, NVIDIA, Microsoft and more) in OTC, plus Live Forex and Crypto
-- **BINOLLA**: the market list is read live from the BINOLLA feed, so new BINOLLA markets appear automatically
+- **BINOLLA**: 27 Forex (incl. exotics like USD/BDT, USD/INR, USD/BRL), 9 Crypto, 7 Commodities, 11 Indices and **50 global stocks** in OTC, plus 17 Live Forex pairs. The list is read live from the BINOLLA feed, so new markets appear automatically
 
 👉 **Every market name, broker by broker, is listed in [SUPPORTED_MARKETS.md](SUPPORTED_MARKETS.md).**
 
@@ -171,7 +172,10 @@ Signals from the economic calendar. AI decides the direction of each event, blen
 | **Market Filters** | Shows which OTC / Live markets are stable right now |
 | **Live Payouts** | Live payout % of every market of your broker |
 
-### 🤖 Q-BOT STUDIO: Build Your Own Bot *(no coding)*
+### 🤖 Q-BOT STUDIO: Build Your Own Bot *(no coding · coming soon)*
+
+> Q-BOT STUDIO is about 85% complete and will be public soon with its **own Studio packages**. It is not part of the STARTER / PLUS / INFINITY Bot Access packages, except that **INFINITY includes 1 Studio bot with limited features**.
+
 | Feature | Description |
 |---|---|
 | **8-step guided wizard** | Bot token → brand name → support contact → **Welcome template** → **About template** → **Help template** → features → optional force-join channel → review → **Deploy** |
@@ -182,7 +186,7 @@ Signals from the economic calendar. AI decides the direction of each event, blen
 | **My Bots** | Start, stop, edit, update the token or delete your bots at any time |
 | **Child Admin Panel** | Manage your bot's users: licences, bans, broadcasts, logs and stats. Choose **open** or **licensed** access. |
 | **Analytics** | Users, active users, actions and signals per bot |
-| **Plan limits** | STARTER **1** bot · PLUS **3** bots · INFINITY **10** bots |
+| **Access** | Separate Studio packages *(coming soon)* · INFINITY: **1 bot, limited** |
 
 ### 🌐 Web Apps (inside Telegram)
 | App | Description |
@@ -240,9 +244,9 @@ Signal loop
 | Plan | Price | Highlights |
 |---|---|---|
 | 🆓 **FREE** | $0 | Small daily signal allowance, checkers, tools, free bots |
-| 🟢 **STARTER** | **$18/month** | More daily signals, premium templates, Q-BOT STUDIO (1 bot) |
-| 💎 **PLUS** ⭐ Most Popular | **$32/month** | Much higher limits, full template customisation, Web Control, Q-BOT STUDIO (3 bots) |
-| 👑 **INFINITY** | **$49/month** | Unlimited signals, Q-BOT STUDIO (10 bots), everything included |
+| 🟢 **STARTER** | **$18/month** | More daily signals, Live Session & Schedule |
+| 💎 **PLUS** ⭐ Most Popular | **$32/month** | Much higher limits, full template customisation, Web Control |
+| 👑 **INFINITY** | **$49/month** | Unlimited signals, everything in PLUS, + 1 limited Q-BOT STUDIO bot |
 
 > 🪄 Tap **Upgrade** in the bot for live pricing and subscribe instantly with **Auto Payment**. See [PRICING.md](PRICING.md) for full details.
 
@@ -280,6 +284,7 @@ Full guide: [GETTING_STARTED.md](GETTING_STARTED.md)
 | | Link |
 |---|---|
 | 🤖 **Telegram Bot** | [@QuantexBinaryTools_bot](https://t.me/QuantexBinaryTools_bot) |
+| 📣 **Main Channel** *(required to use the bot)* | [t.me/bdtraderpro](https://t.me/bdtraderpro) — every update is posted here first |
 | 📢 **Official Channel** | [@Quantexbot1](https://t.me/Quantexbot1) |
 | 👥 **Community Group** | [t.me/quantexlounge](https://t.me/quantexlounge) |
 | 👤 **Owner / Developer** | [@X_Akash_Owner](https://t.me/X_Akash_Owner) |
@@ -310,7 +315,7 @@ All rights reserved. Unauthorized redistribution or resale of subscription acces
 
 **⭐ Star this repo and share it with your trading community!**
 
-[![Join Channel](https://img.shields.io/badge/Join-Telegram%20Channel-2CA5E0?style=for-the-badge&logo=telegram)](https://t.me/Quantexbot1)
+[![Join Main Channel](https://img.shields.io/badge/Join-Main%20Channel-2CA5E0?style=for-the-badge&logo=telegram)](https://t.me/bdtraderpro)
 [![Start Bot](https://img.shields.io/badge/Start-Trading%20Bot-00ff88?style=for-the-badge&logo=telegram)](https://t.me/QuantexBinaryTools_bot)
 
 *QUANTEX-BOT — 3 Brokers. 2 Engines. One Intelligent Signal System.*

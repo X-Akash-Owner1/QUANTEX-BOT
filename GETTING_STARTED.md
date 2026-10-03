@@ -10,7 +10,9 @@
 
 Search **@QuantexBinaryTools_bot** on Telegram or tap: [https://t.me/QuantexBinaryTools_bot](https://t.me/QuantexBinaryTools_bot)
 
-Send `/start` to open the main menu. If the bot asks you to join the official channel first, join it and tap **Verify**.
+Send `/start` to open the main menu.
+
+> 📣 **Join the main channel first:** [t.me/bdtraderpro](https://t.me/bdtraderpro). It is **required** to use the bot, and every update is posted there first. If you are not a member the bot shows **Join Channel**. Join, then tap **Verify Membership**.
 
 ---
 
@@ -43,7 +45,7 @@ QUANTEX-BOT fully supports **three brokers**:
 |---|---|
 | 🟦 **QUOTEX** | 62 OTC + 28 Live |
 | 🟧 **TRADOWIX** | 101 OTC + 15 Live |
-| 🟪 **BINOLLA** | 100+ markets |
+| 🟪 **BINOLLA** | 104 OTC + 17 Live |
 
 There are two ways to pick a broker:
 - **Each time**: every feature asks which broker you trade on.
@@ -141,7 +143,9 @@ Tap **📰 NEWS SIGNAL**, choose pairs (29 supported), an impact filter (High / 
 
 ---
 
-## Step 11 — Build Your Own Bot with Q-BOT STUDIO *(STARTER, PLUS & INFINITY)*
+## Step 11 — Build Your Own Bot with Q-BOT STUDIO *(coming soon · INFINITY: 1 limited bot)*
+
+> Q-BOT STUDIO is about 85% complete and will be public soon with its own Studio packages. Right now INFINITY users can build **1 bot with limited Studio features**.
 
 1. Create a bot with **@BotFather** (`/newbot`) and copy the token
 2. Tap **Q-BOT STUDIO → CREATE** and paste the token
@@ -153,7 +157,7 @@ Tap **📰 NEWS SIGNAL**, choose pairs (29 supported), an impact filter (High / 
 
 Manage it any time in **MY BOTS**: rename buttons, change colours, edit texts and templates, update the token, start/stop, and use the **Child Admin Panel** for your users.
 
-**Bot limits:** STARTER 1 · PLUS 3 · INFINITY 10
+**Access:** separate Studio packages *(coming soon)* · INFINITY: 1 bot (limited) · STARTER / PLUS: not included
 
 ---
 
@@ -220,6 +224,7 @@ Use Auto Payment inside the bot (Binance Pay, TRC20 or BEP20 USDT, instant), or 
 
 - **Telegram**: [@X_Akash_Owner](https://t.me/X_Akash_Owner)
 - **Email**: [quantexbotsupport@gmail.com](mailto:quantexbotsupport@gmail.com)
+- **Main Channel (required)**: [t.me/bdtraderpro](https://t.me/bdtraderpro) — all updates are posted here first
 - **Channel**: [@Quantexbot1](https://t.me/Quantexbot1)
 - **Community Group**: [t.me/quantexlounge](https://t.me/quantexlounge)
 

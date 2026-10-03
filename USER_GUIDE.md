@@ -22,11 +22,11 @@ This guide explains **every menu, every step and every button** in QUANTEX-BOT: 
 | 10 | [Settings](guide/10-settings.md) | Timezones, templates, brokers, what each plan can change |
 | 11 | [Account, Payments & Extras](guide/11-account.md) | Profile, Referral, Upgrade & Auto Payment, Reviews, About, Others, Web Control, HUB, Help |
 | 12 | [Free Bots](guide/12-free-bots.md) | The 10 free bots: which are open, which are locked |
-| 13 | [Q-BOT STUDIO](guide/13-qbot-studio.md) | Build your own bot in 8 steps, templates, My Bots, the bot Admin Panel |
+| 13 | [Q-BOT STUDIO](guide/13-qbot-studio.md) *(coming soon)* | Build your own bot in 8 steps, templates, My Bots, the bot Admin Panel |
 
 ---
 
-## 🗺️ Plan availability at a glance
+## 🗺️ Plan availability at a glance (Bot Access packages)
 
 ✅ = available · 🔢 = available with a daily limit · 👁 = view only · — = not available
 
@@ -48,12 +48,13 @@ This guide explains **every menu, every step and every button** in QUANTEX-BOT: 
 | Settings: timezones, primary broker | ✅ | ✅ | ✅ | ✅ |
 | Settings: **edit** templates and titles | 👁 | 👁 | ✅ | ✅ |
 | Web Control | 👁 | 👁 | ✅ | ✅ |
-| Q-BOT STUDIO bots | — | 1 | 3 | 10 |
+| Q-BOT STUDIO ⁴ | — | — | — | 1 bot (limited) |
 | Free Bots · HUB · Referral · Reviews | ✅ | ✅ | ✅ | ✅ |
 
 ¹ Live Session signals count toward the same daily allowance as Live Signal (25 / 60 / unlimited).
 ² Also needs your Telegram account connected via **OTHERS → Login**.
 ³ The admin decides the FREE allowance for these features (it can also be 0). Your current numbers are always shown in **MY PROFILE**.
+⁴ Q-BOT STUDIO is not part of these Bot Access packages. It will get its own **Studio packages** soon (about 85% complete). Until then INFINITY includes 1 Studio bot with limited features.
 
 > Limits are defaults and may be changed by the admin. The bot always shows your real remaining allowance. Allowances reset every day at **12:00 AM (midnight)**.
 
@@ -80,6 +81,7 @@ This guide explains **every menu, every step and every button** in QUANTEX-BOT: 
 
 - Telegram: [@X_Akash_Owner](https://t.me/X_Akash_Owner)
 - Email: [quantexbotsupport@gmail.com](mailto:quantexbotsupport@gmail.com)
+- 📣 **Main Channel (required)**: [t.me/bdtraderpro](https://t.me/bdtraderpro). All updates are posted here first, and you must stay joined to use the bot
 - Channel: [@Quantexbot1](https://t.me/Quantexbot1) · Community: [t.me/quantexlounge](https://t.me/quantexlounge)
 
 > ⚠️ Binary options trading carries a high level of risk. Signals are analysis, not a guarantee. Trade only with money you can afford to lose.
