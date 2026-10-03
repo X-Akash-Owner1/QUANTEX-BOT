@@ -1,4 +1,4 @@
-# 🔮 QUANTEX-BOT v4 — Complete Feature Documentation
+# 🔮 QUANTEX-BOT v5 — Complete Feature Documentation
 
 > **Official Telegram Bot**: [@QuantexBinaryTools_bot](https://t.me/QuantexBinaryTools_bot)  
 > **Developer**: [@X_Akash_Owner](https://t.me/X_Akash_Owner)
@@ -7,88 +7,150 @@
 
 ## 📋 Feature Index
 
-1. [Live Signal Engine](#1-live-signal-engine)
-2. [AI-Assisted Live Signal System](#2-ai-assisted-live-signal-system)
-3. [Live Signal Broadcast System](#3-live-signal-broadcast-system)
-4. [Future Live Signal System](#4-future-live-signal-system)
-5. [Signal Checker — Full Suite](#5-signal-checker--full-suite)
-6. [News Signal System](#6-news-signal-system)
-7. [Signal Tools](#7-signal-tools)
-8. [MTG (Martingale) System](#8-mtg-martingale-system)
-9. [Chart Generation](#9-chart-generation)
-10. [Telegram Premium Integration](#10-telegram-premium-integration)
-11. [Free Bots Mission](#11-free-bots-mission)
-12. [Bot Builder](#12-bot-builder)
-13. [Auto Payment System](#13-auto-payment-system)
-14. [Session Management](#14-session-management)
-15. [Sleep Mode System](#15-sleep-mode-system)
-16. [Scheduled Sessions](#16-scheduled-sessions)
-17. [Partial Report System](#17-partial-report-system)
-18. [Referral Program](#18-referral-program)
-19. [Reviews & Ratings System](#19-reviews--ratings-system)
-20. [Subscription & Access System](#20-subscription--access-system)
-21. [Admin Control Panel](#21-admin-control-panel)
-22. [Points & Quota System](#22-points--quota-system)
-23. [Database — PostgreSQL Backend](#23-database--postgresql-backend)
-24. [Supported Markets & Pairs](#24-supported-markets--pairs)
-25. [Multi-Platform Support](#25-multi-platform-support)
-26. [Web Control Dashboard](#26-web-control-dashboard)
-27. [Session Log Viewer](#27-session-log-viewer)
-28. [Strategy Intelligence Dashboard](#28-strategy-intelligence-dashboard)
+1. [Supported Brokers (QUOTEX · TRADOWIX · BINOLLA)](#1-supported-brokers)
+2. [Signal Engines — Strategy Mode & Scanning Mode](#2-signal-engines--strategy-mode--scanning-mode)
+3. [Strategy Intelligence](#3-strategy-intelligence)
+4. [Live Session](#4-live-session)
+5. [AI-Assisted Live Signal](#5-ai-assisted-live-signal)
+6. [Signal Checker — Full Suite](#6-signal-checker--full-suite)
+7. [Future Signals (OTC · Live · Blackout · Whiteout · Future Live)](#7-future-signals)
+8. [AXTIRON FS](#8-axtiron-fs)
+9. [AI Filter](#9-ai-filter)
+10. [News Signal System](#10-news-signal-system)
+11. [Signal Tools & Live Payouts](#11-signal-tools--live-payouts)
+12. [MTG (Martingale) System](#12-mtg-martingale-system)
+13. [Chart Generation](#13-chart-generation)
+14. [Q-BOT STUDIO — Build Your Own Bot](#14-q-bot-studio--build-your-own-bot)
+15. [QUANTEX HUB](#15-quantex-hub)
+16. [Live Chart](#16-live-chart)
+17. [Web Control Dashboard](#17-web-control-dashboard)
+18. [Session Log Viewer](#18-session-log-viewer)
+19. [Telegram Premium Integration](#19-telegram-premium-integration)
+20. [Free Bots Mission](#20-free-bots-mission)
+21. [Auto Payment System](#21-auto-payment-system)
+22. [Subscription & Access System](#22-subscription--access-system)
+23. [Points & Quota System](#23-points--quota-system)
+24. [Scheduled Sessions & Partial Reports](#24-scheduled-sessions--partial-reports)
+25. [Referral Program, Reviews & History](#25-referral-program-reviews--history)
+26. [Performance & 24/7 Stability](#26-performance--247-stability)
+27. [Admin Control Panel](#27-admin-control-panel)
+28. [Database — PostgreSQL Backend](#28-database--postgresql-backend)
 
 ---
 
-## 1. Live Signal Engine
+## 1. Supported Brokers
 
-The core of QUANTEX-BOT — a fully automated signal generation system using a **proprietary multi-factor analysis engine**.
+QUANTEX-BOT fully supports **three brokers**. Each has its own live candle feed, payout data and result checking.
 
-### How Signals Are Generated
+| Broker | OTC | Live | Total |
+|---|---|---|---|
+| 🟦 **QUOTEX** | 62 | 28 | **90** |
+| 🟧 **TRADOWIX** | 101 | 15 | **116** |
+| 🟪 **BINOLLA** | 100+ | — | **100+** |
 
-**Step 1 — Clock Sync**  
-The bot synchronizes to the **5-minute candle clock**. Signals only generated at exact 5-minute boundaries.
+- **Every feature works on every broker**: Live Session, Live Signal (both engines), all Checkers, all Future Signal modes, AXTIRON FS, AI Filter, Live Payouts, Market Filters and the Live Chart.
+- **Broker selection**: each feature asks which broker you trade on. You can also set a **Primary Broker** (*Settings → Primary Broker*) and turn on **"Use this broker in all features"** so it is never asked again.
+- **Broker-accurate markets**: lists, payouts, charts and signals always follow the selected broker.
+- **BINOLLA** markets are loaded live from the BINOLLA feed, so new markets appear automatically. BINOLLA results are settled from the closed candle.
 
-**Step 2 — Data Fetch**  
-Latest candle data fetched from the live market API for the selected pair.
+📋 **The complete market list for every broker, with names and counts, is in [SUPPORTED_MARKETS.md](SUPPORTED_MARKETS.md).**
 
-**Step 3 — Proprietary Analysis Engine**  
-QUANTEX-BOT runs its internal multi-factor analysis pipeline. Specific logic, parameters, and methods are proprietary.
+---
 
-**Step 4 — Confidence Scoring**  
-Each signal is scored based on how many internal factors confirm the direction. Only signals reaching a high-confidence threshold are sent.
+## 2. Signal Engines — Strategy Mode & Scanning Mode
 
-**Step 5 — Signal Delivered + Auto Result Check**  
-High-confidence signal sent to Telegram. After candle closes, result automatically checked and delivered as WIN / LOSS / DOJI.
+When you start **Live Session** or **Live Signal → Auto**, you choose between two independent engines (the admin decides which are available).
 
-### 🧠 Machine Learning Signal Engine
+### ⚛️ Strategy Mode — three analyzers
 
-QUANTEX-BOT's signal engine is powered by an adaptive **machine learning-based analysis system** that continuously learns from real market results:
-
-| Feature | Description |
+| Analyzer | Focus |
 |---|---|
-| **3 Analyzer Engines** | QUANTUM SCAN (Dynamic MTF + Structure), SMART FOCUS (Best Quality Market Analyzer), HYBRID ENGINE (MTF + Structure + Trap, Score 75+) |
-| **20+ Analysis Modules** | Each signal passes through independent modules: Trend Continuation, Break of Structure, Change of Character, Engulfing Reversal, MACD Cross, RSI Divergence, Bollinger Breakout, Pin Bar, MTF Confluence, VWAP Reversion, Ichimoku, Fibonacci Pullback, Candlestick Patterns, Supertrend+PSAR, CCI Extreme, Multi-Indicator Confluence, Tweezer Reversal, Three Black Crows, and more |
-| **Multi-Timeframe Analysis** | M1, M2, M3, M5, M10, M15 timeframe support with real clock-boundary aggregation |
-| **Auto Strategy Optimization** | Strategies are continuously trained on live signal results — per-pair, per-timeframe parameter overrides applied automatically |
-| **Self-Healing Performance** | When a strategy underperforms, the system detects it and automatically adjusts — performance improves continuously over time |
-| **Strategy Intelligence Dashboard** | Admin browser dashboard showing real-time strategy performance, win rates, and auto-optimization status per pair and timeframe |
-| **Score-Based Filtering** | Every signal scored by multiple independent engines; only signals meeting the minimum confidence threshold (79+) are delivered |
-| **Weighted Module System** | Module performance weights updated based on historical results — stronger-performing modules carry more influence |
+| **QUANTUM SCAN** | Dynamic MTF + market structure + practical signals. Trend-continuation only. |
+| **SMART FOCUS** | Focuses on the best-quality markets, with defended level and tick-pressure confirmation |
+| **HYBRID ENGINE** | MTF + structure + trap detection. Takes continuation and properly confirmed reversals. |
+
+Under the hood, 20+ independent analysis modules score each setup: Trend Continuation, Break of Structure, Change of Character, Engulfing Reversal, MACD Cross, RSI Divergence, Bollinger Breakout, Pin Bar, MTF Confluence, VWAP Reversion, Ichimoku, Fibonacci Pullback, candlestick patterns (Harami, Morning/Evening Star, Tweezer, Three Black Crows), Supertrend + PSAR, CCI Extreme and Multi-Indicator Confluence. A signal must then pass:
+
+- a **confidence score** threshold (each analyzer has Normal / Standard / Hard presets),
+- a **final closed-candle quality filter** (doji, wickless, abnormal-range and similar checks),
+- a **primary trend gate** (Quantum and Smart Focus),
+- and the admin's **signal controls** (enabled confirmation timeframes and setup types).
+
+### 📡 Scanning Mode — shared zone & trendline scanner
+
+One shared scanner watches **every open market of the broker at once**, continuously, and publishes a signal the moment a confirmed setup appears. Every subscriber receives the same signal at the same time.
+
+| Setup | Description |
+|---|---|
+| **Supply / Demand Rejection** | Price taps a confirmed zone and rejects it with a strong wick |
+| **Trendline Rejection** | Price rejects a clean, unbroken trendline in a trending market |
+| **Trendline Break & Retest** | Price breaks a trendline, then retests it from the other side |
+| **Zone Break Confirmed Retest** | A zone breaks, 1–2 pullback candles follow, then a retest confirms the break |
+
+**Accurate level drawing (v5.0):**
+- Zones are built from clustered swing points, and each touch is counted once (a flat top is one touch, not two).
+- A zone that a later candle has **closed through** is treated as broken and is no longer used as supply/demand.
+- A trendline must have well-separated anchors, and **no candle may close through it** between them. A line broken after its second anchor is marked broken: it is not used for rejections, only for break/retest.
+- Signals never trade into an intact opposing zone or trendline.
+- The signal chart shows **the exact zone or trendline** the signal came from as its support/resistance.
+
+**Options:** M1 / M2 / M3 / M5 timeframes, optional higher-timeframe confirmation (M2–M15), payout ≥ 80% only, at most 2 signals per minute, and a 4-minute cooldown per market.
 
 ---
 
-## 2. AI-Assisted Live Signal System
+## 3. Strategy Intelligence
 
-Every Live Signal goes through a dedicated **AI Confirmation Layer** before delivery.
+Strategy Intelligence is the layer that makes QUANTEX-BOT **better the longer it runs**. Every settled signal (WIN / MTG WIN / LOSS / DOJI) is stored with the analyzer that produced it, the market, timeframe, broker, hour and setup type (continuation or reversal). That history drives these decisions:
 
-### What the AI Does
-- **Validates the signal setup** — reviews current market conditions
-- **Calculates Support & Resistance levels** — key S/R zones included in signal
-- **Fetches real-time payout data** — actual broker payout % before entry
-- **Provides AI reasoning** — human-readable explanation of why the AI confirmed
-- **Assigns AI Confidence Score** — rated confidence level for the setup
-- **Fallback Logic** — if primary analysis produces no result, AI-assisted fallback generates a direction
+| Capability | How it works |
+|---|---|
+| **Per-analyzer learning** | Each analyzer is judged on **its own** record on each market. Results of different analyzers are never mixed. |
+| **Hour → market → broker fallback** | It first looks at the same market at the same hour, then the whole market, then the whole broker, using the most specific scope with enough data |
+| **Conservative scoring** | Win rates are ranked with a confidence-adjusted score, so 8 wins from 10 trades cannot outrank a proven 300-trade record |
+| **Setup preference** | If continuation clearly beats reversal on a market (by 10+ points, or the other side wins under 45%), the weaker setup is skipped there. Otherwise both are allowed. |
+| **Market ranking** | Markets with a strong record are scanned first. Markets that are clearly failing are skipped. |
+| **Smart routing** | If the selected analyzer has 20+ results on a market and another analyzer is clearly better there (20+ results, at least 8 points higher, conservative win rate ≥ 50%), that market is analysed by the better analyzer. Admin switch: `/intelrouting on/off`. |
+| **Safe auto-tuning** | When an analyzer keeps losing on a market (20+ results, win rate under 55%), one extra safety filter is switched on for that market, with at most 3 automatic changes. Admin reset: `/autotunereset` (a backup is kept). |
+| **Recommended analyzer** | The analyzer menu marks the analyzer with the strongest proven 30-day record (minimum 20 results) as **RECOMMENDED** |
+| **Scanning Mode statistics** | Every Scanning Mode signal is recorded with its setup, score, zone touches, hold time and result. Admins can review win rate by setup, score, zone touches, pair and hour with `/scanstats [days]`. |
 
-### Signal Output Includes
+The **Strategy Intelligence dashboard** in the Admin Web Panel shows win rates per analyzer, market, timeframe, hour and setup type, plus per-market *auto/manual* control and the audit log of every change.
+
+---
+
+## 4. Live Session
+
+A continuous signal session that keeps scanning and posting to your channel or group until you stop it. **Requires a paid plan (STARTER, PLUS or INFINITY)**; its signals share the daily allowance with Live Signal.
+
+**Setup wizard:** broker → channel / group → username → message style (Premium or Normal emoji) → market (OTC / Live / All) → Avoid under 80% or manual → engine (Strategy Mode analyzer or Scanning Mode) → pairs → timeframe (**M1, M2, M3, M5, M10, M15**) → charts → partial report interval → review & launch. Every button is explained in the [User Guide](guide/02-live-session.md).
+
+- Signals arrive at the start of the next candle of your timeframe, with entry time, direction, confidence, payout and chart
+- Results are checked after the candle closes, with automatic MTG on a loss
+- **Session Status**, **Send Partial** and **Stop Session** controls
+- Real-time **Session Log** in the web app
+- Saved setups can be re-run or scheduled
+
+---
+
+## 5. AI-Assisted Live Signal
+
+### Manual Signal
+Choose a market and timeframe and receive one **AI-confirmed** signal on demand.
+
+### Auto Signal
+The bot scans all markets (or your filter: OTC, Live, Avoid under 80%, or manual selection) and sends the strongest setups automatically, in **Strategy Mode** or **Scanning Mode**.
+
+### Group Live Signal
+The **bot owner** (in practice, the owner of a Q-BOT STUDIO bot) adds the bot to a Telegram group as an admin and sends `/start_live_signal`. Live Signal then runs **inside the group**, with owner-only controls for start, stop, status and partial reports.
+
+### What each Live Signal includes
+- Direction, entry time and timeframe
+- **Live broker payout %**
+- **Support & Resistance** (in Scanning Mode, the exact zone or trendline the signal came from)
+- **AI confirmation** with a confidence level and a short written reason (Strategy Mode)
+- A professional signal chart, and a result chart after the candle closes
+- Daily quota display and custom templates (header, owner name, branding)
+
 ```
 📊 LIVE SIGNAL
 ━━━━━━━━━━━━━━━━━━━━
@@ -98,7 +160,6 @@ Entry Time   : 14:35
 Payout       : 87%
 Support      : 1.0821
 Resistance   : 1.0847
-AI Confidence: HIGH
 ━━━━━━━━━━━━━━━━━━━━
 🤖 Strong upward momentum confirmed
 at support zone. Entry validated.
@@ -106,71 +167,9 @@ at support zone. Entry validated.
 
 ---
 
-## 3. Live Signal Broadcast System
+## 6. Signal Checker — Full Suite
 
-Send AI-confirmed signals automatically to your own **Telegram channel**.
-
-### Setup Flow
-1. Select a Telegram channel
-2. Bot verifies **Post Messages** admin permission
-3. Configure template, custom header, username
-4. Session runs — signals sent to channel automatically
-
-### Features
-- **Manual Signal Mode** — manually trigger a signal for a specific pair
-- **Auto Signal Mode** — bot scans all pairs and sends the strongest signal automatically
-- **Multi-Template Support** — multiple message formats to choose from
-- **Custom Header & Username** — fully personalize your signal messages
-- **MTG in Broadcast** — recovery signals sent to channel automatically
-- **Channel Permission Validation** — checks admin rights before starting
-- **Owner Name Setting** — customize the name shown at bottom of each signal
-- **Live Signal Quota** — every tier has its own daily live-signal limit; INFINITY subscribers have unlimited access
-- **Daily Remaining Display** — shows remaining signal quota for the day
-
----
-
-## 4. Future Live Signal System
-
-The **Future Live** system lets you paste a pre-planned signal list and have QUANTEX-BOT automatically send each signal to your channel at the exact scheduled time — with real result checking.
-
-### How It Works
-
-**Step 1 — Paste Signal List**  
-Paste your planned signals in any format. All formats supported:
-```
-▢ 05:50 USDIDR ⇨OTC ☞ PUT
-❒ USDCAD-OTC ☞ 05:53 ⊱ PUT
-M1 EURUSD_OTC 06:00 BUY
-```
-
-**Step 2 — Select Chat/Channel**  
-Choose where signals are sent (your DM or a channel).
-
-**Step 3 — Select MTG Mode**  
-Choose: MTG 1, MTG 2, or Non-MTG.
-
-**Step 4 — Template Setup**  
-Preview and customize the signal message template (header & username).
-
-**Step 5 — Session Starts**  
-Signals fire automatically at each scheduled time. Bot waits until the exact minute, sends the signal, waits for candle close, and auto-checks the result.
-
-### Signal Status Tracking
-During an active session:
-- **View Signals** — see all remaining signals and their status
-- **Next Signal Display** — shows upcoming pair and exact time
-- **Live Countdown** — shows minutes until first signal fires
-- **Completion Report** — full WIN/LOSS summary sent when all signals are processed
-- **Stop Any Time** — stop the session with one tap
-
-### Free Tier
-Free users get **3 Future Live sessions** total. Subscribed users have unlimited sessions.
-
----
-
-## 5. Signal Checker — Full Suite
-
-QUANTEX-BOT v4 features a completely rebuilt, **super-fast, 100% accurate** signal checking suite with five checker modes.
+QUANTEX-BOT features a, **super-fast, 100% accurate** signal checking suite with five checker modes.
 
 ### ⚡ Super-Fast & 100% Accurate
 - **Local candle cache system** — candle data stored locally for near-instant lookup
@@ -179,9 +178,9 @@ QUANTEX-BOT v4 features a completely rebuilt, **super-fast, 100% accurate** sign
 - **Archive + recent data** — checks both today's live data and historical archive files
 - **100% accurate results** — direct candle close/open comparison, no estimation
 
-### 🔍 Five Checker Modes
+### 🔍 Checker Modes
 
-#### 1. Live Checker *(New in v4.0)*
+#### 1. Live Checker
 Signal checker for **real/live market pairs** — identical accuracy and feature set as OTC Checker but applied to live forex pairs.
 - Paste live market signals → instant WIN/LOSS per signal
 - Full MTG breakdown and DOJI detection
@@ -222,7 +221,7 @@ Check signals for **any specific date**, not just today/yesterday.
 | **Universal Signal Parser** | Parses signals from ANY source, ANY format — automatically |
 | **Unicode Normalizer** | Converts fancy/bold/italic Unicode characters to standard ASCII before parsing |
 | **Pair Alias Map** | Auto-normalizes 100+ pair name variants to canonical names |
-| **OTC + Live Pair Support** | Supports 60+ OTC pairs and 30+ Live Forex pairs |
+| **All Brokers** | Works with QUOTEX, TRADOWIX and BINOLLA markets (300+ in total) |
 | **DOJI Detection** | DOJI candles detected and reported separately (not counted as WIN or LOSS) |
 | **Payout Filter** | Filter signals below a set payout threshold — flagged with payout % |
 | **BD Timezone** | Bangladesh timezone (UTC+6) for accurate time-based matching |
@@ -247,9 +246,58 @@ M1 USDJPY_OTC  16:00 PUT  ⚖️ (doji)
 
 ---
 
-## 6. News Signal System
+## 7. Future Signals
 
-*(New in v4.0)* — AI-powered trading signals derived from the Forex Factory **economic calendar**.
+| Mode | Description |
+|---|---|
+| **OTC Market FS** | Generates a future signal list for OTC markets over your chosen time window |
+| **Live Market FS** | The same for live markets |
+| **Blackout FS** | Future list for blackout-style (reverse previous candle) trading |
+| **Whiteout FS** | Future list for whiteout-style (follow previous candle) trading |
+| **Future Live** | Paste your own signal list and each signal is posted at its exact time, then checked automatically |
+
+### Future Live — how it works
+1. **Paste** a signal list in any format:
+```
+▢ 05:50 USDIDR ⇨OTC ☞ PUT
+❒ USDCAD-OTC ☞ 05:53 ⊱ PUT
+M1 EURUSD_OTC 06:00 BUY
+```
+2. **Choose** where signals go (DM or channel)
+3. **Choose** MTG mode: MTG 1, MTG 2 or Non-MTG
+4. **Preview** the template (header, username), then start
+5. Each signal is posted at its minute, the result is checked after the candle closes, and a final WIN/LOSS summary is sent
+
+During a session you can view the remaining signals and the next one, see a countdown, and stop with one tap. Free users get **3 Future Live sessions**. Subscribers get unlimited sessions.
+
+---
+
+## 8. AXTIRON FS
+
+A new **advanced Future Signal generator**.
+
+- **OTC or Live** markets of your broker, choosing from open markets only
+- **Timeframes**: M1, M2, M3, M5, M10, M15
+- **Duration**: 1 to 5 hours of signals
+- Settings are remembered per user
+- Daily allowance per plan (STARTER 3 · PLUS 10 · INFINITY unlimited)
+
+---
+
+## 9. AI Filter
+
+Clean up any future-signal list before you trade it.
+
+1. Choose the list type: **Normal OTC, Normal Live, Blackout or Whiteout**
+2. Paste or upload your list, or tap **Filter** straight after generating an FS list
+3. Choose the history range: **1–7, 7–15 or 15–30 days**
+4. Each signal is scored against how that market behaved at that time in the past, and the strongest entries are returned as a new list. Your original list is not changed.
+
+---
+
+## 10. News Signal System
+
+AI-powered trading signals derived from the Forex Factory **economic calendar**.
 
 ### How It Works
 
@@ -294,31 +342,23 @@ XAU/USD
 - Caches analysis results per event — first user pays the AI cost, everyone else gets it instantly
 - Analysis expires after the event's release time to ensure freshness
 - Formatted with premium emoji signal cards
-- Available as a standalone module in the main bot and as a selectable module in Bot Builder
+- Available in the main bot and as a selectable feature in Q-BOT STUDIO bots
 
 ---
 
-## 7. Signal Tools
+## 11. Signal Tools & Live Payouts
 
-*(New in v4.0)* — A set of utility tools to reformat, adjust, and analyze signal lists.
-
-### 🗂️ Signal Formatter
-Paste any signal list in any format — the Formatter normalizes and rebuilds it into a clean, standardized card layout.
-- Supports all common signal formats (any source)
-- Useful for re-sharing or archiving signal lists cleanly
-
-### 🔄 Swap C/P
-Paste a signal list → every **CALL** becomes **PUT** and every **PUT** becomes **CALL** — instantly. Useful for reversing a strategy direction.
-
-### 🌐 TZ Converter
-Paste signal entry times in one timezone → receive them converted to any other timezone. Supports all standard UTC offsets.
-
-### 📊 Market Filters
-Shows which live markets are currently in **stable, tradeable conditions** right now — helping you avoid choppy or low-volatility pairs before entering a session.
+| Tool | Description |
+|---|---|
+| **Formatter** | Paste any signal list and get it back as a clean, standardised card |
+| **Swap C/P** | Flip every CALL ↔ PUT in a pasted list *(coming soon)* |
+| **TZ Converter** | 3-step converter: source timezone → target timezone → paste the list |
+| **Market Filters** | Choose OTC or Live and see which markets are stable and tradeable right now |
+| **Live Payouts** | Live payout % for every OTC and Live market of your broker |
 
 ---
 
-## 8. MTG (Martingale) System
+## 12. MTG (Martingale) System
 
 If the first signal results in a LOSS, QUANTEX-BOT activates a **Martingale recovery trade**.
 
@@ -330,7 +370,7 @@ If the first signal results in a LOSS, QUANTEX-BOT activates a **Martingale reco
 
 ---
 
-## 9. Chart Generation
+## 13. Chart Generation
 
 Every signal includes a professional candlestick chart.
 
@@ -338,11 +378,11 @@ Every signal includes a professional candlestick chart.
 - Recent candles with entry point marked
 - Direction color coding (green = BUY, red = SELL)
 - Proprietary indicator overlays
-- Historical win-rate statistics
+- Session win/loss statistics
 
 ### Live Signal Chart
 - Dedicated chart for Live Signal / channel broadcast mode
-- Support & Resistance levels marked
+- Support & Resistance levels marked (in Scanning Mode: the exact zone/trendline used)
 
 ### Result Chart
 - WIN/LOSS result overlay
@@ -351,17 +391,139 @@ Every signal includes a professional candlestick chart.
 
 ---
 
-## 10. Telegram Premium Integration
+## 14. Q-BOT STUDIO — Build Your Own Bot
+
+**Build, brand and run your own Telegram signal bot, with no coding and no experience needed.** Your bot runs on the QUANTEX engine, so you need no server, hosting or technical setup.
+
+### Plan limits
+| Plan | Bots |
+|---|---|
+| 🆓 FREE | — |
+| 🟢 STARTER | **1** |
+| 💎 PLUS | **3** |
+| 👑 INFINITY | **10** |
+
+### The 8-step creation wizard
+| Step | What you do |
+|---|---|
+| **1 · Bot Token** | Create a bot with @BotFather (`/newbot`) and paste its token. It is verified instantly. |
+| **2 · Brand Name** | Choose the brand name shown across your bot |
+| **3 · Support Contact** | Set the Telegram account your users contact for help |
+| **4 · Welcome Template** | Pick one of **5 ready-made welcome templates** and preview it before applying |
+| **5 · About Template** | Pick one of **5 ready-made About templates** |
+| **6 · Help Template** | Pick one of **5 ready-made Help templates** |
+| **7 · Features** | Tick the features your users get. Each one becomes a menu button. |
+| **8 · Force Channel Join** | *(Optional)* Require users to join your channel first |
+| **Review & Deploy** | Check everything and tap **DEPLOY**. Your bot goes live immediately. |
+
+All templates automatically insert **your brand name** and use premium emojis.
+
+### Features you can give your bot (26)
+- **Core**: Start Live Session, Schedule Session, Settings
+- **Checkers**: Live Checker, OTC Checker, Blackout Checker, Whiteout Checker
+- **Future Signals**: OTC Market FS, Live Market FS, Blackout FS, Whiteout FS, Future Live
+- **Signals**: Live Signal, Live Payouts, News Signal
+- **Tools**: Formatter, Market Filters, Swap C/P, TZ Converter
+- **User**: My Profile, Referral, Upgrade, About, Reviews, Others, Help
+
+### Customise everything after deployment (My Bots)
+- Add or remove features at any time
+- **Rename every button** and change its colour
+- Change the Welcome / About / Help templates, the support contact and the brand
+- Edit signal, result, partial, checker, profile and pricing titles
+- Signal templates and chart branding
+- Premium emoji on/off and a **custom AI prompt** for your bot's AI confirmation
+- Update the bot token, start, stop or delete the bot
+
+### Run your bot like a business
+- **Child Admin Panel** (in Telegram and on the web): users, licences, bans, broadcasts with a notification template, logs and stats
+- **Access mode**: *open* (anyone can use it) or *licensed* (only users you license)
+- **Analytics**: users, active today, actions and signals per bot
+- Your users get their own private sessions, favourites and settings inside your bot
+
+---
+
+## 15. QUANTEX HUB
+
+A full trading community inside Telegram (Mini App).
+
+- **Feed**: text and image posts with up to 5 tags, likes, comments, shares and views
+- **Trending topics** from the most-used tags
+- **Profiles** with avatar, cover, stats (posts, likes, comments, views) and the user's QUANTEX bots
+- **Direct messages**: private conversations with pin, delete and clear
+- **Leaderboards**: top traders and top bot developers (Q-BOT STUDIO builders)
+- **Market News**: the daily economic calendar with bias, call/put pairs and entry time, plus **breaking-news alerts** for high-impact events
+- **Notifications** and reporting tools for a safe community
+
+---
+
+## 16. Live Chart
+
+A professional candlestick chart for **every market of all three brokers**, opened as a Telegram Mini App.
+
+- Timeframes **M1, M2, M3, M5, M10, M15, M20, M25, M30, M35, M40, M45, H1, H4, D1**
+- Up to **30 days** of history, with live price updates
+- Broker switcher (QUOTEX / TRADOWIX / BINOLLA) and a full market picker with payout and open/closed status
+
+---
+
+## 17. Web Control Dashboard
+
+A browser-based control panel for your account, available directly inside Telegram as a **Mini App** — no separate website login required, it opens using your existing Telegram session.
+
+### Who Can Access It
+| Tier | Access Level |
+|---|---|
+| 🆓 FREE / 🟢 STARTER | View-only — profile, plan status, and pricing |
+| 💎 PLUS / 👑 INFINITY | Full control — every feature below |
+
+### What You Can Do
+- **Live Profile** — see your current plan, daily signal credits used/remaining, and referral stats in real time
+- **Timezone Management** — set the clock offset for every signal type from one screen, with instant live preview
+- **Template Customization** — visually edit your Live Session and Live Signal message templates (titles, chart labels, watermark, footer)
+- **Referral Sharing** — copy or share your referral link with one tap
+- **Upgrade / Pricing** — see all subscription tiers and a direct link to purchase or change plans
+
+### Security
+- Authenticated using Telegram's own signed session data — no separate password to create or remember
+- All changes sync instantly with the bot itself
+
+---
+
+## 18. Session Log Viewer
+
+A real-time **diagnostic log** for every active live signal session.
+
+### What It Tracks
+Every event in the signal loop is logged in real time:
+- **Scan** — each pair scanned (pair name + timestamp)
+- **Signal** — every signal generated (pair, direction, time)
+- **Reject** — pairs that failed the confidence filter (with reason)
+- **Info** — general session events (start, stop, resume)
+
+### Storage Design
+- Implemented in `session_log_store.py` — a lightweight shared in-memory module
+- Log is scoped to **one active session per user** — automatically cleared when the session stops
+- The latest 5,000 signal entries and 5,000 general entries are kept per session, so memory stays flat even in sessions that run for weeks
+
+### Access
+- Accessible from the **Web Control Dashboard** and from the **Q-BOT STUDIO Child Admin Panel**
+- Reopening the log page shows the full accumulated history without missing entries
+- Available to the main bot owner and to Q-BOT STUDIO bot owners
+
+---
+
+## 19. Telegram Premium Integration
 
 Connect your Telegram account to unlock **Premium Emoji** signal formatting.
 
 ### How It Works
-1. Tap **Premium** in the bot menu
-2. Tap **Connect Telegram Account**
+1. Open **OTHERS** in the main menu
+2. Tap **Login**
 3. Secure browser-based login opens (WebApp)
 4. Enter credentials and phone number
 5. Enter verification code + optional 2FA
-6. Connected — Premium mode active
+6. Connected — Premium mode active (check anytime with **TG Status**)
 
 ### What It Unlocks
 - Animated premium emojis in signal and checker outputs
@@ -371,72 +533,33 @@ Connect your Telegram account to unlock **Premium Emoji** signal formatting.
 ### Security
 - Encrypted session storage with auto-reconnection
 - 2FA fully supported
-- Login tokens expire in 30 minutes if unused
+- Login links expire automatically
 - Admin can lock/unlock premium per user
 
 ---
 
-## 11. Free Bots Mission
+## 20. Free Bots Mission
 
 **"10 Powerful Premium Bots — 100% FREE"**
 
-QUANTEX-BOT includes a dedicated **Free Bots** section where a collection of 10 premium-grade trading tools are being released step by step, completely free for all QUANTEX users.
+Five free tools are already released for every QUANTEX user, and the rest will follow step by step.
 
-### Currently Released
-| Bot | Description |
-|---|---|
-| 🚀 **HUNTER X QUANTEX** | Advanced Live Signal Software — real-time signals, automatic result tracking, bad market filter, multi-pair analysis, unlimited daily sessions |
-| 🐉 **DRAGON X QUANTEX** | Live OTC Signal Pro — 90%+ OTC accuracy, instant UP/DOWN signals, entry timer, high-confidence levels |
-| 🖤 **BLACKOUT FUTURE AI** | Advanced Future Signal System — AI-powered engine, 80–95% accuracy, smart pair & time selection, real-time + historical data |
-| ⚡ **STORM X QUANTEX** | Premium trading bot — details coming soon |
-| 👻 **PHANTOM X QUANTEX** | Premium trading bot — details coming soon |
+| # | Bot | Description |
+|---|---|---|
+| 01 | 🚀 **HUNTER X QUANTEX** | Advanced live signal software: real-time signals, automatic result tracking, bad-market filter, multi-pair analysis |
+| 02 | 🐉 **DRAGON X QUANTEX** | Live OTC Signal Pro: instant UP/DOWN signals, entry timer and confidence levels |
+| 03 | 🖤 **BLACKOUT FUTURE AI** | Advanced future signal system: AI engine, smart pair and time selection, real-time + historical data |
+| 04 | 🔮 **FUTURE SIGNAL AI** | AI-confirmed future signals with real-time + historical analysis and smart multi-pair selection |
+| 05 | 🧠 **QX PERSONAL AI** | Personal AI signal system with smart pair and time selection |
+| 06–10 | 🔒 | Coming soon |
 
-### Coming Soon (5 More)
-Bots #6–10 are locked and will be released progressively. Follow [@Quantexbot1](https://t.me/Quantexbot1) to be notified when each new free bot drops.
-
-> All free bots are accessible directly inside QUANTEX-BOT — no separate download or registration needed.
+Open them from **FREE BOTS** in the main menu. They need no separate signup.
 
 ---
 
-## 12. Bot Builder
+## 21. Auto Payment System
 
-**PLUS & INFINITY Subscribers — Build Your Own Bot Without Any Coding**
-
-The **Bot Builder** lets anyone — even with zero coding knowledge — build, customize, and deploy their own white-label trading signal bot directly from QUANTEX-BOT.
-
-### Plan Limits
-| Plan | Max Bots |
-|---|---|
-| 🆓 FREE | 0 (not available) |
-| 🟢 STARTER | 1 bot |
-| 💎 PLUS | **3 bots** |
-| 👑 INFINITY | **10 bots** |
-
-### What It Does
-- Step-by-step bot creation wizard inside Telegram — paste your @BotFather token and go
-- No coding required — fully visual, button-based setup
-- Customize display name, description, welcome message, support/community links, theme, and language
-- Choose which modules appear in your bot — all modules available:
-  - **Core**: Live Session, Schedule, Settings
-  - **Checkers**: Live Checker, OTC Checker, Blackout Checker, Whiteout Checker
-  - **Future Signals**: OTC Market FS, Live Market FS, Blackout FS, Whiteout FS, Future Live
-  - **Signals**: Live Signal, Live Payouts, News Signal
-  - **Tools**: Formatter, Market Filters, Swap C/P, TZ Converter
-  - **User**: Profile, Referral, Upgrade, About, Reviews, Help
-- **Custom AI Prompt** — set a custom AI instruction used by your bot's AI confirmation layer
-- **Notification Template** — customize the default announcement text in your Child Admin Panel
-- Customize your bot's core message templates (signal titles, result titles, checker headers, etc.)
-- One-tap **Deploy** — your bot goes live immediately with a working webhook
-- Manage your bot anytime — start, stop, restart, or delete from **My Bots**
-- **Child Admin Panel** — full admin panel for managing your deployed bot's users (ban, license, points, broadcast)
-- **Session Log Viewer** — view real-time diagnostic logs for active sessions in your deployed bot
-- Powered by QUANTEX's signal engine in the backend
-
----
-
-## 13. Auto Payment System
-
-*(New in v4.0)* — Subscribe to any plan **instantly and automatically**, directly inside the bot — no need to contact the owner manually.
+Subscribe to any plan **instantly and automatically**, directly inside the bot — no need to contact the owner manually.
 
 ### Supported Payment Methods
 
@@ -462,108 +585,15 @@ The **Bot Builder** lets anyone — even with zero coding knowledge — build, c
 
 ---
 
-## 14. Session Management
-
-QUANTEX-BOT handles multiple concurrent users with independent sessions.
-
-### Session States
-| State | Description |
-|---|---|
-| `IDLE` | User is at main menu |
-| `RUNNING` | Active signal session in progress |
-| `SETUP` | In configuration wizard |
-| `PAUSED` | Paused (sleep mode) |
-| `FLIVE_RUNNING` | Future Live session active |
-
-### Configuration Options
-1. **Broker** — Quotex or Tradowix
-2. **Chat** — DM or group/channel
-3. **Username** — Broker username for tracking
-4. **Mode** — Single pair or Auto (best signal from all)
-5. **Market Type** — OTC or Live
-6. **Trading Pairs** — Specific pairs or "All"
-7. **Premium Mode** — Telegram Premium emojis (if connected)
-8. **Charts** — Enable/disable signal and result charts
-9. **Partial Reports** — Auto-report interval
-
----
-
-## 15. Sleep Mode System
-
-Bot automatically **pauses** during high-volatility hours.
-
-- **Default window**: 7:00 PM → 10:00 PM daily
-- All active sessions stopped; subscribed users notified
-- Bot resumes automatically at 10:00 PM with notification
-- Admin can exempt specific users or disable entirely
-- Custom sleep windows configurable
-
----
-
-## 16. Scheduled Sessions
-
-Auto-start sessions at specific times each week.
-
-1. Select days (Mon–Sun, any combination)
-2. Set start time and optional stop time
-3. Bot fires session automatically with a pre-alert notification
-
----
-
-## 17. Partial Report System
-
-Real-time performance reports at configurable intervals.
-
-Intervals: Every 5 / 10 / 15 / 30 / 60 minutes, or manual only.
-
-```
-📊 PARTIAL REPORT — 15:30
-━━━━━━━━━━━━━━━━━━━━━━
-Session: @username
-Signals Sent : 6
-✅ WIN        : 4
-❌ LOSS       : 1
-⚖️ DOJI       : 0
-🔄 MTG WIN    : 1
-━━━━━━━━━━━━━━━━━━━━━━
-Win Rate     : 83.3%
-```
-
----
-
-## 18. Referral Program
-
-Earn rewards by inviting others to QUANTEX-BOT.
-
-- Each user gets a unique referral link
-- Each verified referral is tracked
-- Reaching milestones generates exclusive promo codes
-- Dashboard shows total, pending, and confirmed referrals
-- Admin can view and manage all referral activity
-
----
-
-## 19. Reviews & Ratings System
-
-Community-driven trust system.
-
-- Users submit star ratings (1–5)
-- Reviews verified against active accounts
-- Bot displays current average rating publicly
-- Total review count tracked
-- Admin can view full review history
-
----
-
-## 20. Subscription & Access System
+## 22. Subscription & Access System
 
 ### Subscription Tiers
 | Tier | Price | Access Level |
 |---|---|---|
 | 🆓 FREE | $0 | Limited daily usage |
-| 🟢 STARTER | $18/month | Higher usage limits, premium templates, 1 bot in Bot Builder |
-| 💎 PLUS | $32/month | 10× usage, full template customization, Web Control, Bot Builder (3 bots) |
-| 👑 INFINITY | $49/month | Unlimited usage, Bot Builder (10 bots), full control |
+| 🟢 STARTER | $18/month | Higher usage limits, premium templates, Q-BOT STUDIO (1 bot) |
+| 💎 PLUS | $32/month | 10× usage, full template customization, Web Control, Q-BOT STUDIO (3 bots) |
+| 👑 INFINITY | $49/month | Unlimited usage, Q-BOT STUDIO (10 bots), full control |
 
 Subscriptions can be activated for any duration (custom days or permanent) at any tier — the tier determines *what* you can access, the duration determines *how long*.
 
@@ -582,17 +612,7 @@ Subscriptions are tied to your Telegram user ID — non-transferable.
 
 ---
 
-## 21. Admin Control Panel
-
-Available to the bot owner and delegated sub-admins via Telegram commands and a browser-based Web Admin Panel.
-
-> Details of admin controls are not publicly disclosed.
-
-
-
----
-
-## 22. Points & Quota System
+## 23. Points & Quota System
 
 ### Points (Free Trial Access)
 - Admin grants bonus points to users
@@ -612,9 +632,64 @@ Available to the bot owner and delegated sub-admins via Telegram commands and a 
 
 ---
 
-## 23. Database — PostgreSQL Backend
+## 24. Scheduled Sessions & Partial Reports
 
-QUANTEX-BOT v4 uses **PostgreSQL** for all persistent storage.
+### Scheduled Sessions
+- Save a Live Session setup and launch it automatically on chosen **days of the week** at a set start time (optional stop time)
+- A pre-alert is sent before each scheduled start
+
+### Partial Reports
+Automatic performance summaries during a session, **every 30, 60 or 120 minutes** (or disabled), and on demand with **Send Partial**.
+
+```
+📊 PARTIAL REPORT — 15:30
+━━━━━━━━━━━━━━━━━━━━━━
+Signals Sent : 6
+✅ WIN        : 4
+❌ LOSS       : 1
+🔄 MTG WIN    : 1
+━━━━━━━━━━━━━━━━━━━━━━
+Win Rate     : 83.3%
+```
+
+---
+
+## 25. Referral Program, Reviews & History
+
+- **Referral**: a unique referral link, milestone tracking and promo-code rewards
+- **Reviews**: 1–5 star ratings with a public average
+- **History**: the signal history of your current session
+- **Favourite pairs**: save and reuse personal pair lists
+
+---
+
+## 26. Performance & 24/7 Stability
+
+v5.0 was engineered to be **super fast** and to run **non-stop for weeks**.
+
+| Area | What changed |
+|---|---|
+| **Analysis speed** | The market analysis engine runs about **14× faster**, and candle-file reading about **6× faster** |
+| **Instant buttons** | Button taps are acknowledged immediately, more taps are handled in parallel, and heavy screens are cached |
+| **Web apps** | Web Control, HUB, Live Chart and admin pages run on separate worker loops, so one slow request can't freeze the others |
+| **Efficient data** | Shared caches for candles, payouts and settings, with reused Telegram and database connections |
+| **Self-healing** | Stuck market scans, stalled result checks and frozen web loops are detected and recovered automatically |
+| **24/7 launcher** | A supervisor restarts the bot automatically if it ever stops or freezes and logs the reason |
+| **Long-run safety** | Memory caches are bounded and old data is cleaned up automatically, so the bot stays fast after weeks of uptime |
+
+---
+
+## 27. Admin Control Panel
+
+Available to the bot owner and delegated sub-admins through Telegram commands and a browser-based **Admin Web Panel** (users, plans, pairs, brokers, signal controls, Strategy Intelligence dashboard, Studio administration and more).
+
+> Details of admin controls are not publicly disclosed.
+
+---
+
+## 28. Database — PostgreSQL Backend
+
+QUANTEX-BOT uses **PostgreSQL** for all persistent storage.
 
 All data is managed through a dedicated `db_postgres.py` module with connection pooling for efficient concurrent multi-user access.
 
@@ -630,112 +705,10 @@ All data is managed through a dedicated `db_postgres.py` module with connection 
 - Broadcast logs
 - Favorite pair lists
 - News signal analysis cache (per-event, expires at release time)
-- Bot Builder (studio) data — bots, features, labels, texts, users, licenses, quotas
+- Q-BOT STUDIO data — bots, features, labels, texts, users, licenses, quotas
+- Strategy Intelligence history and Scanning Mode signal statistics
+- QUANTEX HUB posts, comments, messages and news
 - Session log entries (per active session, in-memory)
-
----
-
-## 24. Supported Markets & Pairs
-
-### Quotex — Supported Pairs
-- **OTC Forex** — 55+ major, minor, and exotic pairs
-- **OTC Crypto** — Bitcoin (BTC), Ethereum (ETH), XRP, SOL, TON, BNB, BCH, DOT, ETC, ZEC, ATO, AVA, AXS, DAS, LIN, LTC, TRU and more
-- **OTC Commodities** — Gold (XAUUSD), Silver (XAGUSD), US Crude, UK Brent
-- **Live Forex** — 29 major and minor pairs: AUDCAD, AUDCHF, AUDJPY, AUDUSD, AXJAUD, CADJPY, CHFJPY, EURAUD, EURCAD, EURCHF, EURGBP, EURJPY, EURUSD, F40EUR, FTSGBP, GBPAUD, GBPCAD, GBPCHF, GBPJPY, GBPUSD, HSIHKD, IBXEUR, JPXJPY, STXEUR, USDCAD, USDCHF, USDJPY, XAUUSD
-
-### Tradowix — Supported Pairs
-**100+ pairs across all categories:**
-
-**OTC Forex (major/minor/exotic):**
-AUDCAD_otc, AUDCHF_otc, AUDJPY_otc (also AUDJPY live), AUDNZD_otc, AUDUSD_otc (also AUDUSD live), CADCHF_otc, CADJPY_otc, CHFJPY_otc, EURAUD_otc (also EURAUD live), EURCAD_otc (also EURCAD live), EURCHF_otc (also EURCHF live), EURGBP_otc (also EURGBP live), EURJPY_otc (also EURJPY live), EURNZD_otc, EURSGD_otc, EURUSD_otc (also EURUSD live), GBPAUD_otc, GBPCAD_otc, GBPCHF_otc, GBPJPY_otc (also GBPJPY live), GBPNZD_otc, GBPUSD_otc (also GBPUSD live), NZDCAD_otc, NZDCHF_otc, NZDJPY_otc, NZDUSD_otc, USDARS_otc, USDBDT_otc, USDBRL_otc, USDCAD_otc (also USDCAD live), USDCHF_otc (also USDCHF live), USDCOP_otc, USDDZD_otc, USDEGP_otc, USDIDR_otc, USDINR_otc, USDJPY_otc (also USDJPY live), USDMXN_otc, USDNGN_otc, USDPHP_otc, USDPKR_otc, USDTRY_otc, USDZAR_otc
-
-**OTC Crypto:**
-APTUSD_otc, ARBUSD_otc, ATOMUSD_otc, AVAXUSD_otc, AXSUSD_otc, BCHUSD_otc, BNBUSD_otc, BTCUSD_otc (also BTCUSD live), COPPERUSD_otc, DASHUSD_otc, DOGEUSD_otc, DOTUSD_otc, ETCUSD_otc, ETHUSD_otc (also ETHUSD live), GALAUSD_otc, LINKUSD_otc, LTCUSD_otc, MANAUSD_otc, MELANIAUSD_otc, OAIA_otc, SOLUSD_otc, TIAUSD_otc, TONUSD_otc, TRUMPUSD_otc, TRXUSD_otc, WIFUSD_otc, XRPUSD_otc
-
-**OTC Stocks:**
-AAPL_otc, AMD_otc, AMZN_otc, ANTH_otc, AXP_otc, BA_otc, DIS_otc, GOOG_otc, GS_otc, INTC_otc, JNJ_otc, JPM_otc, KO_otc, MCD_otc, META_otc, MSFT_otc, NFLX_otc, NKE_otc, NVDA_otc, PFE_otc, TSLA_otc, V_otc, WMT_otc, XOM_otc
-
-**OTC Commodities:**
-BCOUSD_otc (Brent), WTIUSD_otc (WTI/US Crude), XAGUSD_otc, XAUUSD_otc, XPDUSD_otc (Palladium), XPTUSD_otc (Platinum)
-
----
-
-## 25. Multi-Platform Support
-
-| Platform | Support |
-|---|---|
-| **Windows** | ✅ Full |
-| **Linux** | ✅ Full |
-| **macOS** | ✅ Full |
-| **Android (Termux)** | ✅ Full |
-
-Auto dependency installer handles all required packages on first run — zero manual setup.
-
----
-
-## 26. Web Control Dashboard
-
-A browser-based control panel for your account, available directly inside Telegram as a **Mini App** — no separate website login required, it opens using your existing Telegram session.
-
-### Who Can Access It
-| Tier | Access Level |
-|---|---|
-| 🆓 FREE / 🟢 STARTER | View-only — profile, plan status, and pricing |
-| 💎 PLUS / 👑 INFINITY | Full control — every feature below |
-
-### What You Can Do
-- **Live Profile** — see your current plan, daily signal credits used/remaining, and referral stats in real time
-- **Timezone Management** — set the clock offset for every signal type from one screen, with instant live preview
-- **Template Customization** — visually edit your Live Session and Live Signal message templates (titles, chart labels, watermark, footer)
-- **Referral Sharing** — copy or share your referral link with one tap
-- **Upgrade / Pricing** — see all subscription tiers and a direct link to purchase or change plans
-
-### Security
-- Authenticated using Telegram's own signed session data — no separate password to create or remember
-- All changes sync instantly with the bot itself
-
----
-
-## 27. Session Log Viewer
-
-*(New in v4.0)* — A real-time **diagnostic log** for every active live signal session.
-
-### What It Tracks
-Every event in the signal loop is logged in real time:
-- **Scan** — each pair scanned (pair name + timestamp)
-- **Signal** — every signal generated (pair, direction, time)
-- **Reject** — pairs that failed the confidence filter (with reason)
-- **Info** — general session events (start, stop, resume)
-
-### Storage Design
-- Implemented in `session_log_store.py` — a lightweight shared in-memory module
-- Log is scoped to **one active session per user** — automatically cleared when the session stops
-- Signal entries are **never evicted** for the session's lifetime (complete history guaranteed)
-- General log entries capped at 20,000 entries to prevent unbounded memory growth
-
-### Access
-- Accessible from the **Web Control Dashboard** and from **Bot Builder's Child Admin Panel**
-- Reopening the log page shows the full accumulated history without missing entries
-- Available to both the main bot owner and to Bot Builder child bot owners
-
----
-
-## 28. Strategy Intelligence Dashboard
-
-*(New in v4.0)* — A **browser-based strategy analysis tool** hosted at `/strategy_intelligence` in the web panel.
-
-- Visual strategy intelligence interface for reviewing market conditions and signal setups
-- Accessible from the Web Control / Admin Panel
-- No coding required — browser-based, opens from a Telegram Mini App link
-- Real-time strategy performance, win rates, and auto-optimization status per pair and timeframe
-
-### How Strategy Intelligence Works
-
-- **Live Training**: Every signal result (WIN/LOSS/DOJI) is logged with the full strategy configuration snapshot used to generate it
-- **Per-Pair, Per-Timeframe Learning**: Each combination of pair + timeframe develops its own optimized parameter profile over time
-- **Auto-Recovery**: When a strategy's win rate drops below threshold, the system automatically adjusts parameters — the engine self-heals without manual intervention
-- **Continuous Improvement**: The longer the bot runs, the smarter it gets — performance increases naturally as the ML engine accumulates more signal data
-- **Admin Visibility**: Real-time dashboard shows strategy performance across all pairs, timeframes, and analyzer types
 
 ---
 

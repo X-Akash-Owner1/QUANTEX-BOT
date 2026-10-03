@@ -25,7 +25,7 @@ WIN: 6 | LOSS: 2 | Rate: 75%
 | **Direction** | BUY (CALL) = price goes UP; SELL (PUT) = price goes DOWN |
 | **Entry Time** | Open trade AT this exact minute |
 | **Timeframe** | M1 = 1-minute expiry |
-| **Broker** | Which broker this signal is optimized for (Quotex or Tradowix) |
+| **Broker** | Which broker the signal is for: QUOTEX, TRADOWIX or BINOLLA |
 | **Session Stats** | Running win/loss record |
 
 ---
@@ -50,8 +50,8 @@ Entry validated by AI analysis.
 | Field | Meaning |
 |---|---|
 | **Payout** | Broker's payout % for this pair right now |
-| **Support** | Key price floor level |
-| **Resistance** | Key price ceiling level |
+| **Support** | Key price floor level (in Scanning Mode: the exact demand zone or trendline used) |
+| **Resistance** | Key price ceiling level (in Scanning Mode: the exact supply zone or trendline used) |
 | **AI Confidence** | AI's confidence in the setup (LOW / MEDIUM / HIGH) |
 | **AI Reason** | Why the AI confirmed or flagged the signal |
 
@@ -99,29 +99,37 @@ Technical structure agrees (bullish, 78% strength).
 
 ---
 
-## Executing a Signal on Quotex or Tradowix
+## Executing a Signal on QUOTEX, TRADOWIX or BINOLLA
 
-1. Open your broker (Quotex or Tradowix) and log in
+1. Open your broker (QUOTEX, TRADOWIX or BINOLLA) and log in
 2. Select the **pair** from the signal
-3. Set expiry to **M1 (1 minute)**
+3. Set the expiry to the signal's **timeframe** (M1 = 1 minute, M5 = 5 minutes, …)
 4. Set your **stake amount**
 5. At exactly the **entry time**, click **Higher** (BUY) or **Lower** (SELL)
-6. Wait 1 minute for the result
+6. Wait for the candle to close. The bot sends the result automatically.
 
 > ⏰ Enter within the first 5–10 seconds of the signal minute.
 
 ---
 
-## The 5-Minute Clock System
+## Timeframes & Entry Timing
+
+Signals are aligned to the **timeframe you choose**: M1, M2, M3, M5, M10 or M15 in Live Session, and M1, M2, M3 or M5 in Scanning Mode.
 
 ```
-Time:   14:30  14:35  14:40  14:45  14:50
-Slots:    ↑      ↑      ↑      ↑      ↑
-        Signal  ---   Signal  ---   Signal
+M1 :  14:31  14:32  14:33  14:34 ...
+M5 :  14:30        14:35        14:40 ...
 ```
 
-Signals only at 5-minute marks. If no strong setup is found, bot waits for the next slot. This prevents overtrading.
+A signal always gives the **start time of the entry candle**. If no strong setup is found, the bot simply waits. It never forces a trade.
 
+## Strategy Mode vs Scanning Mode Signals
+
+| | Strategy Mode | Scanning Mode |
+|---|---|---|
+| **Engine** | QUANTUM SCAN / SMART FOCUS / HYBRID ENGINE | Shared zone & trendline scanner |
+| **Setups** | Trend continuation (+ confirmed reversals in Hybrid) | Zone rejection, trendline rejection, break & retest |
+| **Extra** | AI confirmation, Strategy Intelligence | Exact zone/trendline shown on the chart |
 ---
 
 ## WIN / LOSS Results
@@ -170,8 +178,8 @@ In Live Signal mode, each signal includes the **real-time broker payout %**.
 
 ## Signal Tools
 
-### Swap C/P
-Flip all directions in a signal list — every CALL becomes PUT, every PUT becomes CALL. Useful when you want to reverse a strategy direction.
+### Swap C/P *(coming soon)*
+Will flip all directions in a signal list — every CALL becomes PUT, every PUT becomes CALL. The button is in the menu but the tool is not active yet.
 
 ### TZ Converter
 Have signals in a different timezone? Paste them and select your target timezone — the bot converts all entry times automatically.
@@ -200,7 +208,6 @@ Shows which live market pairs are currently in **stable, tradeable conditions** 
 ## Common Mistakes
 
 ❌ Late entries (30+ seconds after signal time)  
-❌ Trading during bot sleep mode (7–10 PM)  
 ❌ Overleveraging (10%+ stake per trade)  
 ❌ Ignoring payout % (low payout = poor risk/reward)  
 ❌ Emotional revenge trading after losses  

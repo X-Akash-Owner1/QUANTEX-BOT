@@ -19,7 +19,6 @@
 - [x] Candlestick Chart Generation
 - [x] Backtest Statistics
 - [x] Session Management
-- [x] Sleep Mode
 - [x] Scheduled Sessions
 - [x] Partial Performance Reports
 - [x] License Key System
@@ -28,7 +27,6 @@
 - [x] Points System
 - [x] Signal Checker Engine
 - [x] Future Signal Engine
-- [x] Multi-Platform Support
 - [x] Quotex OTC + Live support
 - [x] Telegram WebApp Login Server
 
@@ -89,8 +87,8 @@
 - [x] **HUNTER X QUANTEX** — Bot #1 released
 - [x] **DRAGON X QUANTEX** — Bot #2 released
 - [x] **BLACKOUT FUTURE AI** — Bot #3 released
-- [x] **STORM X QUANTEX** — Bot #4 released
-- [x] **PHANTOM X QUANTEX** — Bot #5 released
+- [x] **FUTURE SIGNAL AI** — Bot #4 released
+- [x] **QX PERSONAL AI** — Bot #5 released
 - [ ] Bots #6 through #10 — releasing progressively
 
 ### 🏗️ Bot Builder
@@ -191,7 +189,7 @@
 
 ### 🛠️ Signal Tools (New Category)
 - [x] **Signal Formatter** — reformat any signal list into a clean card layout
-- [x] **Swap C/P** — flip all CALL/PUT directions in a pasted signal list
+- [ ] **Swap C/P** — flip all CALL/PUT directions in a pasted signal list *(button present, coming soon)*
 - [x] **TZ Converter** — convert signal entry times to any other timezone
 - [x] **Market Filters** — show which markets are currently stable
 
@@ -217,17 +215,71 @@
 
 ---
 
-## 🔜 Phase 5 — Short Term
+## ✅ v5.0 — 3 Brokers + Q-BOT STUDIO + Strategy Intelligence + 24/7 Performance
+
+### 🏦 Three Fully Supported Brokers
+- [x] **BINOLLA** added, alongside QUOTEX and TRADOWIX
+- [x] Live market list loaded from the BINOLLA feed (new markets appear automatically)
+- [x] **Primary Broker** setting: choose once, used in every feature
+- [x] Broker-accurate pair lists, payouts, charts and results everywhere
+
+### 🤖 Q-BOT STUDIO
+- [x] Bot Builder rebuilt and renamed **Q-BOT STUDIO**
+- [x] 8-step no-code creation wizard
+- [x] **5 ready-made templates** each for Welcome, About and Help, with preview
+- [x] 26 menu features (24 selectable now), button renaming and recolouring
+- [x] Signal / result / chart / title customisation, premium emoji, custom AI prompt
+- [x] Force channel join, open/licensed access mode
+- [x] Child Admin Panel (Telegram + web), analytics, My Bots management
+- [x] Opened to STARTER (1 bot), PLUS (3 bots) and INFINITY (10 bots)
+
+### 📘 Documentation
+- [x] Complete step-by-step **User Guide** (13 chapters): every menu, step and button, with plan availability
+
+### 🧠 Strategy Intelligence (rebuilt)
+- [x] Per-analyzer learning per market, timeframe and hour
+- [x] Conservative (confidence-adjusted) ranking of results
+- [x] Setup preference only when one setup is clearly better
+- [x] Smart routing to a clearly better analyzer (admin toggle)
+- [x] Safe auto-tuning with hard limits and one-tap reset
+- [x] Recommended analyzer from the strongest proven record
+
+### 📡 Scanning Mode
+- [x] Shared supply/demand zone and trendline scanner across all open markets
+- [x] Zone rejection, trendline rejection, break & retest, confirmed zone-break retest
+- [x] Accurate levels: broken zones discarded, clean trendlines only
+- [x] Signal charts show the exact zone/trendline used
+- [x] Optional MTF confirmation, M1–M5, Live Session and Live Signal Auto
+- [x] Per-signal statistics (`/scanstats`)
+
+### ⚡ Performance & Stability
+- [x] Analysis engine about 14× faster, candle reading about 6× faster
+- [x] Instant button responses and parallel handling of user taps
+- [x] Web apps on separate worker loops
+- [x] Self-healing scanners and result tracking
+- [x] 24/7 launcher with automatic restart and a freeze watchdog
+- [x] Bounded memory and automatic cleanup for weeks of uptime
+
+### 🌐 New Apps & Features
+- [x] **QUANTEX HUB**: community feed, messages, leaderboards, news, breaking-news alerts
+- [x] **Live Chart**: all brokers, M1 → D1, 30-day history
+- [x] **AXTIRON FS**: advanced future signal generator (M1–M15, 1–5 h)
+- [x] **AI Filter**: filter future lists against 1–30 days of history
+- [x] **Group Live Signal**: Live Signal inside Telegram groups
+
+---
+
+## 🔜 Phase 6 — Short Term
 
 ### Multiple Broker Support — Phase 2
 - [ ] **Pocket Option** — full signal and broadcast support
 - [ ] **Olymp Trade** — OTC and Live pair support
 - [ ] **Binomo** — OTC support
 
-### Bot Builder — Full Public Release
-- [ ] Open Bot Builder to STARTER tier
+### Q-BOT STUDIO — Next
 - [ ] Nested multi-level menu builder
 - [ ] Logo/banner upload & full theming
+- [ ] More Welcome / About / Help templates
 
 ### Free Bots Mission — Phase 2
 - [ ] Bot #6 release
@@ -238,7 +290,7 @@
 
 ---
 
-## 🔮 Phase 6 — Medium Term
+## 🔮 Phase 7 — Medium Term
 
 ### Enhanced AI Capabilities
 - [ ] Upgraded AI models for deeper analysis
@@ -248,11 +300,11 @@
 ### Advanced Signal Management
 - [ ] Signal history archive per user
 - [ ] Personal win-rate statistics dashboard
-- [ ] Pair-specific and time-of-day performance tracking
+- [ ] Personal pair-specific and time-of-day performance view
 
 ---
 
-## 🚀 Phase 7 — Long Term
+## 🚀 Phase 8 — Long Term
 
 ### Auto Trading System
 - [ ] Quotex API direct trade execution
@@ -279,6 +331,7 @@
 
 | Version | Highlights |
 |---|---|
+| **v5.0** | 3 brokers (BINOLLA added) + Primary Broker, Q-BOT STUDIO with templates, rebuilt Strategy Intelligence, Scanning Mode with accurate zones/trendlines, ~14× faster engine + 24/7 self-healing runtime, QUANTEX HUB, Live Chart, AXTIRON FS, AI Filter, Group Live Signal |
 | **v4.0** | Tradowix broker support, Auto Payment (Binance Pay/TRC20/BEP20), News Signal System (Forex Factory + AI), Live Checker (5th checker mode), Signal Tools (Formatter/Swap C/P/TZ Converter/Market Filters), new Future Signal modes (Live/Blackout/Whiteout FS), Bot Builder expanded (PLUS: 3 bots, INFINITY: 10 bots; Custom AI Prompt; Child Admin Panel; Session Log Viewer), Strategy Intelligence dashboard |
 | **v3.x** | Tiered subscriptions (STARTER/PLUS/INFINITY), Web Control dashboard, Admin Web Panel with role-based sub-admins, Bot Builder early access (live deployment) |
 | **v3.0** | AI confirmation, Live broadcast, Future Live system, 4-mode checker suite (super-fast + 100% accurate), Free Bots (5 released), Bot Builder button, PostgreSQL, referrals, reviews, premium emojis |

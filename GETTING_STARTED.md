@@ -1,7 +1,8 @@
 # 🚀 QUANTEX-BOT — Getting Started Guide
 
 > **Bot**: [@QuantexBinaryTools_bot](https://t.me/QuantexBinaryTools_bot)  
-> **Support**: [@X_Akash_Owner](https://t.me/X_Akash_Owner)
+> **Support**: [@X_Akash_Owner](https://t.me/X_Akash_Owner)  
+> 📘 **Full manual**: the [User Guide](USER_GUIDE.md) explains every menu, step and button.
 
 ---
 
@@ -9,13 +10,13 @@
 
 Search **@QuantexBinaryTools_bot** on Telegram or tap: [https://t.me/QuantexBinaryTools_bot](https://t.me/QuantexBinaryTools_bot)
 
-Send `/start` to open the main menu.
+Send `/start` to open the main menu. If the bot asks you to join the official channel first, join it and tap **Verify**.
 
 ---
 
 ## Step 2 — Choose a Plan
 
-Tap **🪄 Upgrade** → pick a tier → subscribe instantly via **Auto Payment** or contact **[@X_Akash_Owner](https://t.me/X_Akash_Owner)** to activate manually.
+Tap **🪄 UPGRADE**, pick a tier, then subscribe instantly with **Auto Payment** or contact **[@X_Akash_Owner](https://t.me/X_Akash_Owner)** to activate manually.
 
 | Plan | Price |
 |---|---|
@@ -25,43 +26,71 @@ Tap **🪄 Upgrade** → pick a tier → subscribe instantly via **Auto Payment*
 | 👑 INFINITY | $49 / month |
 
 **Auto Payment options** (instant activation, no approval needed):
-- 💰 **Binance Pay** — Binance Pay ID: `1133439955`
-- 💎 **TRC20 USDT** — USDT on the TRON network
-- 💎 **BEP20 USDT** — USDT on the BNB Smart Chain
+- 💰 **Binance Pay**: Binance Pay ID `1133439955`
+- 💎 **TRC20 USDT**: USDT on the TRON network
+- 💎 **BEP20 USDT**: USDT on the BNB Smart Chain
 
 > 🎟 Have a promo code? Enter it in the Upgrade menu.  
-> 🔓 Even on the FREE plan, you can use: Free Bots (5 available), the full Signal Checker suite, Signal Tools, limited daily Future Signal & Live Signal usage, and 3 free Future Live sessions.
+> 🔓 Even on the FREE plan you can use the Free Bots, the Signal Checkers, the Signal Tools, a daily allowance of Future Signals and Live Signals, and 3 Future Live sessions.
 
 ---
 
-## Step 3 — Select Your Broker
+## Step 3 — Choose Your Broker (QUOTEX · TRADOWIX · BINOLLA)
 
-QUANTEX-BOT supports two brokers. Select your preferred broker in the setup wizard:
+QUANTEX-BOT fully supports **three brokers**:
 
-- **Quotex** — OTC + Live Forex
-- **Tradowix** — OTC + Live Forex
+| Broker | Markets |
+|---|---|
+| 🟦 **QUOTEX** | 62 OTC + 28 Live |
+| 🟧 **TRADOWIX** | 101 OTC + 15 Live |
+| 🟪 **BINOLLA** | 100+ markets |
 
----
+There are two ways to pick a broker:
+- **Each time**: every feature asks which broker you trade on.
+- **Once, for everything** *(recommended)*: open **SETTINGS → Primary Broker**, choose your broker and turn on **"Use this broker in all features"**.
 
-## Step 4 — Start a Live Session
-
-Tap **▶️ START LIVE SESSION** → follow the setup wizard:
-
-1. **Broker** — Quotex or Tradowix
-2. **Chat** — DM or group/channel where signals are sent
-3. **Username** — your broker username for session tracking
-4. **Mode** — Single pair or Auto (bot picks strongest signal)
-5. **Market** — OTC (24/7) or Live (market hours)
-6. **Pairs** — specific pairs or "All"
-7. **Premium Mode** — enable if Telegram account connected
-8. **Charts** — enable/disable signal and result charts
-9. **Partial Reports** — auto-report interval
-
-Signals arrive automatically at each 5-minute slot.
+📋 See every market name in [SUPPORTED_MARKETS.md](SUPPORTED_MARKETS.md).
 
 ---
 
-## Step 5 — Follow Signals
+## Step 4 — Get Live Signals
+
+Tap **📡 LIVE SIGNAL**:
+
+- **Manual Signal**: pick a market and timeframe and get one AI-confirmed signal now.
+- **Auto Signal**: the bot finds the best setups for you. Choose the engine:
+  - **STRATEGY MODE**: pick an analyzer, **QUANTUM SCAN**, **SMART FOCUS** or **HYBRID ENGINE** (the one marked **RECOMMENDED** has the best proven record)
+  - **SCANNING MODE**: the shared supply/demand zone and trendline scanner (M1, M2, M3 or M5)
+- Choose the markets: **Avoid under 80%**, **All markets**, **Select manually** or **Live markets**.
+
+Each signal comes with entry time, direction, payout, support/resistance and a chart. The result is posted automatically after the candle closes.
+
+> 👥 **Group Live Signal:** bot owners (for example with your own Q-BOT STUDIO bot) can add the bot to a group as an admin and send `/start_live_signal` to run Live Signal inside the group.
+
+---
+
+## Step 5 — Start a Live Session *(STARTER, PLUS & INFINITY)*
+
+Tap **▶️ START LIVE SESSION** and follow the wizard (FREE users see **ACCESS RESTRICTED**):
+
+1. **Broker**: QUOTEX, TRADOWIX or BINOLLA (skipped if you set a Primary Broker)
+2. **Step 1 — Target channel**: forward a post from your channel or send its Chat ID (the bot should be an admin there)
+3. **Step 2 — Username**: the username printed on every signal
+4. **Step 3 — Message style**: Premium Emoji Mode (posts from your connected Telegram account) or Normal Emoji Mode (posts from the bot)
+5. **Step 4 — Market**: OTC, Live or All, then **Avoid under 80%** or **Select manually**, then the engine: **Strategy Mode** (Quantum Scan / Smart Focus / Hybrid Engine) or **Scanning Mode**
+6. **Step 5 — Pairs**: pick pairs, or load / save a favourite list
+7. **Step 6 — Timeframe**: M1, M2, M3, M5, M10 or M15 (Scanning Mode: M1–M5)
+8. **Step 7 — Charts**: both, signal only, result only, or none
+9. **Step 8 — Partial reports**: every 30 / 60 / 120 minutes, or off
+10. **Review & Confirm → LAUNCH SESSION**
+
+Use **Send Partial Now**, **Session Status**, **Edit Pairs**, **Pause Session**, **View Log** and **Stop Session** to control it. Live Session signals share the daily allowance with Live Signal.
+
+📘 Every button of every step is explained in the [User Guide → Live Session](guide/02-live-session.md).
+
+---
+
+## Step 6 — Follow a Signal
 
 ```
 📊 QUANTEX BOT SIGNAL
@@ -70,178 +99,120 @@ Pair      : EUR/USD OTC
 Direction : ⬆️ BUY (CALL)
 Entry Time: 14:35
 Timeframe : M1
-Confidence:85%
-Payout    :90%
+Confidence: 85%
+Payout    : 90%
 ```
 
-At exactly **14:35**, open a **BUY (CALL)** M1 trade on your broker. Result is auto-checked and sent after the candle closes.
+At exactly **14:35**, open a **BUY (CALL)** trade with M1 expiry on your broker. The result is checked and sent automatically after the candle closes.
 
 ---
 
-## Step 6 — Use the Live Signal Broadcast
+## Step 7 — Future Signals
 
-Send AI-confirmed signals to your own Telegram channel:
-
-1. Tap **📡 Live Signal** from the main menu
-2. Choose **Manual Signal** (specific pair) or **Auto Signal** (bot picks best)
-3. Select your channel and verify bot has admin permissions
-4. Configure template (header, username)
-5. Signals broadcast to your channel automatically with payout, S/R, and AI reasoning
-
----
-
-## Step 7 — Use Future Live Signal System
-
-Schedule your signal list to auto-fire:
-
-1. Tap **⏱ Future Live** from the main menu
-2. Paste your signal list (any format accepted)
-3. Select your channel
-4. Choose MTG mode (MTG 1, MTG 2, or Non-MTG)
-5. Preview template → Start Session
-6. Each signal fires at its exact time, result checked automatically
+From the main menu:
+- **OTC MARKET FS / LIVE MARKET FS**: generate a future signal list
+- **BLACKOUT FS / WHITEOUT FS**: future lists for blackout or whiteout trading
+- **AXTIRON FS**: the advanced generator. Choose OTC or Live, a timeframe (M1–M15) and a duration (1–5 hours).
+- **AI FILTER**: paste any future list and keep only the strongest entries, based on 1–30 days of history
+- **FUTURE LIVE**: paste your own list. Each signal is posted at its exact time, with automatic results and MTG 1 / MTG 2 / Non-MTG.
 
 ---
 
-## Step 8 — Use the Signal Checker
+## Step 8 — Check Signals
 
-Verify signals from any source:
-
-1. Tap **🔍 Checker** from the main menu
-2. Choose checker mode:
-   - **Live Checker** *(New)* — real/live market signals
-   - **OTC Checker** — standard OTC signal check
-   - **Blackout Checker** — direction-free signals (reverse logic)
-   - **Whiteout Checker** — direction-free signals (follow logic)
-3. Choose date: **Today**, **Yesterday**, or **Custom Date**
-4. Paste your signals (any format)
-5. Receive instant WIN/LOSS/DOJI results with win-rate
+Choose **LIVE CHECKER**, **OTC CHECKER**, **BLACKOUT CHECKER** or **WHITEOUT CHECKER**, then **Today**, **Yesterday** or **Custom Date**, and paste your signals in any format. You get WIN / LOSS / DOJI per signal with MTG levels and the win rate.
 
 ---
 
-## Step 9 — Use News Signal
+## Step 9 — News Signal
 
-Get AI-powered signals from the economic calendar:
-
-1. Tap **📰 News Signal** from the main menu
-2. Select your preferred pairs (from 29 supported pairs)
-3. Set impact filter: HIGH / MEDIUM / LOW / All
-4. Set day range: 1, 2, or 3 days ahead
-5. Receive CALL/PUT signal cards for upcoming economic events, with AI bias and confidence score
+Tap **📰 NEWS SIGNAL**, choose pairs (29 supported), an impact filter (High / Medium / Low / All) and a range (1–3 days). You receive CALL/PUT cards for upcoming economic events, with AI bias and a confidence score.
 
 ---
 
-## Step 10 — Use Signal Tools
+## Step 10 — Tools, Payouts & Live Chart
 
-Utility tools for working with signal lists:
-
-1. Tap the relevant tool from the menu:
-   - **Formatter** — paste any signal list → receive it in clean card format
-   - **Swap C/P** — paste a signal list → all CALL/PUT directions flipped
-   - **TZ Converter** — paste signals → convert entry times to your timezone
-   - **Market Filters** — see which markets are currently stable
-
----
-
-## Step 11 — Access Free Bots
-
-1. Tap **🤖 Free Bots** from the main menu
-2. Choose from available bots
-3. Tap the bot link — opens directly in Telegram
-
-Currently available free bots:
-- 🚀 **HUNTER X QUANTEX** — Live signal software
-- 🐉 **DRAGON X QUANTEX** — OTC Signal Pro
-- 🖤 **BLACKOUT FUTURE AI** — Blackout Future signal system
-- ⚡ **STORM X QUANTEX** — Premium trading bot
-- 👻 **PHANTOM X QUANTEX** — Premium trading bot
+- **FORMATTER**: clean up any signal list
+- **SWAP C/P**: flip every CALL ↔ PUT *(coming soon)*
+- **TZ CONVERTER**: change signal times to another timezone
+- **MARKET FILTERS**: see which markets are stable right now
+- **LIVE PAYOUTS**: live payout % of every market
+- **LIVE CHART**: a candlestick chart of any market, any broker, M1 → D1
 
 ---
 
-## Step 12 — Connect Telegram for Premium Mode *(Optional)*
+## Step 11 — Build Your Own Bot with Q-BOT STUDIO *(STARTER, PLUS & INFINITY)*
 
-1. Tap **💎 Premium** in the main menu
-2. Tap **Connect Telegram Account**
-3. A secure browser login page opens
-4. Enter your Telegram credentials and phone number
-5. Enter the verification code sent to your Telegram
-6. Complete 2FA if prompted
-7. Account connected — Premium emojis enabled ✅
+1. Create a bot with **@BotFather** (`/newbot`) and copy the token
+2. Tap **Q-BOT STUDIO → CREATE** and paste the token
+3. Set your **brand name** and **support contact**
+4. Choose a **Welcome**, an **About** and a **Help** template (5 ready-made designs each, with a preview)
+5. Tick the **features** your bot should have
+6. *(Optional)* turn on **Force Channel Join**
+7. Review and tap **DEPLOY**. Your bot is live, with no coding and no server.
 
----
+Manage it any time in **MY BOTS**: rename buttons, change colours, edit texts and templates, update the token, start/stop, and use the **Child Admin Panel** for your users.
 
-## Step 13 — Manage Everything from Web Control *(PLUS & INFINITY)*
-
-1. Tap **🌐 Web Control** in the main menu — opens instantly, no separate login
-2. View your live profile: plan, daily signal credits, and referral stats
-3. Adjust the timezone for any signal type
-4. Customize your Live Session / Live Signal message templates
-5. Share your referral link with one tap
-6. FREE / STARTER users can still open it to view their profile and see upgrade options
+**Bot limits:** STARTER 1 · PLUS 3 · INFINITY 10
 
 ---
 
-## Step 14 — Build Your Own Bot *(PLUS & INFINITY)*
+## Step 12 — QUANTEX HUB
 
-1. Tap **🏗️ Bot Builder** from the main menu
-2. Tap **Create New Bot** → paste your @BotFather token
-3. Follow the wizard: set branding, welcome message, select modules
-4. Set a custom AI prompt (optional)
-5. Tap **Deploy** — your bot goes live instantly
-6. Manage your bots via **My Bots** (start, stop, restart, delete)
-7. Access the **Child Admin Panel** to manage your deployed bot's users
-
-**Bot limits by plan**: PLUS — 3 bots | INFINITY — 10 bots
+Tap **🌐 QUANTEX HUB** to join the community: post, comment, like, chat privately, check the leaderboards and read the daily market news.
 
 ---
 
-## Step 15 — Referral Program
+## Step 13 — Web Control *(PLUS & INFINITY)*
 
-Earn promo codes by inviting friends:
+Tap **WEB CONTROL**. It opens instantly with no separate login.
+- Live profile: plan, daily credits and referral stats
+- Timezone for every signal type
+- Live Session and Live Signal template editing
+- One-tap referral sharing
 
-1. Tap **👥 Referral** in the main menu (or use Web Control)
-2. Copy your unique referral link
-3. Share it — each verified signup earns you credit toward promo codes
-
----
-
-## Step 16 — Schedule Auto-Sessions *(Optional)*
-
-1. Tap **📅 Schedule**
-2. Select days of the week
-3. Set start and optional end time
-4. Save — bot fires automatically each week with a pre-alert
+FREE and STARTER users can open it to view their profile and plans.
 
 ---
 
-## 💤 Sleep Mode Info
+## Step 14 — Free Bots
 
-Bot auto-pauses **7:00 PM – 10:00 PM** daily. Resumes at 10:00 PM with notification to all subscribed users.
+Tap **🤖 FREE BOTS**: **HUNTER X QUANTEX**, **DRAGON X QUANTEX**, **BLACKOUT FUTURE AI**, **FUTURE SIGNAL AI** and **QX PERSONAL AI** are free for everyone.
+
+---
+
+## Step 15 — Connect Telegram for Premium Emojis *(Optional)*
+
+1. Open **OTHERS → Login**
+2. A secure browser login page opens
+3. Enter your phone number, the verification code and your 2FA password if you have one
+4. Check the connection anytime with **TG Status**
+
+---
+
+## Step 16 — Referral & Schedule
+
+- **REFERRAL**: share your link and earn rewards
+- **SCHEDULE SESSION** *(STARTER, PLUS & INFINITY)*: launch a saved Live Session automatically on chosen days and times
 
 ---
 
 ## ❓ Common Questions
 
-**Q: What is a DOJI?**  
-A candle where open = close. No movement. Not counted as WIN or LOSS.
-
-**Q: What is MTG 1 vs MTG 2?**  
-MTG 1 = one recovery step. MTG 2 = two recovery steps. Each doubles the stake.
-
-**Q: What is the Blackout Checker?**  
-For direction-free signals. Checks the previous candle color to determine expected direction, then verifies the entry candle.
-
-**Q: What is Future Live?**  
-Paste your signal list → bot fires each signal to your channel at the exact scheduled time and auto-checks results.
-
-**Q: What is the News Signal?**  
-AI-powered signals generated from the Forex Factory economic calendar. Gives CALL/PUT recommendations per pair for upcoming high-impact news events.
-
 **Q: Which brokers are supported?**  
-Quotex and Tradowix — both fully supported for OTC and Live Forex signals.
+QUOTEX, TRADOWIX and BINOLLA, all fully supported. See [SUPPORTED_MARKETS.md](SUPPORTED_MARKETS.md).
 
-**Q: How do I pay for a subscription?**  
-Use Auto Payment inside the bot (Binance Pay, TRC20 USDT, or BEP20 USDT — instant and automatic), or message [@X_Akash_Owner](https://t.me/X_Akash_Owner) for manual activation.
+**Q: Strategy Mode or Scanning Mode?**  
+Strategy Mode uses the three analyzers with Strategy Intelligence. Scanning Mode trades supply/demand zones and trendlines across all markets at once. Try both and keep the one that fits your style.
+
+**Q: What is a DOJI?**  
+A candle where open = close. It is reported separately.
+
+**Q: What is MTG?**  
+A recovery trade on the next candle after a loss.
+
+**Q: How do I pay?**  
+Use Auto Payment inside the bot (Binance Pay, TRC20 or BEP20 USDT, instant), or message [@X_Akash_Owner](https://t.me/X_Akash_Owner).
 
 ---
 
