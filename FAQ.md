@@ -365,6 +365,31 @@ Binary options trading carries high risk. QUANTEX-BOT provides signals to assist
 
 ---
 
+## 🌐 Website & Developer API
+
+### Is there a website?
+Yes: **[quantexbot.pro](https://quantexbot.pro)** (also in [বাংলা](https://quantexbot.pro/bn) and [Português](https://quantexbot.pro/pt)). It has the documentation, pricing, updates, FAQ, a contact form, the live [system status](https://quantexbot.pro/status) and your account dashboard. Signals and trading tools stay in the Telegram bot. Details: [WEBSITE.md](WEBSITE.md).
+
+### What is the Developer API?
+A REST API at `https://api.quantexbot.pro/v1` for your own apps and bots: brokers, pairs, payouts, candles, the **live signals the bot delivers and their results**, future signal lists, the checker and economic news. Full documentation: [DEVELOPER_API.md](DEVELOPER_API.md) or [quantexbot.pro/docs/api](https://quantexbot.pro/docs/api).
+
+### How do I get an API key?
+[Create an account](https://quantexbot.pro/register), verify your email, then open **Dashboard → API keys**. The free Developer plan is included; the key is shown only once.
+
+### Which plan do I need for live signals, webhooks or the stream?
+Live signals, results and future lists start from **Starter**. Webhooks, the live stream and candle history are in **Pro** and **Business**. See [quantexbot.pro/pricing](https://quantexbot.pro/pricing).
+
+### Are API signals the same as the bot's signals?
+Yes. The API serves the signals the QUANTEX bot really delivers, each setup once, and the WIN / LOSS result later with the same id. The API never runs a separate analysis.
+
+### How do I pay for an API plan?
+In **Dashboard → Upgrade plan** with Binance Pay, USDT TRC20 or USDT BEP20. Paste the transaction ID; it is verified automatically and the plan starts at once.
+
+### Can AI assistants read the documentation?
+Yes, everything is public: [quantexbot.pro/llms.txt](https://quantexbot.pro/llms.txt), [quantexbot.pro/llms-full.txt](https://quantexbot.pro/llms-full.txt) and the [OpenAPI file](https://api.quantexbot.pro/v1/openapi.json). In this repository: [llms.txt](llms.txt).
+
+---
+
 ## 📞 Support
 
 - 💬 **Telegram**: [@X_Akash_Owner](https://t.me/X_Akash_Owner)
@@ -373,3 +398,4 @@ Binary options trading carries high risk. QUANTEX-BOT provides signals to assist
 - 📢 **Channel**: [@Quantexbot1](https://t.me/Quantexbot1)
 - 👥 **Community Group**: [t.me/quantexlounge](https://t.me/quantexlounge)
 - 🤖 **Bot**: [@QuantexBinaryTools_bot](https://t.me/QuantexBinaryTools_bot)
+- 🌐 **Website**: [quantexbot.pro](https://quantexbot.pro) · ✉️ [Contact form](https://quantexbot.pro/contact)

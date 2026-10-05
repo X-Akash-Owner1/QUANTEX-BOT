@@ -16,9 +16,15 @@
 [![Status](https://img.shields.io/badge/Status-Active%2024%2F7-00ff88?style=flat-square)](https://t.me/QuantexBinaryTools_bot)
 [![Database](https://img.shields.io/badge/Database-PostgreSQL-336791?style=flat-square&logo=postgresql)](https://t.me/QuantexBinaryTools_bot)
 
+[![Website](https://img.shields.io/badge/🌐%20Website-quantexbot.pro-2f6bff?style=for-the-badge)](https://quantexbot.pro)
+[![Developer API](https://img.shields.io/badge/🔌%20Developer%20API-api.quantexbot.pro-8b5cf6?style=for-the-badge)](https://quantexbot.pro/docs/api)
+[![Status](https://img.shields.io/badge/🟢%20System-Status-00b894?style=for-the-badge)](https://quantexbot.pro/status)
+
 ---
 
 > **QUANTEX-BOT** is a professional binary options signal system that runs entirely inside Telegram. It supports **three brokers — QUOTEX, TRADOWIX and BINOLLA — with 300+ markets**. Signals come from two engines, **Strategy Mode** and **Scanning Mode**, and a **Strategy Intelligence** layer learns from every real result. Around the signals you get a complete checker suite, Future Signal generators, the **Q-BOT STUDIO** no-code bot builder, the **QUANTEX HUB** community, a **Live Chart**, a Web Control dashboard and instant Auto Payment.
+
+> 🌐 **Website:** [quantexbot.pro](https://quantexbot.pro) — documentation, accounts, the **Developer API**, payments and live system status. · 🔌 **Developer API:** [`https://api.quantexbot.pro/v1`](https://quantexbot.pro/docs/api) — live signals, results, candles, payouts, checker, future signals and news for your own apps and bots.
 
 ---
 
@@ -26,6 +32,7 @@
 
 ## 📌 Table of Contents
 
+- [🌐 New: Website & Developer API](#-new-website--developer-api)
 - [What's New in v5.0](#-whats-new-in-v50)
 - [What is QUANTEX-BOT?](#-what-is-quantex-bot)
 - [Supported Brokers & Markets](#-supported-brokers--markets)
@@ -36,6 +43,42 @@
 - [📘 User Guide (step by step)](USER_GUIDE.md)
 - [Documentation](#-documentation)
 - [Contact & Support](#-contact--support)
+
+---
+
+## 🌐 New: Website & Developer API
+
+QUANTEX now has its own website and a public **Developer API**.
+
+| | Link | What it is |
+|---|---|---|
+| 🌐 **Website** | [quantexbot.pro](https://quantexbot.pro) · [বাংলা](https://quantexbot.pro/bn) · [Português](https://quantexbot.pro/pt) | Features, documentation, pricing, updates, FAQ, contact; sign up with email or Google |
+| 👤 **Dashboard** | [quantexbot.pro/dashboard](https://quantexbot.pro/dashboard) | Profile, two-step security, notifications, API keys, webhooks, usage, logs, billing |
+| 🔌 **Developer API** | [api.quantexbot.pro/v1](https://api.quantexbot.pro/v1/status) | REST API: brokers, pairs, payouts, candles, **live signals + results**, **future signals**, checker, news; **webhooks** and a **live stream** |
+| 📘 **API documentation** | [quantexbot.pro/docs/api](https://quantexbot.pro/docs/api) · [DEVELOPER_API.md](DEVELOPER_API.md) | Every endpoint, parameter, example and error code |
+| 🧾 **OpenAPI** | [api.quantexbot.pro/v1/openapi.json](https://api.quantexbot.pro/v1/openapi.json) · [api/openapi.json](api/openapi.json) | Machine-readable description for code generators, Postman and AI agents |
+| 🤖 **For AI assistants** | [quantexbot.pro/llms.txt](https://quantexbot.pro/llms.txt) · [llms.txt](llms.txt) | The whole documentation as plain text, open to everyone |
+| 🟢 **System status** | [quantexbot.pro/status](https://quantexbot.pro/status) | Website, API, data engine, Telegram bot and payments, checked every minute |
+| 💳 **API plans** | [quantexbot.pro/pricing](https://quantexbot.pro/pricing) | Developer (free), Starter, Pro, Business — paid with Binance Pay or USDT, verified automatically |
+| 🤖 **QUANTEX AI** | on every page | 24/7 support assistant in English, বাংলা and Português |
+
+**Developer API in one minute**
+
+```bash
+# 1. Create a free account at https://quantexbot.pro/register and an API key in Dashboard → API keys
+# 2. Ask for the open OTC pairs of QUOTEX:
+curl "https://api.quantexbot.pro/v1/pairs?broker=quotex&market=otc&open=true" \
+  -H "Authorization: Bearer qx_live_YOUR_KEY"
+# 3. Get the live signals the bot delivers, and their results (poll with ?since=<next_cursor>):
+curl "https://api.quantexbot.pro/v1/signals/live?broker=quotex" -H "Authorization: Bearer qx_live_YOUR_KEY"
+```
+
+| Read more | |
+|---|---|
+| [WEBSITE.md](WEBSITE.md) | Everything on the website, page by page |
+| [DEVELOPER_API.md](DEVELOPER_API.md) | Complete Developer API documentation (all endpoints) |
+| [ARCHITECTURE.md](ARCHITECTURE.md) | How the bot, website and API work together |
+| [examples/](examples/) | Ready-to-run code: Python, Node.js, PHP, cURL |
 
 ---
 
@@ -276,6 +319,12 @@ Full guide: [GETTING_STARTED.md](GETTING_STARTED.md)
 | [PRICING.md](PRICING.md) | Plans, limits and payment |
 | [FAQ.md](FAQ.md) | Frequently asked questions |
 | [ROADMAP.md](ROADMAP.md) | Version history and what's next |
+| [WEBSITE.md](WEBSITE.md) | 🌐 The website [quantexbot.pro](https://quantexbot.pro): pages, accounts, dashboard, billing, AI support, status |
+| [DEVELOPER_API.md](DEVELOPER_API.md) | 🔌 **Developer API**: authentication, keys, limits, every endpoint with examples, webhooks, stream, errors, plans |
+| [ARCHITECTURE.md](ARCHITECTURE.md) | 🧩 System architecture: bot, collectors, Engine Bridge, website, API; how a live signal reaches the API |
+| [examples/](examples/) | 🧪 Code examples (Python, Node.js, PHP, cURL) |
+| [api/openapi.json](api/openapi.json) | 🧾 OpenAPI 3.1 file of the API |
+| [llms.txt](llms.txt) | 🤖 Index of this documentation for AI assistants |
 
 ---
 
@@ -284,6 +333,10 @@ Full guide: [GETTING_STARTED.md](GETTING_STARTED.md)
 | | Link |
 |---|---|
 | 🤖 **Telegram Bot** | [@QuantexBinaryTools_bot](https://t.me/QuantexBinaryTools_bot) |
+| 🌐 **Website** | [quantexbot.pro](https://quantexbot.pro) |
+| 🔌 **Developer API docs** | [quantexbot.pro/docs/api](https://quantexbot.pro/docs/api) |
+| 🟢 **System status** | [quantexbot.pro/status](https://quantexbot.pro/status) |
+| ✉️ **Contact form** | [quantexbot.pro/contact](https://quantexbot.pro/contact) |
 | 📣 **Main Channel** *(required to use the bot)* | [t.me/bdtraderpro](https://t.me/bdtraderpro) — every update is posted here first |
 | 📢 **Official Channel** | [@Quantexbot1](https://t.me/Quantexbot1) |
 | 👥 **Community Group** | [t.me/quantexlounge](https://t.me/quantexlounge) |
@@ -317,6 +370,8 @@ All rights reserved. Unauthorized redistribution or resale of subscription acces
 
 [![Join Main Channel](https://img.shields.io/badge/Join-Main%20Channel-2CA5E0?style=for-the-badge&logo=telegram)](https://t.me/bdtraderpro)
 [![Start Bot](https://img.shields.io/badge/Start-Trading%20Bot-00ff88?style=for-the-badge&logo=telegram)](https://t.me/QuantexBinaryTools_bot)
+[![Website](https://img.shields.io/badge/Visit-quantexbot.pro-2f6bff?style=for-the-badge)](https://quantexbot.pro)
+[![API](https://img.shields.io/badge/Build%20with-the%20API-8b5cf6?style=for-the-badge)](https://quantexbot.pro/docs/api)
 
 *QUANTEX-BOT — 3 Brokers. 2 Engines. One Intelligent Signal System.*
 

@@ -270,6 +270,36 @@
 
 ---
 
+## ✅ v5.1 — Website + Developer API Platform
+
+### 🌐 Website — [quantexbot.pro](https://quantexbot.pro)
+- [x] Public website in **English, বাংলা and Português** (more languages from the admin panel)
+- [x] Feature pages, brokers, Live Chart preview, pricing, documentation, updates, FAQ, rules, terms, privacy, contact
+- [x] Accounts: email or Google sign-up, email verification, **two-step verification**, session management, notifications, profile photo, Telegram link
+- [x] User dashboard (with a slide-in menu on phones): profile, security, notifications, settings, API pages, billing
+- [x] Content management: Markdown editor, drafts, preview, publishing, version history
+- [x] **QUANTEX AI** support assistant on every page (3 languages, own knowledge base, account-aware, hand-off to support)
+- [x] Admin panel: users, payments, subscriptions, API keys / usage / logs, content, AI support, roles, audit log, analytics dashboard
+
+### 💳 Billing
+- [x] Developer API plans (Developer free, Starter, Pro, Business) bought on the website
+- [x] Binance Pay, USDT TRC20 and USDT BEP20 with **automatic verification** (unique amount, exact receiver, confirmations, one-time transaction IDs shared with the bot)
+- [x] Receipts, renew / upgrade, reminders 7 days and 1 day before the end
+
+### 🔌 Developer API — [api.quantexbot.pro/v1](https://quantexbot.pro/docs/api)
+- [x] API keys (hash only, scopes, IP allow-list, expiry, rotate, revoke), per-minute and monthly limits per plan
+- [x] Brokers, pairs, payouts, **OHLC candles M1–H4** (closed candles, activity volume, payout), **signal checker**, **economic news** with bias
+- [x] **Live signals and results** (`/v1/signals/live`, `/v1/results`) — every signal the bot delivers, once, with its result
+- [x] **Webhooks** (signed, retries 1 / 5 / 30 min) and a **Server-Sent Events stream**
+- [x] **Future signal lists** as async jobs (OTC, Live, Blackout, Whiteout)
+- [x] Usage and request logs in the dashboard; OpenAPI 3.1; documentation open to AI assistants (`/llms.txt`)
+
+### 🟢 System Status
+- [x] Health checks every minute (website, API, database, data engine, Telegram bot, payments)
+- [x] Public status page with 90-day uptime and incidents; `/v1/status` JSON
+
+---
+
 ## 🔜 Phase 6 — Short Term
 
 ### Multiple Broker Support — Phase 2
@@ -320,6 +350,7 @@
 - [ ] Push notifications for signals
 
 ### Multi-Language Support
+> The website already speaks English, বাংলা and Português; this item is for the Telegram bot.
 - [ ] Bengali (বাংলা)
 - [ ] Arabic (عربي)
 - [ ] Spanish (Español)
@@ -332,6 +363,7 @@
 
 | Version | Highlights |
 |---|---|
+| **v5.1** | Website [quantexbot.pro](https://quantexbot.pro) (3 languages, accounts, dashboard, AI support), Developer API with live signals + results, webhooks, SSE stream, future signal jobs, candles, checker, news; automatic USDT / Binance Pay billing; public status page; admin analytics |
 | **v5.0** | 3 brokers (BINOLLA added) + Primary Broker, Q-BOT STUDIO with templates, rebuilt Strategy Intelligence, Scanning Mode with accurate zones/trendlines, ~14× faster engine + 24/7 self-healing runtime, QUANTEX HUB, Live Chart, AXTIRON FS, AI Filter, Group Live Signal |
 | **v4.0** | Tradowix broker support, Auto Payment (Binance Pay/TRC20/BEP20), News Signal System (Forex Factory + AI), Live Checker (5th checker mode), Signal Tools (Formatter/Swap C/P/TZ Converter/Market Filters), new Future Signal modes (Live/Blackout/Whiteout FS), Bot Builder expanded (PLUS: 3 bots, INFINITY: 10 bots; Custom AI Prompt; Child Admin Panel; Session Log Viewer), Strategy Intelligence dashboard |
 | **v3.x** | Tiered subscriptions (STARTER/PLUS/INFINITY), Web Control dashboard, Admin Web Panel with role-based sub-admins, Bot Builder early access (live deployment) |
